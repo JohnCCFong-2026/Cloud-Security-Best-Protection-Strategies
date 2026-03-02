@@ -10,11 +10,22 @@ For setup instructions, please follow the steps provided in Azure.
 #### ⛔️ Role-Based Access Control (RBAC) for Subscription / Resource Group / Resource Level:**
 - Enforces the principle of least privilege by assigning users only the permissions necessary for their roles. For example, virtual machine contributor etc.
 - [Grant a user access to Azure resources using the Azure portal](https://learn.microsoft.com/en-us/azure/role-based-access-control/quickstart-assign-role-user-portal)
+#### ‌‌‌‌🦱 Service Principal
+- Use Service Principals when external apps or automation need Azure access.
+- [Register a Microsoft Entra app and create a service principal](https://learn.microsoft.com/en-us/entra/identity-platform/howto-create-service-principal-portal)
+#### 🦱 Managed Identity
+- Use Managed Identities when Azure services need to talk to each other.
+- [Use Azure portal to grant a managed identity access to a resource](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/grant-managed-identity-resource-access-azure-portal)
 #### 💵 Option: Microsoft Entra Privileged Identity Management (PIM) (license required)
 - Requires users to obtain one-time permission for high-privilege requests, applicable to both internal and external users.
 - [Start using Privileged Identity Management](https://docs.azure.cn/en-us/entra/id-governance/privileged-identity-management/pim-getting-started)
 #### 💵 Option: Just-in-time (JIT) (license required)
 - Requires users to obtain one-time access to resources, such as virtual machines.
+- [Enable just-in-time access](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-just-in-time-access)
+
+
+
+
 
 #### Network security group
  
