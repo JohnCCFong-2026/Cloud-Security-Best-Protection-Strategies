@@ -7,7 +7,7 @@ For setup instructions, please follow the steps provided in Azure.
 #### 🔐 Multi-Factor Authentication (MFA) for user sign in
 - Requires all users to register for MFA
 - [Configure Microsoft Entra multifactor authentication settings](https://docs.azure.cn/en-us/entra/identity/authentication/howto-mfa-mfasettings)
-#### ⛔️ Role-Based Access Control (RBAC) for Subscription / Resource Group / Resource Level:
+#### ⛔️ Role-Based Access Control (RBAC) for Management Group / Subscription / Resource Group / Resource Level:
 - Enforces the principle of least privilege by assigning users only the permissions necessary for their roles. For example, virtual machine contributor etc.
 - [Grant a user access to Azure resources using the Azure portal](https://learn.microsoft.com/en-us/azure/role-based-access-control/quickstart-assign-role-user-portal)
 #### ‌‌‌‌🦱 Service Principal
@@ -18,6 +18,7 @@ For setup instructions, please follow the steps provided in Azure.
 - [Use Azure portal to grant a managed identity access to a resource](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/grant-managed-identity-resource-access-azure-portal)
 #### 👨‍👨‍👦‍👦 Microsoft Entra ID
 - Enforce group member practices through central management, for example by dividing departments to allocate resources effectively.
+- [Manage Microsoft Entra groups and group membership](https://docs.azure.cn/en-us/entra/fundamentals/how-to-manage-groups)
 #### 💵 Option: Microsoft Entra Privileged Identity Management (PIM) (license required)
 - Requires users to obtain one-time permission for high-privilege requests, applicable to both internal and external users.
 - [Start using Privileged Identity Management](https://docs.azure.cn/en-us/entra/id-governance/privileged-identity-management/pim-getting-started)
