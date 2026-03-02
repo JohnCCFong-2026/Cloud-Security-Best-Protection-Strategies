@@ -16,6 +16,8 @@ For setup instructions, please follow the steps provided in Azure.
 #### 🦱 Managed Identity
 - Use Managed Identities when Azure services need to talk to each other.
 - [Use Azure portal to grant a managed identity access to a resource](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/grant-managed-identity-resource-access-azure-portal)
+#### 👨‍👨‍👦‍👦 Microsoft Entra ID
+- Enforce group member practices through central management, for example by dividing departments to allocate resources effectively.
 #### 💵 Option: Microsoft Entra Privileged Identity Management (PIM) (license required)
 - Requires users to obtain one-time permission for high-privilege requests, applicable to both internal and external users.
 - [Start using Privileged Identity Management](https://docs.azure.cn/en-us/entra/id-governance/privileged-identity-management/pim-getting-started)
