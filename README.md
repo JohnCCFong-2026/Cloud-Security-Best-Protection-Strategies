@@ -12,8 +12,14 @@ This repository is designed for proactive protection in the cloud. It provides s
 For setup instructions, see the README.md file included in the library’s folder.
 
 For tutorials, samples, quick starts, and other documentation.
+
+Azure
 * [Zero Trust security in Azure](https://learn.microsoft.com/en-us/azure/security/fundamentals/zero-trust)
-* [Understanding Zero Trust principles in AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-zero-trust-architecture/zero-trust-principles.html)
 * [Overview of Azure security controls (v3)](https://learn.microsoft.com/en-us/security/benchmark/azure/overview-v3)
+
+AWS
+* [Understanding Zero Trust principles in AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-zero-trust-architecture/zero-trust-principles.html)
 * [Standards reference for Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.html)
+
+Others
 * [MITRR ATT&ACK](https://attack.mitre.org/)
