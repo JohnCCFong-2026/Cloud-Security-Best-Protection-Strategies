@@ -25,32 +25,33 @@ For setup instructions, please follow the steps provided in Azure.
 ##### 💵 Just-in-time (JIT) (Premium license required)
 - Requires users to obtain one-time access to resources, such as virtual machines.
 - [Enable just-in-time access](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-just-in-time-access)
-### 🛡️ Review Microsoft Entra recommendations (such as Identity Secure Score) to assess and improve your identity management security posture.
+### Review Microsoft Entra recommendations (such as Identity Secure Score) to assess and improve your identity management security posture.
 ##### 🛂 Microsoft Entra Identity Protection (Premium license required)
 - With Identity Protection, your organization can continuously monitor for vulnerabilities and high‑risk identity activities. Using advanced machine learning, it detects abnormal sign‑ins and flags suspicious user behaviors to safeguard identities.
 - [Plan an ID Protection deployment](https://learn.microsoft.com/en-us/entra/id-protection/how-to-deploy-identity-protection)
 ##### 🔎 Access Reviews (Premium license required)
 - With Access Reviews in Microsoft Entra ID, organizations can maintain secure and compliant identity governance. Scheduled reviews ensure that only authorized users continue to have access to groups, applications, and roles.
 - [Create an access review of groups and applications in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/id-governance/create-access-review)
-### Framework
-##### Zero Trust Principles for Azure IAM
-###### Verify Explicitly
+### Zero Trust IAM Framework
+##### 🛡️ Zero Trust Principles for Azure IAM
+###### 🔎 Verify Explicitly
 - Concept: Never trust, always verify. Authentication and authorization must use all available signals (identity, device health, location, risk, workload).
 ###### Your Controls
-- Multi-Factor Authentication (MFA) → Strong sign-in verification.
-- Service Principals & Managed Identities → Secure non-human identities.
-- Microsoft Entra Identity Protection → Detect risky sign-ins and compromised accounts.
-- Conditional Access (via Entra) → Enforce contextual policies.
-###### Least Privilege Access
+- 🔐 Multi-Factor Authentication (MFA)
+- 🦱 Service Principals
+- 🦱 Managed Identities
+- 🛂 Microsoft Entra Identity Protection
+- 🎯 Conditional Access (via Entra)
+###### ⛔ Least Privilege Access
 - Concept: Limit access to only what is necessary, and only for the time required.
 ###### Your Controls
-- Role-Based Access Control (RBAC) → Assign minimum permissions at multiple scopes.
-- Microsoft Entra ID Groups → Centralized group-based access management.
-- Privileged Identity Management (PIM) → Just-in-time elevation for admin roles.
-- Access Reviews → Continuous validation of user access.
-###### Assume Breach
+- ⛔ Role-Based Access Control (RBAC)
+- 👨‍👨‍👦‍👦 Microsoft Entra ID Groups
+- 💵 Privileged Identity Management (PIM)
+- 🔎 Access Reviews
+###### 🛡️ Assume Breach
 - Concept: Design IAM policies to minimize impact if credentials or accounts are compromised.
 ###### Your Controls
-- Just-in-Time (JIT) VM Access → Temporary access reduces exposure.
-- Audit Logs & Monitoring (Sentinel, Defender for Cloud) → Detect anomalies quickly.
-- Identity Secure Score → Continuous posture assessment and improvement.
+- 💵 Just-in-Time (JIT) VM Access.
+- 📜 Audit Logs & Monitoring (Sentinel, Defender for Cloud)
+- 📊 Identity Secure Score
