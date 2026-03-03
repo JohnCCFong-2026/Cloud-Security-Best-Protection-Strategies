@@ -4,6 +4,8 @@
 For setup instructions, please follow the steps provided in Azure.
 
 ### Identity & Access Control
+Azure Identity and Access Management (IAM) is the framework Microsoft provides to control who can access Azure resources, how they authenticate, and what they are allowed to do once inside. It is delivered primarily through Microsoft Entra ID
+
 ##### 🔐 Multi-Factor Authentication (MFA) for user sign in
 - Requires all users to register for MFA
 - [Configure Microsoft Entra multifactor authentication settings](https://docs.azure.cn/en-us/entra/identity/authentication/howto-mfa-mfasettings)
