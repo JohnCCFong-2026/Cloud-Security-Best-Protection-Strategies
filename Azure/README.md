@@ -19,17 +19,17 @@ For setup instructions, please follow the steps provided in Azure.
 ##### 👨‍👨‍👦‍👦 Microsoft Entra ID
 - Enforce group member practices through central management, for example by dividing departments to allocate resources effectively.
 - [Manage Microsoft Entra groups and group membership](https://docs.azure.cn/en-us/entra/fundamentals/how-to-manage-groups)
-##### 💵 Option: Microsoft Entra Privileged Identity Management (PIM) (License required)
+##### 💵 Option: Microsoft Entra Privileged Identity Management (PIM) (Premium license required)
 - Requires users to obtain one-time permission for high-privilege requests, applicable to both internal and external users.
 - [Start using Privileged Identity Management](https://docs.azure.cn/en-us/entra/id-governance/privileged-identity-management/pim-getting-started)
-##### 💵 Option: Just-in-time (JIT) (License required)
+##### 💵 Option: Just-in-time (JIT) (Premium license required)
 - Requires users to obtain one-time access to resources, such as virtual machines.
 - [Enable just-in-time access](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-just-in-time-access)
 ##### 🛡️ Perform an assessment of identity management security
-##### 🛂 Microsoft Entra Identity Protection (License required)
+##### 🛂 Microsoft Entra Identity Protection (Premium license required)
 - With Identity Protection, your organization can continuously monitor for vulnerabilities and high‑risk identity activities. Using advanced machine learning, it detects abnormal sign‑ins and flags suspicious user behaviors to safeguard identities.
 - [Plan an ID Protection deployment](https://learn.microsoft.com/en-us/entra/id-protection/how-to-deploy-identity-protection)
-##### 🔎 Access Reviews (License required)
+##### 🔎 Access Reviews (Premium license required)
 - With Access Reviews in Microsoft Entra ID, organizations can maintain secure and compliant identity governance. Scheduled reviews ensure that only authorized users continue to have access to groups, applications, and roles.
 - [Create an access review of groups and applications in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/id-governance/create-access-review)
 ##### Framework
