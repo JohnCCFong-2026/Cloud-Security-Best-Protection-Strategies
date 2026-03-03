@@ -14,6 +14,8 @@ For setup instructions, see the README.md file included in the library’s folde
 For tutorials, samples, quick starts, and other documentation.
 
 Azure
+- [🔍 Identity and Access management  →](https://github.com/Mubaarak1-git/secure-azure-foundations/tree/main/Code/identity-access-control)
+- 
 * [Zero Trust security in Azure](https://learn.microsoft.com/en-us/azure/security/fundamentals/zero-trust)
 * [Overview of Azure security controls (v3)](https://learn.microsoft.com/en-us/security/benchmark/azure/overview-v3)
 
