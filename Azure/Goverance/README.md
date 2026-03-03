@@ -12,3 +12,4 @@ For setup instructions, please follow the steps provided in Azure.
 - [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/governance/policy/samples/?context=%2Fazure%2Fgovernance%2Fpolicy%2Fcontext%2Fpolicy-context)
 ##### 💵 Cost Management
 - Monitor and track costs within Azure. For example, if daily costs increase unexpectedly beyond normal usage patterns, it may indicate a potential attack.
+- [Start using Cost Analysis](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/quick-acm-cost-analysis)
