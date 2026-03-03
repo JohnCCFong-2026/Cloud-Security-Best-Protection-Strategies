@@ -10,6 +10,6 @@ For setup instructions, please follow the steps provided in Azure.
 #####  🔒 Security Polices
 - Enforce compliance with global standards and regulatory frameworks, including NIST, HIPAA, and other industry benchmarks, ensuring that cloud resources remain secure and aligned with organizational requirements.
 - [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/governance/policy/samples/?context=%2Fazure%2Fgovernance%2Fpolicy%2Fcontext%2Fpolicy-context)
-##### 💵 Cost Management
+##### 💵 Cost Management misconfiguration
 - Monitor and track costs within Azure. For example, if daily costs increase unexpectedly beyond normal usage patterns, it may indicate a potential attack.
 - [Start using Cost Analysis](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/quick-acm-cost-analysis)
