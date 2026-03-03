@@ -4,6 +4,8 @@
 For setup instructions, please follow the steps provided in Azure.
 
 ### Governance
+Azure Governance refers to the set of policies, processes, and tools that organizations use to manage, secure, and control their resources in Microsoft Azure. It ensures that cloud usage aligns with business requirements, regulatory standards, and security best practices.
+
 #####  🔧 Azure Polices
 - Enforce compliance by ensuring that resources meet both conditional and mandatory standards, keeping them aligned with your organization’s corporate requirements.
 - [Create a policy assignment to identify non-compliant resources using Azure portal](https://learn.microsoft.com/en-us/azure/governance/policy/assign-policy-portal)
