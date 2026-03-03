@@ -55,7 +55,7 @@ For setup instructions, please follow the steps provided in Azure.
 - 💵 Just-in-Time (JIT) VM Access.
 - 📜 Audit Logs & Monitoring (Sentinel, Defender for Cloud)
 - 📊 Identity Secure Score
-### Reference
+### Refer to the following links to learn about the various services and technologies mentioned in this article.
 - [Zero Trust security in Azure](https://learn.microsoft.com/en-us/azure/security/fundamentals/zero-trust)
 - <img width="709" height="378" alt="image" src="https://github.com/user-attachments/assets/c361f72d-6155-45a4-885d-27d1b011f3fd" />
 
