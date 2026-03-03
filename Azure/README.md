@@ -26,9 +26,10 @@ For setup instructions, please follow the steps provided in Azure.
 - Requires users to obtain one-time access to resources, such as virtual machines.
 - [Enable just-in-time access](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-just-in-time-access)
 ##### (Protection) Perform an assessment of identity management security
-##### 🛂 Identity Protection (License required)
+##### 🛂 Microsoft Entra Identity Protection (License required)
 - With Identity Protection, your organization can continuously monitor for vulnerabilities and high‑risk identity activities. Using advanced machine learning, it detects abnormal sign‑ins and flags suspicious user behaviors to safeguard identities.
-##### Access Reviews (License required)
+- [Plan an ID Protection deployment](https://learn.microsoft.com/en-us/entra/id-protection/how-to-deploy-identity-protection)
+##### 🔎 Access Reviews (License required)
 
 
 #### Network security group
