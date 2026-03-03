@@ -25,7 +25,7 @@ For setup instructions, please follow the steps provided in Azure.
 ##### 💵 Just-in-time (JIT) (Premium license required)
 - Requires users to obtain one-time access to resources, such as virtual machines.
 - [Enable just-in-time access](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-just-in-time-access)
-### Review Microsoft Entra recommendations (such as Identity Secure Score) to assess and improve your identity management security posture.
+### Microsoft Entra Recommendations for Azure Identity Security
 ##### 🛂 Microsoft Entra Identity Protection (Premium license required)
 - With Identity Protection, your organization can continuously monitor for vulnerabilities and high‑risk identity activities. Using advanced machine learning, it detects abnormal sign‑ins and flags suspicious user behaviors to safeguard identities.
 - [Plan an ID Protection deployment](https://learn.microsoft.com/en-us/entra/id-protection/how-to-deploy-identity-protection)
