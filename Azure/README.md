@@ -55,3 +55,4 @@ For setup instructions, please follow the steps provided in Azure.
 - 💵 Just-in-Time (JIT) VM Access.
 - 📜 Audit Logs & Monitoring (Sentinel, Defender for Cloud)
 - 📊 Identity Secure Score
+- ![Screenshot](<img width="709" height="378" alt="image" src="https://github.com/user-attachments/assets/fcf9e910-183e-4416-bb73-a222c41a1718" />)
