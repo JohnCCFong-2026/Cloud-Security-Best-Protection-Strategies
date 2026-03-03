@@ -14,7 +14,8 @@ For setup instructions, see the README.md file included in the library’s folde
 For tutorials, samples, quick starts, and other documentation.
 
 Azure
-- [🔍 Identity and Access management  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/blob/main/Azure/README.md)
+- [🔍 1. Identity and Access management  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/blob/main/Azure/Identity%20&%20Access%20Control/README.md)
+- [🔍 2. Goverance  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/blob/main/Azure/Goverance/README.md)
 - [Overview of Azure security controls (v3)](https://learn.microsoft.com/en-us/security/benchmark/azure/overview-v3)
 
 AWS
