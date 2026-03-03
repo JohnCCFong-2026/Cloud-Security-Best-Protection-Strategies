@@ -15,6 +15,7 @@ For tutorials, samples, quick starts, and other documentation.
 
 Azure
 - [🔍 Identity and Access management  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/blob/main/Azure/README.md)
+- [Overview of Azure security controls (v3)](https://learn.microsoft.com/en-us/security/benchmark/azure/overview-v3)
 
 AWS
 * [Understanding Zero Trust principles in AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-zero-trust-architecture/zero-trust-principles.html)
