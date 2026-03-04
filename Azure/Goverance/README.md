@@ -20,3 +20,7 @@ Azure Governance refers to the set of policies, processes, and tools that organi
 - Provides threat protection for workloads (VMs, databases, containers, storage).
 - Supports regulatory compliance and extends protection to multicloud/hybrid environments.
 - [Connect your Azure subscriptions](https://learn.microsoft.com/en-us/azure/defender-for-cloud/connect-azure-subscription)
+### Cloud Adoption Framework (CAF)
+##### Cloud Adoption Framework (CAF) for Azure
+- Provides best practices, guidance, and tools to help organizations plan, implement, and manage their cloud adoption journey effectively.
+- [What is the Microsoft Cloud Adoption Framework?](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview#cloud-adoption-framework-scenarios)
