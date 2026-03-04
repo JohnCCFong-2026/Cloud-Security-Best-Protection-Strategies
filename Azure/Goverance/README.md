@@ -15,7 +15,7 @@ Azure Governance refers to the set of policies, processes, and tools that organi
 ##### 💵 Cost Management
 - Monitor and track costs within Azure. For example, if daily costs increase unexpectedly beyond normal usage patterns, it may indicate a potential attack.
 - [Start using Cost Analysis](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/quick-acm-cost-analysis)
-##### ☁️ Defender for Cloud
+##### ☁️ Defender for Cloud (Basic is free and Premium license required)
 - Continuously assesses resources to improve security posture with secure score and recommendations.
 - Provides threat protection for workloads (VMs, databases, containers, storage).
 - Supports regulatory compliance and extends protection to multicloud/hybrid environments.
