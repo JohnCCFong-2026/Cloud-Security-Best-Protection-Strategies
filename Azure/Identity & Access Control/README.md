@@ -6,26 +6,32 @@ For setup instructions, please follow the steps provided in Azure.
 ### Identity & Access Control
 Azure Identity and Access Management (IAM) is the framework Microsoft provides to control who can access Azure resources, how they authenticate, and what they are allowed to do once inside. It is delivered primarily through Microsoft Entra ID.
 
-##### 🔐 Multi-Factor Authentication (MFA) for user sign in
+##### 🔐 Multi-Factor Authentication (MFA)
 - Requires all users to register for MFA
 - [Configure Microsoft Entra multifactor authentication settings](https://docs.azure.cn/en-us/entra/identity/authentication/howto-mfa-mfasettings)
-##### ⛔️ Role-Based Access Control (RBAC) applies at multiple scopes: Management Group, Subscription, Resource Group, and individual resources
-- Enforces the principle of least privilege by assigning users only the permissions necessary for their roles. For example, virtual machine contributor etc.
+##### ⛔️ Role-Based Access Control (RBAC)
+- Applies at multiple scopes: Management Group, Subscription, Resource Group, and individual resources.
+- Enforces least privilege by assigning only necessary permissions (e.g., Virtual Machine Contributor).
 - [Grant a user access to Azure resources using the Azure portal](https://learn.microsoft.com/en-us/azure/role-based-access-control/quickstart-assign-role-user-portal)
 ##### ‌‌‌‌🦱 Service Principals
-- Service Principals are best for external or non‑Azure apps.
+- Best for external or non‑Azure apps.
 - [Register a Microsoft Entra app and create a service principal](https://learn.microsoft.com/en-us/entra/identity-platform/howto-create-service-principal-portal)
 ##### 🦱 Managed Identity
-- Managed Identities are best for Azure-native services.
+- Best for Azure-native services.
+- Credentials are automatically managed by Azure.
 - [Use Azure portal to grant a managed identity access to a resource](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/grant-managed-identity-resource-access-azure-portal)
-##### 👨‍👨‍👦‍👦 Microsoft Entra ID
-- Enforce group member practices through central management, for example by dividing departments to allocate resources effectively.
+##### 👨‍👨‍👦‍👦 Microsoft Entra ID Group
+- Enforce group membership practices through central management (e.g., dividing departments to allocate resources effectively).
 - [Manage Microsoft Entra groups and group membership](https://docs.azure.cn/en-us/entra/fundamentals/how-to-manage-groups)
-##### 💵 Microsoft Entra Privileged Identity Management (PIM) (Premium license required)
-- Requires users to obtain one-time permission for high-privilege requests, applicable to both internal and external users.
+##### 💵 Privileged Identity Management (PIM) *(Premium license required)*
+- Provides just-in-time elevation for high-privilege roles, meaning users only get admin-level access when they need it, and only for the time required.
+- Enforces on-time permission by requiring approval workflows or activation before elevated access is granted.
+- Helps reduce standing privileges and includes auditing/alerts to track privileged role activations.
 - [Start using Privileged Identity Management](https://docs.azure.cn/en-us/entra/id-governance/privileged-identity-management/pim-getting-started)
-##### 💵 Just-in-time (JIT) (Premium license required)
-- Requires users to obtain one-time access to resources, such as virtual machines.
+##### 💵 Just-in-time (JIT) Access *(Premium license required)*
+- Grants temporary, controlled access to Azure resources — not only virtual machines, but also other sensitive workloads and administrative functions.
+- Enforces the principle of least privilege by ensuring users only have access for the exact time they need it, reducing standing permissions.
+- Can be combined with Privileged Identity Management (PIM) to require approval workflows before granting elevated access.
 - [Enable just-in-time access](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-just-in-time-access)
 ### Microsoft Entra Recommendations for Azure Identity Security
 ##### 🛂 Microsoft Entra Identity Protection (Premium license required)
