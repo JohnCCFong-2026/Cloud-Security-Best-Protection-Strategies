@@ -44,25 +44,25 @@ Azure Identity and Access Management (IAM) is the framework Microsoft provides t
 ##### 🛡️ Zero Trust Principles for Azure IAM
 ###### 🔎 Verify Explicitly
 - Concept: Never trust, always verify. Authentication and authorization must use all available signals (identity, device health, location, risk, workload).
-###### Your Controls
-- 🔐 Multi-Factor Authentication (MFA)
-- 🦱 Service Principals
-- 🦱 Managed Identities
-- 🛂 Microsoft Entra Identity Protection
-- 🎯 Conditional Access (via Entra)
+  - Your Controls:
+    - 🔐 Multi-Factor Authentication (MFA)
+    - 🦱 Service Principals
+    - 🦱 Managed Identities
+    - 🛂 Microsoft Entra Identity Protection
+    - 🎯 Conditional Access (via Entra)
 ###### ⛔ Least Privilege Access
 - Concept: Limit access to only what is necessary, and only for the time required.
-###### Your Controls
-- ⛔ Role-Based Access Control (RBAC)
-- 👨‍👨‍👦‍👦 Microsoft Entra ID Groups
-- 💵 Privileged Identity Management (PIM)
-- 🔎 Access Reviews
+  - Your Controls:
+    - ⛔ Role-Based Access Control (RBAC)
+    - 👨‍👨‍👦‍👦 Microsoft Entra ID Groups
+    - 💵 Privileged Identity Management (PIM)
+    - 🔎 Access Reviews
 ###### 🛡️ Assume Breach
 - Concept: Design IAM policies to minimize impact if credentials or accounts are compromised.
-###### Your Controls
-- 💵 Just-in-Time (JIT) VM Access.
-- 📜 Audit Logs & Monitoring (Sentinel, Defender for Cloud)
-- 📊 Identity Secure Score
+  - Your Controls
+    - 💵 Just-in-Time (JIT) VM Access.
+    - 📜 Audit Logs & Monitoring (Sentinel, Defender for Cloud)
+    - 📊 Identity Secure Score
 ### Refer to the following links to learn about the various services and technologies mentioned in this article.
 - [Zero Trust security in Azure](https://learn.microsoft.com/en-us/azure/security/fundamentals/zero-trust)
 - <img width="709" height="378" alt="image" src="https://github.com/user-attachments/assets/c361f72d-6155-45a4-885d-27d1b011f3fd" />
