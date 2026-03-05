@@ -28,9 +28,9 @@ Azure Governance refers to the set of policies, processes, and tools that organi
 - [What is the Microsoft Cloud Adoption Framework?](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview#cloud-adoption-framework-scenarios)
 ##### 🧩 Well-Architected Framework (WAF) for Azure
 - Focuses on workload design and architecture. It provides best practices across five pillars:
-- Cost Optimization
-- Operational Excellence
-- Performance Efficiency
-- Reliability
-- Security
+  - Cost Optimization.
+  - Operational Excellence.
+  - Performance Efficiency.
+  - Reliability.
+  - Security.
 - [Microsoft Azure Well-Architected Framework pillars](https://learn.microsoft.com/en-us/azure/well-architected/pillars)
