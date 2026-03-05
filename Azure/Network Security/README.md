@@ -14,4 +14,10 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - NSGs include **default rules** such as allowing traffic within a virtual network and denying inbound internet traffic unless explicitly permitted.
 - [Create, change, or delete a network security group](https://learn.microsoft.com/en-us/azure/virtual-network/manage-network-security-group?tabs=network-security-group-portal)
 
-
+##### Application Security Group (ASG)
+- An Application Security Group (ASG) in Microsoft Azure is a feature that simplifies network security management by grouping virtual machines (VMs) or resources based on their application or workload.
+- ASGs allow you to reference groups directly in **Network Security Group (NSG)** rules, eliminating the need to manage individual IP addresses.
+- They provide **logical grouping** of resources (e.g., "WebServers", "DatabaseServers") and enable **dynamic membership**, so VMs can be added or removed without modifying NSG rules.
+- ASGs make NSG rule management more scalable and easier to maintain in large environments.
+- Example: You can create a rule that allows traffic from ASG **WebServers** to ASG **DatabaseServers** on port 1433 (SQL), instead of specifying IP addresses.
+- [Application security groups](https://docs.azure.cn/en-us/virtual-network/application-security-groups)
