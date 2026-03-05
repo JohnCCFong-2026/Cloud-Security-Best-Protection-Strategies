@@ -42,3 +42,12 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - Example: Configure an IP network rule for Azure Storage to allow only trusted IP ranges.
 - [Create an IP network rule for Azure Storage](https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security-ip-address-range?tabs=azure-portal)
 
+##### 🛡️ Application Gateway Firewall with Web Application Firewall (WAF) *(pricing required)*
+- An Application Firewall in Azure is designed to protect web applications from common threats and vulnerabilities. The most widely used implementation is the **Azure Web Application Firewall (WAF)**, which operates at the application layer (HTTP/HTTPS traffic).
+- WAF protects against **OWASP Top 10 vulnerabilities** such as SQL injection, cross-site scripting (XSS), and request forgery.
+- It supports **custom rules** (IP, geolocation, request size, patterns) , **bot protectionF** and **footprinting** while allowing legitimate traffic.
+- WAF integrates with **Azure Application Gateway**, **Azure Front Door**, and **Azure Content Delivery Network (CDN)** to provide flexible deployment options.
+- Provides **centralized logging and monitoring** through Azure Monitor, Log Analytics, and Sentinel.
+- WAF is a **paid feature**, with pricing based on the hosting service and traffic processed.
+- [Create an application gateway with a Web Application Firewall using the Azure portal](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-web-application-firewall-portal)
+
