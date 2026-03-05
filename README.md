@@ -16,6 +16,7 @@ For tutorials, samples, quick starts, and other documentation.
 Azure
 - [🔍 1. Identity and Access management  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/blob/main/Azure/Identity%20&%20Access%20Control/README.md)
 - [🔍 2. Goverance  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/blob/main/Azure/Goverance/README.md)
+- [🔍 3. Network Security  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/tree/main/Azure/Network%20Security/READ<E.md)
 - [Overview of Azure security controls (v3)](https://learn.microsoft.com/en-us/security/benchmark/azure/overview-v3)
 
 AWS
