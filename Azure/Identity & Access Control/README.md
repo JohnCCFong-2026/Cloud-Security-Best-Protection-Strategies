@@ -59,7 +59,7 @@ Azure Identity and Access Management (IAM) is the framework Microsoft provides t
     - 🔎 Access Reviews
 ###### 🛡️ Assume Breach
 - Concept: Design IAM policies to minimize impact if credentials or accounts are compromised.
-  - Your Controls
+  - Your Controls:
     - 💵 Just-in-Time (JIT) VM Access.
     - 📜 Audit Logs & Monitoring (Sentinel, Defender for Cloud)
     - 📊 Identity Secure Score
