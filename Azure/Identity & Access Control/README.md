@@ -13,14 +13,14 @@ Azure Identity and Access Management (IAM) is the framework Microsoft provides t
 - Applies at multiple scopes: Management Group, Subscription, Resource Group, and individual resources.
 - Enforces least privilege by assigning only necessary permissions (e.g., Virtual Machine Contributor).
 - [Grant a user access to Azure resources using the Azure portal](https://learn.microsoft.com/en-us/azure/role-based-access-control/quickstart-assign-role-user-portal)
-##### ‌‌‌‌🦱 Service Principals
+##### ‌‌‌‌🔑 Service Principals
 - Best for external or non‑Azure apps.
 - [Register a Microsoft Entra app and create a service principal](https://learn.microsoft.com/en-us/entra/identity-platform/howto-create-service-principal-portal)
-##### 🦱 Managed Identity
+##### 🛠️ Managed Identity
 - Best for Azure-native services.
 - Credentials are automatically managed by Azure.
 - [Use Azure portal to grant a managed identity access to a resource](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/grant-managed-identity-resource-access-azure-portal)
-##### 👨‍👨‍👦‍👦 Microsoft Entra ID Group
+##### 👨‍👨‍👦‍👦 Microsoft Entra ID Groups
 - Enforce group membership practices through central management (e.g., dividing departments to allocate resources effectively).
 - [Manage Microsoft Entra groups and group membership](https://docs.azure.cn/en-us/entra/fundamentals/how-to-manage-groups)
 ##### 💵 Privileged Identity Management (PIM) *(Premium license required)*
