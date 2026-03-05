@@ -22,3 +22,13 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - ASGs make NSG rule management more scalable and easier to maintain in large environments.
 - Example: You can create a rule that allows traffic from ASG **WebServers** to ASG **DatabaseServers** on port 1433 (SQL), instead of specifying IP addresses.
 - [Application security groups](https://docs.azure.cn/en-us/virtual-network/application-security-groups)
+
+##### Azure Firewall *(pricing required)*
+- Azure Firewall is a cloud-native, managed network security service that protects Azure Virtual Network resources. Unlike NSGs or ASGs, which are rule-based and workload-specific, Azure Firewall is a **stateful, fully managed firewall** designed for enterprise-scale protection.
+- Key features include:
+  - Threat intelligence-based filtering (block known malicious IPs/domains).
+  - Application and network-level filtering (control traffic by FQDNs, ports, protocols).
+  - Web categories filtering (block or allow traffic based on content categories).
+  - High availability and scalability (built-in, no need for manual configuration).
+  - Centralized logging and monitoring (integrates with Azure Monitor and Sentinel).
+- Azure Firewall is a **paid service**, with pricing based on tier (Basic, Standard, Premium) and data processing usage.
