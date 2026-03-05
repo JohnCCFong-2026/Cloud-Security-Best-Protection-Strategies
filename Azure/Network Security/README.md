@@ -51,7 +51,7 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - WAF is a **paid feature**, with pricing based on the hosting service and traffic processed.
 - [Create an application gateway with a Web Application Firewall using the Azure portal](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-web-application-firewall-portal)
 
-##### Private Endpoint
+##### 🛣️ Private Endpoint
 - A Private Endpoint in Azure is a network interface that securely connects you to Azure services using a private IP address from your Virtual Network (VNet). This ensures traffic between your VNet and the Azure service travels entirely over the Microsoft backbone network, rather than the public internet.
 - Private Endpoints are part of **Azure Private Link** and can be used with services such as **Azure Storage**, **Azure SQL Database**, **Cosmos DB**, and **Key Vault**.
 - They help prevent **data exfiltration risks** by keeping traffic within Azure’s trusted network.
