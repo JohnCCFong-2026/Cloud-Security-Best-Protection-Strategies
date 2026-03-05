@@ -35,4 +35,10 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - [Deploy and configure Azure Firewall using the Azure portal](https://learn.microsoft.com/en-us/azure/firewall/tutorial-firewall-deploy-portal)
 
 ##### 🛡️ Resource Firewall
-- A Resource Firewall in Azure refers to firewall rules that are applied directly at the resource level, rather than at the network level. This provides fine-grained control over which clients or services can access a specific Azure resource.
+- A Resource Firewall in Azure refers to firewall rules applied directly at the **resource level**, rather than at the network level. This provides fine-grained control over which clients or services can access a specific Azure resource.
+- Resource Firewalls are available for services such as **Azure Storage**, **Azure SQL Database**, and **Cosmos DB**.
+- By default, most resource firewalls block all external traffic unless explicitly allowed.
+- Rules can be based on **IP address ranges**, **Virtual Network integration**, or **Private Endpoints**, ensuring secure and restricted access.
+- Example: Configure an IP network rule for Azure Storage to allow only trusted IP ranges.
+- [Create an IP network rule for Azure Storage](https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security-ip-address-range?tabs=azure-portal)
+
