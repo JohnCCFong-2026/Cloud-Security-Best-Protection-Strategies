@@ -32,3 +32,7 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
   - High availability and scalability (built-in, no need for manual configuration).
   - Centralized logging and monitoring (integrates with Azure Monitor and Sentinel).
 - Azure Firewall is a **paid service**, with pricing based on tier (Basic, Standard, Premium) and data processing usage.
+- [Deploy and configure Azure Firewall using the Azure portal](https://learn.microsoft.com/en-us/azure/firewall/tutorial-firewall-deploy-portal)
+
+##### 🛡️ Resource Firewall
+- A Resource Firewall in Azure refers to firewall rules that are applied directly at the resource level, rather than at the network level. This provides fine-grained control over which clients or services can access a specific Azure resource.
