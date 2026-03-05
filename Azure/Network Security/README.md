@@ -11,6 +11,7 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - A Network Security Group (NSG) is a specific security feature in Microsoft Azure that acts like a virtual firewall for controlling inbound and outbound traffic to Azure resources.
 - NSGs can be applied to **subnets** (affecting all resources inside) or **network interfaces (NICs)** (affecting individual VMs/resources).
 - They contain rules that allow or deny traffic based on source/destination IP, port, and protocol.
+- NSGs are **stateful**: if traffic is allowed in one direction, the return traffic is automatically allowed.
 - NSGs include **default rules** such as allowing traffic within a virtual network and denying inbound internet traffic unless explicitly permitted.
 - [Create, change, or delete a network security group](https://learn.microsoft.com/en-us/azure/virtual-network/manage-network-security-group?tabs=network-security-group-portal)
 
