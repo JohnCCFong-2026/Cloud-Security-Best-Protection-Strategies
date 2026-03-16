@@ -37,6 +37,20 @@ Azure Identity and Access Management (IAM) is the framework Microsoft provides t
 ##### 🛂 Microsoft Entra Identity Protection *(Premium license required)*
 - With Identity Protection, your organization can continuously monitor for vulnerabilities and high‑risk identity activities. Using advanced machine learning, it detects abnormal sign‑ins and flags suspicious user behaviors to safeguard identities.
 - [Plan an ID Protection deployment](https://learn.microsoft.com/en-us/entra/id-protection/how-to-deploy-identity-protection)
+##### 🔐 Microsoft Entra Privileged Identity Management (PIM) (Premium license required)
+- Provides just‑in‑time (JIT) access to Azure AD and Azure resource roles.
+- Enforces approval workflows, MFA, and time‑bound access for privileged roles.
+- Reduces the risk of standing administrative privileges.
+##### 🔐 Azure Privileged Access Management (PAM) *(Premium license required)*
+- Focuses on controlling and monitoring privileged accounts during sensitive operations.
+- Enforces just‑enough‑access (JEA) and approval workflows for elevated tasks.
+- Complements PIM by adding an extra layer of control for privileged sessions.
+##### 🔐 Azure Identity and Access Management (IAM)
+- The broader umbrella covering:
+  - Authentication (sign‑in, MFA, passwordless)
+  - Authorization (RBAC, conditional access)
+  - Identity governance (lifecycle management, access reviews)
+- Ensures the right users have the right access under the right conditions.
 ##### 🔎 Access Reviews *(Premium license required)*
 - With Access Reviews in Microsoft Entra ID, organizations can maintain secure and compliant identity governance. Scheduled reviews ensure that only authorized users continue to have access to groups, applications, and roles.
 - [Create an access review of groups and applications in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/id-governance/create-access-review)
