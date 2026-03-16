@@ -53,7 +53,7 @@ Azure Identity and Access Management (IAM) is the framework Microsoft provides t
   - Authorization (RBAC, conditional access)
   - Identity governance (lifecycle management, access reviews)
 - Ensures the right users have the right access under the right conditions.
-- 
+- [Grant a user access to Azure resources using the Azure portal](https://learn.microsoft.com/en-us/azure/role-based-access-control/quickstart-assign-role-user-portal)
 ##### 🔎 Access Reviews *(Premium license required)*
 - With Access Reviews in Microsoft Entra ID, organizations can maintain secure and compliant identity governance. Scheduled reviews ensure that only authorized users continue to have access to groups, applications, and roles.
 - [Create an access review of groups and applications in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/id-governance/create-access-review)
