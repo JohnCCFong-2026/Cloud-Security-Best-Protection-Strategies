@@ -64,7 +64,3 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - Connections are tunneled over SSL, reducing attack surface.
 
 ### Microsoft Entra Recommendations for Azure network Security
-##### 🔐 Azure Privileged Access Management (PAM) 
-- PAM in Azure is about controlling and monitoring privileged accounts.
-- It helps enforce just-in-time (JIT) access and just-enough-access (JEA) principles.
-- This reduces the risk of standing administrative privileges being misused.
