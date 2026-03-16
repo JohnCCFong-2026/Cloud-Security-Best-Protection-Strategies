@@ -62,5 +62,6 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - Bastion is a fully managed PaaS service that provides secure RDP/SSH connectivity to VMs directly through the Azure portal.
 - It eliminates the need to expose VMs to the public internet with open ports.
 - Connections are tunneled over SSL, reducing attack surface.
-
+- [Secure your Azure Bastion deployment](https://learn.microsoft.com/en-us/azure/bastion/secure-bastion)
+  
 ### Microsoft Entra Recommendations for Azure network Security
