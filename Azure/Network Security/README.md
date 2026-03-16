@@ -58,8 +58,13 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - Private Endpoints integrate with **Resource Firewalls** and **Private DNS zones** to provide fine-grained, secure, and seamless access to resources.
 - [Create a private endpoint by using the Azure portal](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-portal?tabs=dynamic-ip)
 
+##### 🌐 Azure Bastion *(pricing required)*
+- Bastion is a fully managed PaaS service that provides secure RDP/SSH connectivity to VMs directly through the Azure portal.
+- It eliminates the need to expose VMs to the public internet with open ports.
+- Connections are tunneled over SSL, reducing attack surface.
+
 ### Microsoft Entra Recommendations for Azure network Security
-##### Azure Privileged Access Management (PAM) 
+##### 🔐 Azure Privileged Access Management (PAM) 
 - PAM in Azure is about controlling and monitoring privileged accounts.
 - It helps enforce just-in-time (JIT) access and just-enough-access (JEA) principles.
 - This reduces the risk of standing administrative privileges being misused.
