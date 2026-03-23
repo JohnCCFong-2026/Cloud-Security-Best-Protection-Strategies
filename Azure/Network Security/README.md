@@ -64,4 +64,5 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - Connections are tunneled over SSL, reducing attack surface.
 - [Secure your Azure Bastion deployment](https://learn.microsoft.com/en-us/azure/bastion/secure-bastion)
   
-### Microsoft Entra Recommendations for Azure network Security
+### Microsoft Entra Recommendations for Azure Network Security
+
