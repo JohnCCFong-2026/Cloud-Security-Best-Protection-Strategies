@@ -72,6 +72,15 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - Provides a private, dedicated connection between your on‑premises infrastructure and Microsoft cloud services (Azure, Microsoft 365, Dynamics 365).
 - [Create and modify ExpressRoute circuits](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-portal-resource-manager)
 
+##### 🖥️ Azure Virtual Network Manager *(pricing required)*
+- Definition: A centralized management service that allows you to create, configure, and enforce network rules across multiple Azure Virtual Networks (VNets) at scale.
+- Purpose: Simplifies network administration by providing a single control plane for connectivity and security policies.
+- Connectivity Management: Enables you to define and deploy connectivity topologies (such as hub‑and‑spoke or mesh) across VNets consistently.
+- Security Rules: Lets you centrally create and apply security rules (like NSG configurations) across multiple VNets without manual duplication.
+- Dynamic Groups: Supports grouping VNets based on tags or resource attributes, making policy assignment more flexible.
+- Integration: Works with Azure Policy and Defender for Cloud to ensure compliance and security posture across your network estate.
+- [Create a mesh network topology with Azure Virtual Network Manager - Azure portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-portal?tabs=manualmembership)
+
 ### Recommendations for Azure Network Security
 ##### ☸ Hub-and-spoke Architecture
 - Separates workloads into hub and spoke VNets for easier management.
@@ -105,4 +114,5 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
     - Provides targeted protection for specific resources (e.g., a critical web app or API endpoint).
     - Best for workloads that require fine‑grained control or when only certain IPs need enhanced protection.
 - [Create and configure Azure DDoS Network Protection using the Azure portal](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection?tabs=new-vnet)
+
 ### Network Security Framework
