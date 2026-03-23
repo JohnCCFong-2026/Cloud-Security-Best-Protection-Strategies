@@ -63,7 +63,15 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - It eliminates the need to expose VMs to the public internet with open ports.
 - Connections are tunneled over SSL, reducing attack surface.
 - [Secure your Azure Bastion deployment](https://learn.microsoft.com/en-us/azure/bastion/secure-bastion)
-  
+
+#####  Azure VPN Gateway *(pricing required)*
+- Provides secure, encrypted connectivity between your on‑premises network and Azure Virtual Networks (VNets) over the public internet.
+- [Create and manage a VPN gateway using the Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-create-gateway-portal)
+
+#####  Azure ExpressRoute *(pricing required)*
+- Provides a private, dedicated connection between your on‑premises infrastructure and Microsoft cloud services (Azure, Microsoft 365, Dynamics 365).
+- [Create and modify ExpressRoute circuits](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-portal-resource-manager)
+
 ### Microsoft Entra Recommendations for Azure Network Security
 ##### ☸ Hub-and-spoke Architecture
 - Separates workloads into hub and spoke VNets for easier management.
