@@ -65,7 +65,7 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - [Secure your Azure Bastion deployment](https://learn.microsoft.com/en-us/azure/bastion/secure-bastion)
   
 ### Microsoft Entra Recommendations for Azure Network Security
-##### Hub-and-spoke Architecture
+##### ☸ Hub-and-spoke Architecture
 - Separates workloads into hub and spoke VNets for easier management.
 - The hub VNet hosts shared services such as Azure Firewall, Bastion, and VPN Gateway.
 - Spoke VNets contain application workloads (production, dev, test), isolated for security.
@@ -73,7 +73,7 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - Simplifies administration by isolating environments while maintaining secure connectivity.
 - [Deploy Azure landing zones](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/landing-zone-deploy)
 
-##### Subnet Segmenetation
+##### 🖧 Subnet Segmenetation
 - Divide production and non-production subnets to reduce the attack surface.
 - Apply network security groups (NSGs) and Azure Firewall rules to enforce segmentation.
 - Prevent lateral movement of threats by restricting communication between sensitive workloads.
