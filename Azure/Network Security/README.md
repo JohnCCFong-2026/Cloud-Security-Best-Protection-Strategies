@@ -73,7 +73,7 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - Simplifies administration by isolating environments while maintaining secure connectivity.
 - [Deploy Azure landing zones](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/landing-zone-deploy)
 
-##### 🖧 Subnet Segmenetation
+##### 🌐 Subnet Segmentation
 - Divide production and non-production subnets to reduce the attack surface.
 - Apply network security groups (NSGs) and Azure Firewall rules to enforce segmentation.
 - Prevent lateral movement of threats by restricting communication between sensitive workloads.
