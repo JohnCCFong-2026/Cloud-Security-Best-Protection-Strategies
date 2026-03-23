@@ -51,6 +51,11 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - WAF is a **paid feature**, with pricing based on the hosting service and traffic processed.
 - [Create an application gateway with a Web Application Firewall using the Azure portal](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-web-application-firewall-portal)
 
+##### 🛡️ Azure Front Door with Web Application Firewall (WAF) *(pricing required)*
+- Protects global web applications with built‑in DDoS protection, caching, and SSL offloading.
+- Complements Application Gateway WAF for internet‑facing workloads.
+- [Create a WAF policy on Azure Front Door by using the Azure portal](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-create-portal)
+
 ##### 🛣️ Private Endpoint
 - A Private Endpoint in Azure is a network interface that securely connects you to Azure services using a private IP address from your Virtual Network (VNet). This ensures traffic between your VNet and the Azure service travels entirely over the Microsoft backbone network, rather than the public internet.
 - Private Endpoints are part of **Azure Private Link** and can be used with services such as **Azure Storage**, **Azure SQL Database**, **Cosmos DB**, and **Key Vault**.
@@ -82,14 +87,6 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - [Create a mesh network topology with Azure Virtual Network Manager - Azure portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-portal?tabs=manualmembership)
 
 ### Recommendations for Azure Network Security
-##### ☸ Hub-and-spoke Architecture
-- Separates workloads into hub and spoke VNets for easier management.
-- The hub VNet hosts shared services such as Azure Firewall, Bastion, and VPN Gateway.
-- Spoke VNets contain application workloads (production, dev, test), isolated for security.
-- Centralized routing through the hub ensures consistent inspection, governance, and compliance.
-- Simplifies administration by isolating environments while maintaining secure connectivity.
-- [Deploy Azure landing zones](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/landing-zone-deploy)
-
 ##### 🌐 Subnet Segmentation
 - Divide production and non-production subnets to reduce the attack surface.
 - Apply network security groups (NSGs) and Azure Firewall rules to enforce segmentation.
@@ -116,3 +113,12 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - [Create and configure Azure DDoS Network Protection using the Azure portal](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection?tabs=new-vnet)
 
 ### Network Security Framework
+##### ☸ Hub-and-spoke Architecture
+- Separates workloads into hub and spoke VNets for easier management.
+- The hub VNet hosts shared services such as Azure Firewall, Bastion, and VPN Gateway.
+- Spoke VNets contain application workloads (production, dev, test), isolated for security.
+- Centralized routing through the hub ensures consistent inspection, governance, and compliance.
+- Simplifies administration by isolating environments while maintaining secure connectivity.
+- [Deploy Azure landing zones](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/landing-zone-deploy)
+
+
