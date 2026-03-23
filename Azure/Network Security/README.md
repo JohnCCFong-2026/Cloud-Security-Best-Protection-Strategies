@@ -64,15 +64,15 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - Connections are tunneled over SSL, reducing attack surface.
 - [Secure your Azure Bastion deployment](https://learn.microsoft.com/en-us/azure/bastion/secure-bastion)
 
-#####  Azure VPN Gateway *(pricing required)*
+##### 🛡️ Azure VPN Gateway *(pricing required)*
 - Provides secure, encrypted connectivity between your on‑premises network and Azure Virtual Networks (VNets) over the public internet.
 - [Create and manage a VPN gateway using the Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-create-gateway-portal)
 
-#####  Azure ExpressRoute *(pricing required)*
+##### 🛣 Azure ExpressRoute *(pricing required)*
 - Provides a private, dedicated connection between your on‑premises infrastructure and Microsoft cloud services (Azure, Microsoft 365, Dynamics 365).
 - [Create and modify ExpressRoute circuits](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-portal-resource-manager)
 
-### Microsoft Entra Recommendations for Azure Network Security
+### Recommendations for Azure Network Security
 ##### ☸ Hub-and-spoke Architecture
 - Separates workloads into hub and spoke VNets for easier management.
 - The hub VNet hosts shared services such as Azure Firewall, Bastion, and VPN Gateway.
@@ -87,3 +87,22 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - Prevent lateral movement of threats by restricting communication between sensitive workloads.
 - Supports least privilege access and strengthens overall network defense.
 - [Azure Virtual Network concepts and best practices](https://learn.microsoft.com/en-us/azure/virtual-network/concepts-and-best-practices#:~:text=In%20Azure%2C%20a%20subnet%20is%20a%20way,within%20subnets%20using%20Network%20Security%20Groups%20(NSGs).)
+
+##### Azure DDoS Protection *(pricing required)*
+- Definition: A managed service that protects Azure applications and resources from Distributed Denial of Service (DDoS) attacks, ensuring availability and resilience.
+- Automatic Protection: Always‑on monitoring that detects and mitigates volumetric, protocol, and resource layer attacks without requiring workload changes.
+- Adaptive Tuning: Learns traffic patterns for each protected resource and automatically adjusts thresholds to minimize false positives.
+- Attack Analytics: Provides detailed telemetry, mitigation reports, and real‑time monitoring during and after attacks.
+- Cost Protection: Helps safeguard against unexpected cloud usage charges caused by attack traffic.
+- Integration: Works with Azure Monitor and Sentinel for alerts, logging, and incident response.
+- Protection Modes
+  - Network Protection:
+    - Applied at the Virtual Network (VNet) level.
+    - Protects all public IP addresses associated with resources in that VNet.
+    - Best for scenarios where multiple workloads share the same VNet and need collective protection.
+  - IP Protection:
+    - Applied directly to individual public IP addresses.
+    - Provides targeted protection for specific resources (e.g., a critical web app or API endpoint).
+    - Best for workloads that require fine‑grained control or when only certain IPs need enhanced protection.
+- [Create and configure Azure DDoS Network Protection using the Azure portal](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection?tabs=new-vnet)
+### Network Security Framework
