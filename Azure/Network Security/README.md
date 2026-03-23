@@ -88,7 +88,7 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - Supports least privilege access and strengthens overall network defense.
 - [Azure Virtual Network concepts and best practices](https://learn.microsoft.com/en-us/azure/virtual-network/concepts-and-best-practices#:~:text=In%20Azure%2C%20a%20subnet%20is%20a%20way,within%20subnets%20using%20Network%20Security%20Groups%20(NSGs).)
 
-##### Azure DDoS Protection *(pricing required)*
+##### 🛡️ Azure DDoS Protection *(pricing required)*
 - Definition: A managed service that protects Azure applications and resources from Distributed Denial of Service (DDoS) attacks, ensuring availability and resilience.
 - Automatic Protection: Always‑on monitoring that detects and mitigates volumetric, protocol, and resource layer attacks without requiring workload changes.
 - Adaptive Tuning: Learns traffic patterns for each protected resource and automatically adjusts thresholds to minimize false positives.
