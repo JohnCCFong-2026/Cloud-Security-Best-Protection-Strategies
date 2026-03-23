@@ -69,7 +69,7 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - Connections are tunneled over SSL, reducing attack surface.
 - [Secure your Azure Bastion deployment](https://learn.microsoft.com/en-us/azure/bastion/secure-bastion)
 
-##### 🛡️ Azure VPN Gateway *(pricing required)*
+##### 🛣 Azure VPN Gateway *(pricing required)*
 - Provides secure, encrypted connectivity between your on‑premises network and Azure Virtual Networks (VNets) over the public internet.
 - [Create and manage a VPN gateway using the Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-create-gateway-portal)
 
