@@ -78,13 +78,38 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - [Create and modify ExpressRoute circuits](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-portal-resource-manager)
 
 ##### 🖥️ Azure Virtual Network Manager *(pricing required)*
-- Definition: A centralized management service that allows you to create, configure, and enforce network rules across multiple Azure Virtual Networks (VNets) at scale.
-- Purpose: Simplifies network administration by providing a single control plane for connectivity and security policies.
-- Connectivity Management: Enables you to define and deploy connectivity topologies (such as hub‑and‑spoke or mesh) across VNets consistently.
-- Security Rules: Lets you centrally create and apply security rules (like NSG configurations) across multiple VNets without manual duplication.
-- Dynamic Groups: Supports grouping VNets based on tags or resource attributes, making policy assignment more flexible.
-- Integration: Works with Azure Policy and Defender for Cloud to ensure compliance and security posture across your network estate.
+- A centralized management service that allows you to create, configure, and enforce network rules across multiple Azure Virtual Networks (VNets) at scale.
+- Simplifies network administration by providing a single control plane for connectivity and security policies.
+- Enables you to define and deploy connectivity topologies (such as hub‑and‑spoke or mesh) across VNets consistently.
+- Lets you centrally create and apply security rules (like NSG configurations) across multiple VNets without manual duplication.
+- Supports grouping VNets based on tags or resource attributes, making policy assignment more flexible.
+- Integrates works with Azure Policy and Defender for Cloud to ensure compliance and security posture across your network estate.
 - [Create a mesh network topology with Azure Virtual Network Manager - Azure portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-portal?tabs=manualmembership)
+
+##### 🛡️ Azure Traffic Manager *(pricing required)*
+- A DNS-based global traffic distribution service that improves application availability and performance by directing user requests to the most appropriate endpoint based on routing policies.
+- Ensures high availability and responsiveness by automatically rerouting traffic during endpoint failures and optimizing performance for users worldwide.
+- Supports multiple routing methods such as priority, weighted, performance, geographic, and multi-value routing.
+- Provides endpoint monitoring with health checks to ensure traffic is only directed to healthy services.
+- Works seamlessly with Azure services and external applications.
+- Complements solutions like Azure Front Door for application-layer routing and advanced traffic management.
+- [Create a Traffic Manager profile using the Azure portal](https://learn.microsoft.com/en-us/azure/traffic-manager/quickstart-create-traffic-manager-profile)
+
+##### 🌍 Azure Private DNS
+- A scalable, reliable, and secure DNS service that manages and resolves domain names within your private Azure networks.
+- Provides internal name resolution for VMs and services inside VNets, ensuring seamless communication without exposing records to the public internet.
+- Supports split-horizon DNS, allowing different DNS records for internal vs. external queries.
+- Integrates with Azure VNets, automatically registering VM hostnames.
+- Enhances security posture by keeping DNS queries private and isolated.
+- [Create an Azure private DNS zone using the Azure portal](https://learn.microsoft.com/en-us/azure/dns/private-dns-getstarted-portal)
+
+##### 🌍 Azure Public DNS
+- A public DNS hosting service that provides name resolution for internet-facing domains.
+- Ensures high availability and low-latency resolution using Azure’s global infrastructure.
+- Supports DNSSEC for cryptographic signing of DNS records, improving security against spoofing.
+- Integrates with Azure Resource Manager for automated deployments and policy enforcement.
+- Complements Azure Private DNS by handling external queries while keeping internal records isolated.
+- [Create an Azure DNS zone and record using the Azure portal](https://learn.microsoft.com/en-us/azure/dns/dns-getstarted-portal)
 
 ### Recommendations for Azure Network Security
 ##### 🌐 Subnet Segmentation
@@ -95,12 +120,12 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - [Azure Virtual Network concepts and best practices](https://learn.microsoft.com/en-us/azure/virtual-network/concepts-and-best-practices#:~:text=In%20Azure%2C%20a%20subnet%20is%20a%20way,within%20subnets%20using%20Network%20Security%20Groups%20(NSGs).)
 
 ##### 🛡️ Azure DDoS Protection *(pricing required)*
-- Definition: A managed service that protects Azure applications and resources from Distributed Denial of Service (DDoS) attacks, ensuring availability and resilience.
-- Automatic Protection: Always‑on monitoring that detects and mitigates volumetric, protocol, and resource layer attacks without requiring workload changes.
-- Adaptive Tuning: Learns traffic patterns for each protected resource and automatically adjusts thresholds to minimize false positives.
-- Attack Analytics: Provides detailed telemetry, mitigation reports, and real‑time monitoring during and after attacks.
-- Cost Protection: Helps safeguard against unexpected cloud usage charges caused by attack traffic.
-- Integration: Works with Azure Monitor and Sentinel for alerts, logging, and incident response.
+- A managed service that protects Azure applications and resources from Distributed Denial of Service (DDoS) attacks, ensuring availability and resilience.
+- Always‑on monitoring that detects and mitigates volumetric, protocol, and resource layer attacks without requiring workload changes.
+- Learns traffic patterns for each protected resource and automatically adjusts thresholds to minimize false positives.
+- rovides detailed telemetry, mitigation reports, and real‑time monitoring during and after attacks.
+- Helps safeguard against unexpected cloud usage charges caused by attack traffic.
+- Integrates works with Azure Monitor and Sentinel for alerts, logging, and incident response.
 - Protection Modes
   - Network Protection:
     - Applied at the Virtual Network (VNet) level.
@@ -120,5 +145,3 @@ This includes tools such as **Network Security Groups (NSGs)**, **Azure Firewall
 - Centralized routing through the hub ensures consistent inspection, governance, and compliance.
 - Simplifies administration by isolating environments while maintaining secure connectivity.
 - [Deploy Azure landing zones](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/landing-zone-deploy)
-
-
