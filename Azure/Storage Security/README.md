@@ -23,11 +23,11 @@ Azure ensures that data stored in the cloud is protected against unauthorized ac
 - [Configure customer-managed keys in the same tenant for a new storage account](https://docs.azure.cn/en-us/storage/common/customer-managed-keys-configure-new-account?tabs=azure-portal)
 
 ##### 🛣️ Private Endpoint
-A Private Endpoint in Azure is a network interface that securely connects you to Azure services using a private IP address from your Virtual Network (VNet). This ensures traffic between your VNet and the Azure service travels entirely over the Microsoft backbone network, rather than the public internet.
-Private Endpoints are part of Azure Private Link and can be used with services such as Azure Storage, Azure SQL Database, Cosmos DB, and Key Vault.
-They help prevent data exfiltration risks by keeping traffic within Azure’s trusted network.
-Private Endpoints integrate with Resource Firewalls and Private DNS zones to provide fine-grained, secure, and seamless access to resources.
-Create a private endpoint by using the Azure portal
+- A Private Endpoint in Azure is a network interface that securely connects you to Azure services using a private IP address from your Virtual Network (VNet). This ensures traffic between your VNet and the Azure service travels entirely over the Microsoft backbone network, rather than the public internet.
+- Private Endpoints are part of **Azure Private Link** and can be used with services such as **Azure Storage**, **Azure SQL Database**, **Cosmos DB**, and **Key Vault**.
+- They help prevent **data exfiltration risks** by keeping traffic within Azure’s trusted network.
+- Private Endpoints integrate with **Resource Firewalls** and **Private DNS zones** to provide fine-grained, secure, and seamless access to resources.
+- [Create a private endpoint by using the Azure portal](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-portal?tabs=dynamic-ip)
 
 ### Storage Security Framework
 ##### Least Privilege Access
