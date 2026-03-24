@@ -18,3 +18,7 @@ Azure ensures that data stored in the cloud is protected against unauthorized ac
 - Provides identity-based access control for Azure Storage and other services like Azure SQL Database, Azure Files, and Cosmos DB. Instead of relying on long-lived account keys or connection strings, you can enforce secure authentication and authorization through Entra ID.
 - [Configure and manage Microsoft Entra authentication with Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql&tabs=azure-portal)
 
+##### 🔑 Customer-Managed Keys (CMK)
+- Organizations have direct control over the encryption keys used to protect their data in Azure Storage by using Customer-Managed Keys (CMK). Instead of relying only on Microsoft-managed keys, you store and manage your own keys in Azure Key Vault, which ensures that you retain ultimate authority over encryption and decryption.
+- [Configure customer-managed keys in the same tenant for a new storage account](https://docs.azure.cn/en-us/storage/common/customer-managed-keys-configure-new-account?tabs=azure-portal)
+
