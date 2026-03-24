@@ -23,5 +23,5 @@ Azure ensures that data stored in the cloud is protected against unauthorized ac
 - [Configure customer-managed keys in the same tenant for a new storage account](https://docs.azure.cn/en-us/storage/common/customer-managed-keys-configure-new-account?tabs=azure-portal)
 
 ### Storage Security Framework
-Low privlige
+Low privilege
 
