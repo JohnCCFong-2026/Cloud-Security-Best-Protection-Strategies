@@ -48,7 +48,6 @@ Azure ensures that data stored in the cloud is protected against unauthorized ac
 
 ### Storage Security Framework
 ##### Least Privilege Access
-### Storage Security Framework
 - **Least Privilege Access**: Grant only the minimum permissions required.
 - **Defense in Depth**: Combine SAS, firewalls, identity-based access, and private endpoints.
 - **Encryption Everywhere**: Ensure encryption at rest (default), enforce encryption in transit, and use confidential computing for encryption in use.
