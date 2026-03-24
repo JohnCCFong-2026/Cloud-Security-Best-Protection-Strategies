@@ -29,6 +29,7 @@ Azure ensures that data stored in the cloud is protected against unauthorized ac
 - Private Endpoints integrate with **Resource Firewalls** and **Private DNS zones** to provide fine-grained, secure, and seamless access to resources.
 - [Create a private endpoint by using the Azure portal](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-portal?tabs=dynamic-ip)
 
+### Recommendations for Azure Storage Security
 ##### 🔐 Encryption in Rest
 - Protects data when it is stored on disk in Azure Storage. By default, Azure automatically encrypts all data at rest using AES-256 with Microsoft-managed keys. You can optionally use Customer-Managed Keys (CMK) in Azure Key Vault for more control.
 - Example: You upload a backup file to Blob Storage. Azure encrypts it before writing it to disk. Even if someone accessed the physical storage, they would only see encrypted data, not the original file.
@@ -47,4 +48,9 @@ Azure ensures that data stored in the cloud is protected against unauthorized ac
 
 ### Storage Security Framework
 ##### Least Privilege Access
+### Storage Security Framework
+- **Least Privilege Access**: Grant only the minimum permissions required.
+- **Defense in Depth**: Combine SAS, firewalls, identity-based access, and private endpoints.
+- **Encryption Everywhere**: Ensure encryption at rest (default), enforce encryption in transit, and use confidential computing for encryption in use.
+- **Monitoring & Compliance**: Enable Defender for Storage, logging, and regular audits to detect threats and meet regulatory standards.
 
