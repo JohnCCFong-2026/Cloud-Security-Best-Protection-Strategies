@@ -29,6 +29,22 @@ Azure ensures that data stored in the cloud is protected against unauthorized ac
 - Private Endpoints integrate with **Resource Firewalls** and **Private DNS zones** to provide fine-grained, secure, and seamless access to resources.
 - [Create a private endpoint by using the Azure portal](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-portal?tabs=dynamic-ip)
 
+##### 🔐 Encryption in Rest
+- Protects data when it is stored on disk in Azure Storage. By default, Azure automatically encrypts all data at rest using AES-256 with Microsoft-managed keys. You can optionally use Customer-Managed Keys (CMK) in Azure Key Vault for more control.
+- Example: You upload a backup file to Blob Storage. Azure encrypts it before writing it to disk. Even if someone accessed the physical storage, they would only see encrypted data, not the original file.
+- [Azure data encryption at rest](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest)
+
+##### 🔐 Encryption in Transit
+- Protects data while it is moving between your client and Azure Storage. Azure supports HTTPS/TLS for secure connections. You can enforce this by enabling the “Secure transfer required” setting on your storage account.
+- Example: A developer connects to Blob Storage from an application. If they try to use http://..., the request will be blocked once secure transfer is required, ensuring only https://... connections are allowed.
+- [Double encryption](https://docs.azure.cn/en-us/security/fundamentals/double-encryption#:~:text=Transit%20encryption%20using%20Transport%20Layer,no%20measurable%20link%20latency%20increase.)
+
+##### 🔐 Encryption in Use
+- Protects data while it is actively being processed in memory. Unlike encryption at rest or in transit, this is not enabled by default for storage accounts. It requires Azure Confidential Computing features such as Confidential VMs or Always Encrypted with secure enclaves in Azure SQL Database.
+- Encryption in use is achieved through Azure Confidential Computing, which leverages hardware-based Trusted Execution Environments (TEEs).
+- Example: A financial application runs on an Azure Confidential VM. While sensitive transaction data is processed in memory, it remains encrypted and protected from unauthorized access—even from the cloud provider or system administrators.
+- [What is confidential computing?](https://learn.microsoft.com/en-us/azure/confidential-computing/overview)
+
 ### Storage Security Framework
 ##### Least Privilege Access
 
