@@ -35,12 +35,12 @@ Azure ensures that data stored in the cloud is protected against unauthorized ac
 - Example: You upload a backup file to Blob Storage. Azure encrypts it before writing it to disk. Even if someone accessed the physical storage, they would only see encrypted data, not the original file.
 - [Azure data encryption at rest](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest)
 
-##### 🔐 Encryption at Transit
+##### 🔐 Encryption in Transit
 - Protects data while it is moving between your client and Azure Storage. Azure supports HTTPS/TLS for secure connections. You can enforce this by enabling the “Secure transfer required” setting on your storage account.
 - Example: A developer connects to Blob Storage from an application. If they try to use http://..., the request will be blocked once secure transfer is required, ensuring only https://... connections are allowed.
 - [Double encryption](https://docs.azure.cn/en-us/security/fundamentals/double-encryption#:~:text=Transit%20encryption%20using%20Transport%20Layer,no%20measurable%20link%20latency%20increase.)
 
-##### 🔐 Encryption at Use
+##### 🔐 Encryption in Use
 - Protects data while it is actively being processed in memory. Unlike encryption at rest or in transit, this is not enabled by default for storage accounts. It requires Azure Confidential Computing features such as Confidential VMs or Always Encrypted with secure enclaves in Azure SQL Database.
 - Encryption in use is achieved through Azure Confidential Computing, which leverages hardware-based Trusted Execution Environments (TEEs).
 - Example: A financial application runs on an Azure Confidential VM. While sensitive transaction data is processed in memory, it remains encrypted and protected from unauthorized access—even from the cloud provider or system administrators.
@@ -48,8 +48,21 @@ Azure ensures that data stored in the cloud is protected against unauthorized ac
 
 ### Storage Security Framework
 ##### Least Privilege Access
-- **Least Privilege Access**: Grant only the minimum permissions required.
-- **Defense in Depth**: Combine SAS, firewalls, identity-based access, and private endpoints.
-- **Encryption Everywhere**: Ensure encryption at rest (default), enforce encryption in transit, and use confidential computing for encryption in use.
-- **Monitoring & Compliance**: Enable Defender for Storage, logging, and regular audits to detect threats and meet regulatory standards.
+- Grant only the permissions that are strictly necessary for users, applications, and services. This minimizes the risk of accidental misuse or malicious activity.
+- Example: A reporting tool is given read-only access to a specific container instead of full access to the entire storage account.
+- [Secure your Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql)
+
+##### Defense in Depth
+- Apply multiple layers of protection so that if one control fails, others remain in place. Combine access tokens, network restrictions, and identity-based security.
+- Example: Use Shared Access Signatures (SAS) for temporary access, enforce firewall rules to block untrusted networks, require Azure AD authentication, and route traffic through private endpoints.
+- [Introduction to Azure security](https://learn.microsoft.com/en-us/azure/security/fundamentals/overview#:~:text=Azure%20employs%20a%20defense%2Din,security%2C%20see%20Azure%20physical%20security.)
+
+##### Encryption Everywhere
+- Protect data at every stage—while stored, while transmitted, and even while being processed.
+- Example:
+  - At rest: Azure Storage automatically encrypts data with service-managed keys.
+  - In transit: Enforce HTTPS-only connections.
+  - In use: Run workloads on confidential computing environments so data remains encrypted during processing.
+  - [Azure encryption overview](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview)
+
 
