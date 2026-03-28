@@ -18,6 +18,7 @@ Azure
 - [🔍 2. Goverance  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/blob/main/Azure/Goverance/README.md)
 - [🔍 3. Network Security  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/blob/main/Azure/Network%20Security/README.md)
 - [🔍 4. Storage Security  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/blob/main/Azure/Storage%20Security/README.md)
+- [🔍 4. Host Security  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/tree/main/Azure/Host%20Security)
 - [Overview of Azure security controls (v3)](https://learn.microsoft.com/en-us/security/benchmark/azure/overview-v3)
 
 AWS
