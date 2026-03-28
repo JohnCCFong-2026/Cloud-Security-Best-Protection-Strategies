@@ -46,18 +46,18 @@ Azure ensures that data stored in the cloud is protected against unauthorized ac
 - Example: A financial application runs on an Azure Confidential VM. While sensitive transaction data is processed in memory, it remains encrypted and protected from unauthorized access—even from the cloud provider or system administrators.
 - [What is confidential computing?](https://learn.microsoft.com/en-us/azure/confidential-computing/overview)
 
-### Storage Security Framework
-##### Least Privilege Access
+### Storage Security Framework (5 Pillars)
+##### 🔑 Least Privilege Access
 - Grant only the permissions that are strictly necessary for users, applications, and services. This minimizes the risk of accidental misuse or malicious activity.
 - Example: A reporting tool is given read-only access to a specific container instead of full access to the entire storage account.
 - [Secure your Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql)
 
-##### Defense in Depth
+##### 🛡️ Defense in Depth
 - Apply multiple layers of protection so that if one control fails, others remain in place. Combine access tokens, network restrictions, and identity-based security.
 - Example: Use Shared Access Signatures (SAS) for temporary access, enforce firewall rules to block untrusted networks, require Azure AD authentication, and route traffic through private endpoints.
 - [Introduction to Azure security](https://learn.microsoft.com/en-us/azure/security/fundamentals/overview#:~:text=Azure%20employs%20a%20defense%2Din,security%2C%20see%20Azure%20physical%20security.)
 
-##### Encryption Everywhere
+##### 🔒 Encryption Everywhere
 - Protect data at every stage—while stored, while transmitted, and even while being processed.
 - Example:
   - At rest: Azure Storage automatically encrypts data with service-managed keys.
@@ -65,4 +65,18 @@ Azure ensures that data stored in the cloud is protected against unauthorized ac
   - In use: Run workloads on confidential computing environments so data remains encrypted during processing.
   - [Azure encryption overview](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview)
 
+##### 📊 Monitoring & Compliance
+- Continuous monitoring of all storage accounts and databases.
+- Enable Microsoft Defender for Storage and Microsoft Defender for Databases (Azure SQL, SQL on VMs, PostgreSQL, MariaDB).
+- Turn on logging and auditing (Azure Monitor, Storage Analytics, SQL Auditing).
+- Perform regular compliance reviews (GDPR, HIPAA, ISO 27001).
+- Integrate alerts with Microsoft Sentinel for centralized monitoring.
+- [Architecture best practices for Azure SQL Database(Provide a list of storage checklist articles)](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-sql-database)
 
+##### 🔄 Resilience & Recovery
+- Ensure data availability and disaster recovery readiness.
+- Use geo-redundant storage (GRS) or zone-redundant storage (ZRS).
+- Enable Azure Backup for critical workloads.
+- Test restore procedures regularly.
+- Apply immutable storage (WORM) for compliance scenarios.
+- [Azure storage disaster recovery planning and failover](https://learn.microsoft.com/en-us/azure/storage/common/storage-disaster-recovery-guidance)
