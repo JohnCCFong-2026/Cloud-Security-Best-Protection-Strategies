@@ -21,7 +21,7 @@ Azure host security focuses on protecting the virtual machines (VMs), operating 
 - Example: We applied Azure Disk Encryption to our VM disks, with keys stored in Azure Key Vault, so that sensitive data at rest is fully secured using BitLocker for Windows and DM-Crypt for Linux.
 - [Azure Disk Encryption scenarios on Windows VMs](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-windows)
 
-##### Encrypt at Host
+##### 🖥 Encrypt at Host
 - Encrypt at Host is a security feature in Azure that ensures all data is encrypted at the compute layer before it leaves the VM host and travels to Azure Storage. Unlike Azure Disk Encryption (ADE), which encrypts disks inside the VM using BitLocker or DM-Crypt, Encrypt at Host works transparently at the infrastructure level.
 - Example: In Azure, we enabled Encrypt at Host for our virtual machines so that all data is automatically encrypted at the compute layer before leaving the host, providing strong protection without requiring disk-level encryption management.
 - [Use the Azure portal to enable end-to-end encryption using encryption at host](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-host-based-encryption-portal?tabs=azure-powershell)
@@ -38,14 +38,14 @@ Azure host security focuses on protecting the virtual machines (VMs), operating 
 - [Azure security baseline for Virtual Machines - Linux Virtual Machines](https://learn.microsoft.com/en-us/security/benchmark/azure/baselines/virtual-machines-linux-virtual-machines-security-baseline)
 
 ### Host Security Framework (3 Pillars)
-- Protection
+- 🔒 Protection
   - This pillar focuses on safeguarding virtual machines (VMs) and their data against malware, unauthorized access, and breaches. It includes endpoint protection tools, encryption at the disk level (Azure Disk Encryption), and encryption at the host level to ensure data remains secure both at rest and in use.
   - Example: We deployed Microsoft Defender for Endpoint on our VMs to detect and block malware, enabled Azure Disk Encryption (ADE) to protect sensitive data at rest, and activated Encrypt at Host to ensure all VM data is encrypted during processing.
 
-- Maintenance
+- 🔄 Maintenance
   - Maintenance ensures that operating systems remain secure and compliant by keeping them up to date. Azure Update Management helps automate patching across Windows and Linux VMs, reducing vulnerabilities and maintaining a strong security posture.
   - Example: We configured Azure Update Management to automatically apply monthly security patches to all Windows and Linux VMs, ensuring that known vulnerabilities are addressed promptly and compliance requirements are met.
 
-- Hardening
+- 🛠️ Hardening
   - Hardening strengthens the internal operating system by reducing its attack surface. This involves applying Windows/Linux security baselines, disabling unnecessary services, closing unused ports, enforcing strong authentication, and configuring host-based firewalls. Azure provides official security baselines and recommendations through Microsoft Defender for Cloud.
   - Example: We hardened our Linux VMs by applying Azure’s security baseline, disabling legacy protocols like Telnet, enforcing SSH key-based authentication, and configuring host-based firewalls to block unused ports, thereby reducing potential entry points for attackers.
