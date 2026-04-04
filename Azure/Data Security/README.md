@@ -9,12 +9,16 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
 ##### 🔐 Azure SQL Database Security
 - Always Encrypted
   - Ensures sensitive data (like credit card numbers or SSNs) is encrypted both at rest and in use. Even administrators cannot access plaintext values.
+  - [Create, change, or delete a network security group](https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-tutorial-getting-started?view=sql-server-ver17&viewFallbackFrom=azuresql&tabs=ssms)
 - Transparent Data Encryption (TDE)
   - Encrypts the entire database, backups, and transaction logs automatically.
+  - [Transparent data encryption for SQL Database, SQL Managed Instance, and Azure Synapse Analytics](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql&tabs=azure-portal)
 - Dynamic Data Masking (DDM)
   - Masks sensitive data in query results without altering the actual data.
+  - [Dynamic data masking](https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-overview?view=azuresql)
 - Encryption at Rest & In Transit
   - AES-256 secures stored data; TLS protects connections.
+  - [An overview of Azure SQL Database and SQL Managed Instance security capabilities](https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql)
 - Example: A healthcare provider stores patient records in Azure SQL. Doctors can query encrypted data, but administrators cannot view medical history in plaintext.
 
 ##### 🌍 Azure Cosmos DB Security
