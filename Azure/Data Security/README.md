@@ -7,8 +7,6 @@ For setup instructions, please follow the steps provided in Azure.
 Azure ensures data security through a multilayered defense-in-depth approach, combining encryption, identity management, compliance certifications, and advanced threat protection to safeguard data at rest, in transit, and during processing. It follows Microsoft’s Zero Trust model, meaning every access request is verified, and data is protected across all stages.
 
 ##### 🔐 Azure SQL Database Security
-- Advanced Data Security (ADS)
-  - Provides vulnerability assessments, advanced threat protection, and data discovery/classification.
 - Always Encrypted
   - Ensures sensitive data (like credit card numbers or SSNs) is encrypted both at rest and in use. Even administrators cannot access plaintext values.
 - Transparent Data Encryption (TDE)
@@ -73,8 +71,12 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
   Ensures data availability across regions.
 - Example: A manufacturing company uses Azure Backup to protect ERP databases, ensuring recovery in case of ransomware attacks.
 
+##### 🛡️ Microsoft Defender for SQL (pricing required)
+- A unified security package that provides vulnerability assessments, advanced threat protection, and data discovery/classification.
+- Explore Microsoft Defender for SQL capabilities
+
 ### Data Security Framework
-##### Data Loss Prevention (DLP)
+##### Data Loss Prevention (DLP) (pricing required)
 - Prevents sensitive data from being leaked or misused by monitoring and controlling data movement.
 - Example: Configure policies to block credit card numbers from being copied out of VMs or uploaded to unauthorized storage.
 
