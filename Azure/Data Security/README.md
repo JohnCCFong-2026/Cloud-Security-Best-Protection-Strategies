@@ -71,15 +71,6 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
   - [Azure role-based access control (Azure RBAC) vs. access policies (legacy)](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-access-policy)
 - Example: A fintech app stores API keys in Key Vault. Applications securely retrieve them at runtime, avoiding hardcoded secrets.
 
-##### 🔒 Azure Confidential Computing
-- Data-in-Use Protection
-  - Uses secure enclaves to protect data while being processed.
-  - [Protecting data privacy and security on your most sensitive workloads](https://azure.microsoft.com/en-us/solutions/confidential-compute)
-- Trusted Execution Environments (TEEs)
-  - Prevents unauthorized access even from cloud operators.
-  - [Trusted Execution Environment (TEE)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-execution-environment)
-- Example: A financial institution runs risk models in confidential computing enclaves, ensuring sensitive data remains protected during analysis.
-
 ### Recommendations for Azure Data Security
 ##### 🛡️ Azure Backup & Recovery
 - Automated Backups 
@@ -91,6 +82,15 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
 ##### 🛡️ Microsoft Defender for SQL (pricing required)
 - A unified security package that provides vulnerability assessments, advanced threat protection, and data discovery/classification.
 - Explore Microsoft Defender for SQL capabilities
+
+##### 🔒 Azure Confidential Computing
+- Data-in-Use Protection
+  - Uses secure enclaves to protect data while being processed.
+  - [Protecting data privacy and security on your most sensitive workloads](https://azure.microsoft.com/en-us/solutions/confidential-compute)
+- Trusted Execution Environments (TEEs)
+  - Prevents unauthorized access even from cloud operators.
+  - [Trusted Execution Environment (TEE)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-execution-environment)
+- Example: A financial institution runs risk models in confidential computing enclaves, ensuring sensitive data remains protected during analysis.
 
 ### Data Security Framework
 ##### Data Loss Prevention (DLP) (pricing required)
