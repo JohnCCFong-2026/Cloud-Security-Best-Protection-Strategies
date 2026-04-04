@@ -62,10 +62,13 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
 ##### 🔑 Azure Key Vault
 - Centralized Key Management
   - Stores encryption keys, secrets, and certificates.
+  - [Create a key vault using the Azure portal](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal)
 - Hardware Security Modules (HSMs)
   - Keys are protected in FIPS 140-2 Level 2 validated HSMs.
-- Access Policies
+  - [Provision and activate a Managed HSM using Azure CLI](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/quick-create-cli)
+- Azure role-based access control (Azure RBAC)
   - Define who can access or manage keys.
+  - [Azure role-based access control (Azure RBAC) vs. access policies (legacy)](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-access-policy)
 - Example: A fintech app stores API keys in Key Vault. Applications securely retrieve them at runtime, avoiding hardcoded secrets.
 
 ##### 🔒 Azure Confidential Computing
