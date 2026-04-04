@@ -47,6 +47,7 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
 - Kerberos Authentication
   - Provides secure identity verification.
   - [Configure HDInsight clusters for Microsoft Entra integration with Enterprise Security Package](https://learn.microsoft.com/en-us/azure/hdinsight/domain-joined/apache-domain-joined-configure-using-azure-adds)
+  - [Azure HDInsight architecture with Enterprise Security Package](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/hdinsight/domain-joined/apache-domain-joined-architecture.md) by kmurphy1000
 - Example: A telecom company analyzes call records with Hadoop jobs. Kerberos ensures only authorized analysts can run queries.
 
 ##### 📦 Azure Storage Security (Blob, Files, Queues, Tables)
