@@ -43,8 +43,10 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
 ##### 🧠 Azure HDInsight Security
 - Encryption at Rest & In Transit
   - Protects big data clusters.
+  - [IPsec Encryption in transit for Azure HDInsight](https://learn.microsoft.com/sk-sk/%20azure/hdinsight/domain-joined/encryption-in-transit)
 - Kerberos Authentication
   - Provides secure identity verification.
+  - [Configure HDInsight clusters for Microsoft Entra integration with Enterprise Security Package](https://learn.microsoft.com/en-us/azure/hdinsight/domain-joined/apache-domain-joined-configure-using-azure-adds)
 - Example: A telecom company analyzes call records with Hadoop jobs. Kerberos ensures only authorized analysts can run queries.
 
 ##### 📦 Azure Storage Security (Blob, Files, Queues, Tables)
