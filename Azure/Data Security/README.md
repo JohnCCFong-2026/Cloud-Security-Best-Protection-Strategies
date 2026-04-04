@@ -95,7 +95,7 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
 - Example: A financial institution runs risk models in confidential computing enclaves, ensuring sensitive data remains protected during analysis.
 
 ### Data Security Framework
-##### Microsoft Purview (Data Loss Prevention (DLP)) (pricing required)
+##### 🔍 Microsoft Purview - Data Loss Prevention (DLP) (pricing required)
 - Prevents sensitive data from being leaked or misused by monitoring and controlling data movement.
 - Example: Configure policies to block credit card numbers from being copied out of VMs or uploaded to unauthorized storage.
 - [Learn about the information protection scanner](https://learn.microsoft.com/en-us/purview/deploy-scanner#learn-about-the-information-protection-scanner)
