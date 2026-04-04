@@ -74,7 +74,8 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
 ### Recommendations for Azure Data Security
 ##### 🛡️ Azure Backup & Recovery
 - Automated Backups 
-  Protects against accidental deletion or corruption.
+  - Protects against accidental deletion or corruption.
+  - [Overview of security features in Azure Backup](https://learn.microsoft.com/en-us/azure/backup/security-overview)
 - Geo-Redundant Storage (GRS)
   Ensures data availability across regions.
 - Example: A manufacturing company uses Azure Backup to protect ERP databases, ensuring recovery in case of ransomware attacks.
@@ -82,6 +83,7 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
 ##### 🛡️ Microsoft Defender for SQL (pricing required)
 - A unified security package that provides vulnerability assessments, advanced threat protection, and data discovery/classification.
 - Explore Microsoft Defender for SQL capabilities
+- [Microsoft Defender for SQL](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-defender-for-sql?view=azuresql)
 
 ##### 🔒 Azure Confidential Computing
 - Data-in-Use Protection
@@ -96,4 +98,4 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
 ##### Data Loss Prevention (DLP) (pricing required)
 - Prevents sensitive data from being leaked or misused by monitoring and controlling data movement.
 - Example: Configure policies to block credit card numbers from being copied out of VMs or uploaded to unauthorized storage.
-
+- [Learn about the information protection scanner](https://learn.microsoft.com/en-us/purview/deploy-scanner#learn-about-the-information-protection-scanner)
