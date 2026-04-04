@@ -53,8 +53,10 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
 ##### 📦 Azure Storage Security (Blob, Files, Queues, Tables)
 - Encryption at Rest
   - Automatic AES-256 encryption for all storage types.
+  - [Azure Storage encryption for data at rest](https://learn.microsoft.com/en-us/azure/storage/common/storage-service-encryption)
 - Shared Access Signatures (SAS)
   - Fine-grained access tokens for temporary or limited access.
+  - [Grant limited access to Azure Storage resources using shared access signatures (SAS)](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview)
 - Example: A media company stores video files in Blob Storage. SAS tokens allow temporary access without exposing account keys.
 
 ##### 🔑 Azure Key Vault
