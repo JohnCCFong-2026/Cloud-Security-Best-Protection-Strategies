@@ -24,11 +24,13 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
 ##### 🌍 Azure Cosmos DB Security
 - Encryption at Rest
   - All data is automatically encrypted using AES-256.
+  - [https://learn.microsoft.com/en-us/azure/cosmos-db/database-encryption-at-rest](https://learn.microsoft.com/en-us/azure/cosmos-db/database-encryption-at-rest)
 - Role-Based Access Control (RBAC)
   - Fine-grained access control for users and applications.
+  - [Configure role-based access control in Azure Cosmos DB for MongoDB](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-role-based-access-control?tabs=python)
 - Example: An e-commerce app stores shopping carts in Cosmos DB. Even if accessed improperly, encryption prevents exposure of customer data.
 
-##### 📊 Azure Data Lake Store Security
+##### 📊 Azure Data Lake Storage Security
 - Encryption at Rest & In Transit
   - AES-256 and TLS secure stored and transmitted data.
 - Access Control Lists (ACLs)
