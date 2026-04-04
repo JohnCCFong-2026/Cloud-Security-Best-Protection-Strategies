@@ -11,6 +11,10 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
   - Provides vulnerability assessments, advanced threat protection, and data discovery/classification.
 - Always Encrypted
   - Ensures sensitive data (like credit card numbers or SSNs) is encrypted both at rest and in use. Even administrators cannot access plaintext values.
+- Transparent Data Encryption (TDE)
+  - Encrypts the entire database, backups, and transaction logs automatically.
+- Dynamic Data Masking (DDM)
+  - Masks sensitive data in query results without altering the actual data.
 - Encryption at Rest & In Transit
   - AES-256 secures stored data; TLS protects connections.
 - Example: A healthcare provider stores patient records in Azure SQL. Doctors can query encrypted data, but administrators cannot view medical history in plaintext.
@@ -20,8 +24,6 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
   - All data is automatically encrypted using AES-256.
 - Role-Based Access Control (RBAC)
   - Fine-grained access control for users and applications.
-- Network Security
-  - Private endpoints and firewall rules restrict access.
 - Example: An e-commerce app stores shopping carts in Cosmos DB. Even if accessed improperly, encryption prevents exposure of customer data.
 
 ##### 📊 Azure Data Lake Store Security
@@ -38,8 +40,6 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
   - Protects big data clusters.
 - Kerberos Authentication
   - Provides secure identity verification.
-- Virtual Network Integration
-  - Isolates clusters from public internet.
 - Example: A telecom company analyzes call records with Hadoop jobs. Kerberos ensures only authorized analysts can run queries.
 
 ##### 📦 Azure Storage Security (Blob, Files, Queues, Tables)
@@ -58,6 +58,14 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
   - Define who can access or manage keys.
 - Example: A fintech app stores API keys in Key Vault. Applications securely retrieve them at runtime, avoiding hardcoded secrets.
 
+##### 🔒 Azure Confidential Computing
+- Data-in-Use Protection
+  Uses secure enclaves to protect data while being processed.
+- Trusted Execution Environments (TEEs)
+  Prevents unauthorized access even from cloud operators.
+- Example: A financial institution runs risk models in confidential computing enclaves, ensuring sensitive data remains protected during analysis.
+
+### Recommendations for Azure Data Security
 ##### 🛡️ Azure Backup & Recovery
 - Automated Backups 
   Protects against accidental deletion or corruption.
@@ -65,9 +73,8 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
   Ensures data availability across regions.
 - Example: A manufacturing company uses Azure Backup to protect ERP databases, ensuring recovery in case of ransomware attacks.
 
-##### 🔒 Azure Confidential Computing
-- Data-in-Use Protection
-  Uses secure enclaves to protect data while being processed.
-- Trusted Execution Environments (TEEs)
-  Prevents unauthorized access even from cloud operators.
-- Example: A financial institution runs risk models in confidential computing enclaves, ensuring sensitive data remains protected during analysis.
+### Data Security Framework
+##### Data Loss Prevention (DLP)
+- Prevents sensitive data from being leaked or misused by monitoring and controlling data movement.
+- Example: Configure policies to block credit card numbers from being copied out of VMs or uploaded to unauthorized storage.
+
