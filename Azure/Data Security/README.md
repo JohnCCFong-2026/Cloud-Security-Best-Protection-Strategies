@@ -42,6 +42,13 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
   - Isolates clusters from public internet.
 - Example: A telecom company analyzes call records with Hadoop jobs. Kerberos ensures only authorized analysts can run queries.
 
+##### 📦 Azure Storage Security (Blob, Files, Queues, Tables)
+- Encryption at Rest
+  - Automatic AES-256 encryption for all storage types.
+- Shared Access Signatures (SAS)
+  - Fine-grained access tokens for temporary or limited access.
+- Example: A media company stores video files in Blob Storage. SAS tokens allow temporary access without exposing account keys.
+
 ##### 🔑 Azure Key Vault
 - Centralized Key Management
   - Stores encryption keys, secrets, and certificates.
@@ -50,13 +57,6 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
 - Access Policies
   - Define who can access or manage keys.
 - Example: A fintech app stores API keys in Key Vault. Applications securely retrieve them at runtime, avoiding hardcoded secrets.
-
-##### 📦 Azure Storage Security (Blob, Files, Queues, Tables)
-- Encryption at Rest
-  - Automatic AES-256 encryption for all storage types.
-- Shared Access Signatures (SAS)
-  - Fine-grained access tokens for temporary or limited access.
-- Example: A media company stores video files in Blob Storage. SAS tokens allow temporary access without exposing account keys.
 
 ##### 🛡️ Azure Backup & Recovery
 - Automated Backups 
