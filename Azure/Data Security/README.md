@@ -73,9 +73,11 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
 
 ##### 🔒 Azure Confidential Computing
 - Data-in-Use Protection
-  Uses secure enclaves to protect data while being processed.
+  - Uses secure enclaves to protect data while being processed.
+  - [Protecting data privacy and security on your most sensitive workloads](https://azure.microsoft.com/en-us/solutions/confidential-compute)
 - Trusted Execution Environments (TEEs)
-  Prevents unauthorized access even from cloud operators.
+  - Prevents unauthorized access even from cloud operators.
+  - [Trusted Execution Environment (TEE)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-execution-environment)
 - Example: A financial institution runs risk models in confidential computing enclaves, ensuring sensitive data remains protected during analysis.
 
 ### Recommendations for Azure Data Security
