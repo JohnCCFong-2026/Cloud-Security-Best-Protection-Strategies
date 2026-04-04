@@ -35,6 +35,7 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
   - AES-256 and TLS secure stored and transmitted data.
 - Access Control Lists (ACLs)
   - Granular permissions at file and folder levels.
+  - [Access control lists (ACLs) in Azure Data Lake Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-access-control)
 - Azure AD Integration
   - Centralized identity management.
 - Example: A bank stores transaction logs in Data Lake. Analysts only access relevant folders, while encryption secures logs outside the environment.
