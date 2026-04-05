@@ -19,11 +19,13 @@ Azure application security focuses on protecting the applications, APIs, and cod
 - Azure integrates security into the application lifecycle through CI/CD pipelines. Tools like Azure DevOps and GitHub Actions can run automated security scans, while Microsoft Defender for DevOps checks for vulnerabilities in code and dependencies. Infrastructure as Code templates can be validated against security policies, and container workloads in Azure Kubernetes Service (AKS) can be scanned for misconfigurations.
 - Example: A developer pushes new code to GitHub. The CI/CD pipeline runs automated scans for exposed secrets or outdated libraries. Only after passing these checks is the code deployed to Azure App Service, ensuring secure delivery.
 - [DevSecOps for infrastructure as code (IaC)](https://learn.microsoft.com/en-us/azure/architecture/guide/devsecops/devsecops-on-aks)
+- [DevSecOps on Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/architecture/guide/devsecops/devsecops-on-aks)
 
 ### Recommendations for Azure Application Security
 ##### 🛠️ Microsoft Defender for DevOps (pricing required)
 - Defender for DevOps integrates security into your CI/CD pipelines. It scans source code, dependencies, and infrastructure templates for vulnerabilities before deployment. This helps prevent insecure code from reaching production.
 - Example: A developer commits code to GitHub. Defender for DevOps automatically scans the repository, detects a vulnerable library, and alerts the team. The pipeline blocks deployment until the issue is fixed, ensuring only secure code is released to Azure.
+- 
 
 ##### 🔑 Azure Key Vault
 - Key Vault securely stores and manages secrets, certificates, and encryption keys. It prevents developers from hardcoding sensitive information in applications and supports automated rotation of credentials.
