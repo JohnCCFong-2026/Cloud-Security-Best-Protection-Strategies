@@ -70,7 +70,9 @@ Azure application security focuses on protecting the applications, APIs, and cod
 - Microsoft’s own framework for secure application development.
 - Encourages integrating SAST/DAST into DevOps pipelines, threat modeling, and secure coding practices.
 - Example: An Azure DevOps pipeline includes SDL practices — automated SAST scans, dependency checks, and security gates before deployment.
+- [Microsoft Security Development Lifecycle (SDL)](https://learn.microsoft.com/en-us/compliance/assurance/assurance-microsoft-security-development-lifecycle)
 
 ##### 🏛️ NIST Cybersecurity Framework (CSF)
 - A broader security framework that includes application security as part of “Protect” and “Detect” functions.
 - Example: Using Defender for Cloud for continuous monitoring (Detect) and Key Vault for secret management (Protect).
+- [NIST Cybersecurity Framework (CSF)](https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-nist-csf)
