@@ -9,6 +9,7 @@ Azure application security focuses on protecting the applications, APIs, and cod
 ##### 🔒 SSL/TLS Certificates (Secure Communication)
 - Azure enforces encrypted communication between clients and applications using SSL/TLS. Certificates can be managed through Azure Key Vault for automated rotation and renewal, ensuring that sensitive data in transit is protected.
 - Example: A web app hosted on Azure App Service binds an SSL certificate to its domain. All customer traffic (https://myshop.com) is encrypted, preventing attackers from intercepting login credentials or payment details.
+- - [Use a custom domain and a managed certificate to secure your app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-secure-domain-certificate)
 
 ##### 👤 Microsoft Entra ID (Identity & Access Integration)
 - Microsoft Entra ID provides centralized identity management for applications. It supports Single Sign-On (SSO), Multi-Factor Authentication (MFA), and modern protocols like OAuth2 and OpenID Connect. Applications can also use managed identities to securely access Azure resources without storing credentials in code.
