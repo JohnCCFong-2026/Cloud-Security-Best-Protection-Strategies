@@ -42,14 +42,17 @@ Azure application security focuses on protecting the applications, APIs, and cod
 ##### 🧩 SAST (Static Application Security Testing)
 - SAST analyzes source code or binaries during development to detect vulnerabilities before deployment. It helps developers fix issues early in the lifecycle.
 - Example: A CI/CD pipeline runs a SAST tool on a developer’s code and finds hardcoded credentials in a configuration file. The build fails, and the developer removes the secret, ensuring it is stored securely in Azure Key Vault instead.
+- [Develop secure applications on Azure](https://learn.microsoft.com/en-us/azure/security/develop/secure-develop)
 
 ##### 🧪 DAST (Dynamic Application Security Testing)
 - DAST tests running applications by simulating real-world attacks. It identifies vulnerabilities in the application’s runtime behavior, such as input validation flaws.
 - Example: A QA team runs a DAST scan against a staging environment of a web app. The tool detects that the login form is vulnerable to cross-site scripting (XSS). The issue is fixed before the app is deployed to production in Azure.
+- [Develop secure applications on Azure](https://learn.microsoft.com/en-us/azure/security/develop/secure-develop)
 
 ##### 📦 Dependency Scanning
 - Dependency scanning checks third-party libraries and packages for known vulnerabilities. This prevents insecure components from being included in applications.
 - Example: Defender for DevOps flags an outdated open-source package with a critical CVE. Developers update the dependency before deployment, reducing risk.
+- [Set up dependency scanning](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-dependency-scanning?view=azure-devops)
 
 ##### 🔗 Azure API Management (API Security)
 - API Management secures APIs by enforcing authentication, authorization, throttling, and monitoring. It helps prevent abuse and ensures only trusted clients can access APIs.
