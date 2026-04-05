@@ -64,6 +64,7 @@ Azure application security focuses on protecting the applications, APIs, and cod
 - Focuses on the OWASP Top 10 vulnerabilities (SQL injection, XSS, insecure deserialization, etc.).
 - Recommends practices like SAST and DAST to detect and mitigate these risks.
 - Example: Running SAST in CI/CD to catch hardcoded secrets, and DAST scans to block XSS in a login form.
+- [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/www-project-application-security-verification-standard/)
 
 ##### 🏗️ Microsoft Secure Development Lifecycle (SDL)
 - Microsoft’s own framework for secure application development.
