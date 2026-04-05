@@ -57,6 +57,7 @@ Azure application security focuses on protecting the applications, APIs, and cod
 ##### 🔗 Azure API Management (API Security)
 - API Management secures APIs by enforcing authentication, authorization, throttling, and monitoring. It helps prevent abuse and ensures only trusted clients can access APIs.
 - Example: A company exposes a customer API through API Management. Requests must include a valid Azure AD token, and rate limits prevent denial-of-service attacks.
+- [Set up dependency scanning](https://learn.microsoft.com/en-us/azure/api-management/authentication-authorization-overview)
 
 ### Applicaiotn Security Framework
 ##### 🛡️ OWASP Application Security Framework
