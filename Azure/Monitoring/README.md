@@ -75,7 +75,7 @@ Azure Monitoring refers to the collection of tools, services, and processes that
 - Example: Detecting suspicious login attempts across multiple regions, correlating them with known attack patterns, and automatically disabling compromised accounts.
 - [What is Microsoft Sentinel security information and event management (SIEM)?](https://learn.microsoft.com/en-us/azure/security/fundamentals/management-monitoring-overview)
 
-##### Cloud Native Application Protection Platform (CNAPP)
+##### Cloud Native Application Protection Platform (CNAPP) *(pricing required)*
 - A unified security solution that combines Defender for Cloud capabilities with workload protection for applications, containers, and Kubernetes.
 - Tools: CNAPP integrates CSPM (Cloud Security Posture Management) and CWPP (Cloud Workload Protection Platform).
 - Example: Detecting vulnerabilities in container images before deployment and enforcing compliance policies across Kubernetes clusters.
