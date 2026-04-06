@@ -31,6 +31,7 @@ Azure Monitoring refers to the collection of tools, services, and processes that
 ##### 🔔 Alerts & Action Groups
 - Automated notifications when thresholds or conditions are met.
 - Example: Sending an SMS to admins when a critical service goes down.
+- [Action groups](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/action-groups)
 
 ##### 📊 Workbooks & Dashboards
 - Visualize metrics and logs in customizable reports.
@@ -40,6 +41,7 @@ Azure Monitoring refers to the collection of tools, services, and processes that
 - Provides personalized recommendations based on monitoring data.
 - Helps optimize cost, performance, reliability, and security.
 - Example: Suggesting resizing underutilized VMs, enabling geo-redundancy, or applying encryption.
+- [Azure Advisor portal basics](https://learn.microsoft.com/en-us/azure/advisor/advisor-get-started)
 
 ### Recommendations for Azure Monitoring
 ##### Microsoft Sentinel *(pricing required)*
@@ -47,6 +49,7 @@ Azure Monitoring refers to the collection of tools, services, and processes that
 - Collects and correlates security data across Azure, on-premises, and multi-cloud environments.
 - Uses AI and threat intelligence to detect, investigate, and respond to incidents.
 - Example: Detecting suspicious login attempts across multiple regions, correlating them with known attack patterns, and automatically disabling compromised accounts.
+- [What is Microsoft Sentinel security information and event management (SIEM)?](https://learn.microsoft.com/en-us/azure/security/fundamentals/management-monitoring-overview)
 
 ### Monitoring Framework (7 Pillars)
 ##### 📥 Data Collection
