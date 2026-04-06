@@ -80,7 +80,7 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
   Ensures data availability across regions.
 - Example: A manufacturing company uses Azure Backup to protect ERP databases, ensuring recovery in case of ransomware attacks.
 
-##### 🛡️ Microsoft Defender for SQL (pricing required)
+##### 🛡️ Microsoft Defender for SQL *(pricing required)*
 - A unified security package that provides vulnerability assessments, advanced threat protection, and data discovery/classification.
 - Explore Microsoft Defender for SQL capabilities
 - [Microsoft Defender for SQL](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-defender-for-sql?view=azuresql)
