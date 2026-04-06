@@ -22,7 +22,7 @@ Azure application security focuses on protecting the applications, APIs, and cod
 - [DevSecOps on Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/architecture/guide/devsecops/devsecops-on-aks)
 
 ### Recommendations for Azure Application Security
-##### 🛠️ Microsoft Defender for DevOps (pricing required)
+##### 🛠️ Microsoft Defender for DevOps *(pricing required)*
 - Defender for DevOps integrates security into your CI/CD pipelines. It scans source code, dependencies, and infrastructure templates for vulnerabilities before deployment. This helps prevent insecure code from reaching production.
 - Example: A developer commits code to GitHub. Defender for DevOps automatically scans the repository, detects a vulnerable library, and alerts the team. The pipeline blocks deployment until the issue is fixed, ensuring only secure code is released to Azure.
 - [Connect Azure DevOps environments to Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-devops)
