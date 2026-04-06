@@ -47,36 +47,36 @@ Azure Monitoring refers to the collection of tools, services, and processes that
 
 ### Monitoring Framework (7 Pillars)
 ##### 📥 Data Collection
-- What it is: Gathering metrics, logs, and traces from Azure resources and applications.
+- Gathering metrics, logs, and traces from Azure resources and applications.
 - Tools: Azure Monitor, Application Insights.
 - Example: Collecting CPU usage metrics from VMs and transaction traces from a web app.
 
 ##### 🗄️ Centralized Storage
-- What it is: Storing monitoring data in a single place for querying and correlation.
+- Storing monitoring data in a single place for querying and correlation.
 - Tools: Log Analytics Workspace.
 - Example: Aggregating logs from multiple VMs to detect failed login attempts across the environment.
 
 ##### 📊 Visualization
-- What it is: Turning raw data into dashboards and reports for real-time insights.
+- Turning raw data into dashboards and reports for real-time insights.
 - Tools: Workbooks, Dashboards.
 - Example: A dashboard showing live traffic, latency, and error rates for an e-commerce site.
 
 ##### 🔔 Alerting & Automation
-- What it is: Setting thresholds and automating responses when issues occur.
+- Setting thresholds and automating responses when issues occur.
 - Tools: Alerts, Action Groups.
 - Example: Sending an SMS to admins when a critical API fails, and triggering an automated script to restart the service.
 
 ##### 🛡️ Security Integration
-- What it is: Monitoring compliance and detecting threats.
+- Monitoring compliance and detecting threats.
 - Tools: Microsoft Defender for Cloud.
 - Example: Flagging a VM exposed to the internet without proper firewall rules and recommending remediation.
 
 ##### 🕵️ Threat Intelligence & Response
-- What it is: Advanced detection, investigation, and automated response to security incidents.
+- Advanced detection, investigation, and automated response to security incidents.
 - Tools: Microsoft Sentinel (pricing required).
 - Example: Detecting suspicious login attempts from multiple countries, correlating them with known attack patterns, and automatically disabling compromised accounts.
 
 ##### 💡 Optimization
-- What it is: Using recommendations to improve cost, performance, reliability, and security.
+- Using recommendations to improve cost, performance, reliability, and security.
 - Tools: Azure Advisor.
 - Example: Suggesting resizing underutilized VMs to save costs or enabling geo-redundancy for databases.
