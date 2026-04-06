@@ -10,11 +10,13 @@ Azure Monitoring refers to the collection of tools, services, and processes that
 - Collects metrics, logs, and traces from Azure resources, applications, and hybrid systems.
 - Provides dashboards, alerts, and automated actions.
 - Example: Monitoring a VM’s CPU usage and sending an alert if it exceeds 80%.
+- [Monitor Azure resources with Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/monitor-azure-resource)
 
-##### 🛡️ Microsoft Defender for Cloud
+##### 🛡️ Microsoft Defender for Cloud *(basic tier)*
 - Focuses on security monitoring and compliance.
 - Detects threats and provides recommendations to strengthen security posture.
 - Example: Identifying that a VM is exposed to the internet without firewall rules.
+- Monitor Azure resources with Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/monitor-azure-resource)
 
 ##### 📜 Log Analytics
 - Centralized workspace for storing and querying logs using Kusto Query Language (KQL).
