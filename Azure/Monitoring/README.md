@@ -16,16 +16,17 @@ Azure Monitoring refers to the collection of tools, services, and processes that
 - Focuses on security monitoring and compliance.
 - Detects threats and provides recommendations to strengthen security posture.
 - Example: Identifying that a VM is exposed to the internet without firewall rules.
-- Monitor Azure resources with Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/monitor-azure-resource)
 
 ##### 📜 Log Analytics
 - Centralized workspace for storing and querying logs using Kusto Query Language (KQL).
 - Example: Querying failed login attempts across multiple resources.
+- [Collect and analyze resource logs from an Azure resource in Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/tutorial-resource-logs)
 
 ##### ⚙️ Application Insights
 - Specialized monitoring for applications.
 - Tracks performance, dependencies, and user behavior.
 - Example: Detecting slow response times in a web app and pinpointing the database query causing delays.
+- [Create and configure Application Insights resources](https://learn.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource?tabs=portal)
 
 ##### 🔔 Alerts & Action Groups
 - Automated notifications when thresholds or conditions are met.
