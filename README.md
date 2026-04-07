@@ -13,7 +13,7 @@ For setup instructions, see the README.md file included in the library’s folde
 
 For tutorials, samples, quick starts, and other documentation.
 
-Azure
+### Azure
 - [🔍 1. Identity and Access management  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/blob/main/Azure/Identity%20&%20Access%20Control/README.md)
 - [🔍 2. Goverance  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/blob/main/Azure/Goverance/README.md)
 - [🔍 3. Network Security  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/blob/main/Azure/Network%20Security/README.md)
@@ -22,11 +22,15 @@ Azure
 - [🔍 6. Data Security  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/blob/main/Azure/Data%20Security/README.md)
 - [🔍 7. Application Security  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/blob/main/Azure/Application%20Security/README.md)
 - [🔍 8. Monitoring  →](https://github.com/JohnCCFong-2026/Cloud-Security-Best-Protection-Strategies/blob/main/Azure/Monitoring/README.md)
+
+##### Approach
 - [Overview of Azure security controls (v3)](https://learn.microsoft.com/en-us/security/benchmark/azure/overview-v3)
 
-AWS
-* [Understanding Zero Trust principles in AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-zero-trust-architecture/zero-trust-principles.html)
-* [Standards reference for Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.html)
+### AWS
 
-Others
+##### Approach
+- [Understanding Zero Trust principles in AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-zero-trust-architecture/zero-trust-principles.html)
+- [Standards reference for Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.html)
+
+##### Others
 * [MITRR ATT&ACK](https://attack.mitre.org/)
