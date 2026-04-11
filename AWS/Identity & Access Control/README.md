@@ -34,11 +34,13 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
     - A Read-only role has permissions to view resources without making changes.
 - [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
 
-##### AWS Single Sign-On (SSO)
-- Single sign-on (SSO) is an authentication solution that enables users to access multiple applications and websites with a single login. By validating a user’s identity once, organizations can provide seamless access to password-protected resources while strengthening security and improving the overall user experience.
+##### AWS IAM Identity Center (formerly AWS SSO)
+- Single sign-on (SSO) is an authentication solution that enables users to securely access multiple applications and websites with a single login. By validating a user’s identity once, organizations can provide seamless access to password-protected resources while strengthening security and improving the overall user experience.
+- When you enable IAM Identity Center and connect it to an identity source (such as Microsoft Entra ID, Okta, or AWS Directory Service), SSO functionality becomes available by default. Users can then sign in once and access multiple AWS accounts and integrated applications without repeated logins.
 - Example
    - A company integrates AWS IAM Identity Center (AWS SSO) with Microsoft Entra ID.
    - An employee signs in once with their corporate credentials and MFA.
    - They can then access AWS accounts (dev, test, prod) and apps like Salesforce without logging in again.
    - If the employee leaves, disabling their Entra ID account instantly removes all access.
+- [Enable IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/enable-identity-center.html)
 - [What is SSO (Single-Sign-On)?](https://aws.amazon.com/what-is/sso/)
