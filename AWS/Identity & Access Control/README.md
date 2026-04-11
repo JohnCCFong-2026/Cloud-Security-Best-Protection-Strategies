@@ -33,3 +33,12 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
     - A Developer role has permissions to start/stop EC2 instances but not terminate them.
     - A Read-only role has permissions to view resources without making changes.
 - [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
+
+##### AWS Single Sign-On (SSO)
+- Single sign-on (SSO) is an authentication solution that enables users to access multiple applications and websites with a single login. By validating a user’s identity once, organizations can provide seamless access to password-protected resources while strengthening security and improving the overall user experience.
+- Example
+   - A company integrates AWS IAM Identity Center (AWS SSO) with Microsoft Entra ID.
+   - An employee signs in once with their corporate credentials and MFA.
+   - They can then access AWS accounts (dev, test, prod) and apps like Salesforce without logging in again.
+   - If the employee leaves, disabling their Entra ID account instantly removes all access.
+- [What is SSO (Single-Sign-On)?](https://aws.amazon.com/what-is/sso/)
