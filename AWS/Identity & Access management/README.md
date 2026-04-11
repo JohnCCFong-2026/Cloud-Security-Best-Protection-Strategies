@@ -23,7 +23,7 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
 - [AWS Multi-factor authentication in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)
 
 ##### ⛔️ AWS IAM
-- AWS implements access control through Identity and Access Management (IAM). While the concept is similar to Role-Based Access Control (RBAC), AWS uses its own terminology
+- AWS implements access control through Identity and Access Management (IAM). While the concept is similar to Role-Based Access Control (RBAC), AWS uses its own terminology:
   - Roles: Identities with specific permissions that can be assumed by users, applications, or services.
   - Policies: JSON documents that define what actions are allowed or denied on specific resources.
   - Resource-level permissions: Fine-grained controls applied to specific AWS resources (e.g., restricting access to a single S3 bucket).
