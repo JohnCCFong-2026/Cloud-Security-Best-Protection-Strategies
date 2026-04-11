@@ -23,4 +23,12 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
 - [AWS Multi-factor authentication in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)
 
 ##### ⛔️ Role-Based Access Control (RBAC)
-- RBAC in AWS is implemented through IAM policies, roles, and resource-level permissions, which can be applied across Organizations, Accounts, and individual resources. This structure enforces the principle of least privilege by granting only the permissions necessary for a specific task.
+- RBAC in AWS is implemented through IAM (Identity and Access Management) using:
+  - Policies: JSON documents that define permissions.
+  - Roles: Identities with specific permissions that can be assumed by users, applications, or services.
+  - Resource-level permissions: Fine-grained controls applied to specific AWS resources.
+- RBAC enforces the principle of least privilege, meaning users only get the permissions necessary to perform their tasks.
+  - Example:
+    - An Admin role might have full access to manage EC2 instances.
+    - A Developer role might only have permissions to start/stop instances but not delete them.
+    - A Read-only role might only allow viewing resources without making changes.
