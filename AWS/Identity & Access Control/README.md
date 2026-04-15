@@ -34,7 +34,7 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
     - A Read-only role has permissions to view resources without making changes.
 - [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
 
-##### AWS IAM Identity Center (formerly AWS SSO)
+##### 🌐 AWS IAM Identity Center (formerly AWS SSO)
 - Single sign-on (SSO) is an authentication solution that enables users to securely access multiple applications and websites with a single login. By validating a user’s identity once, organizations can provide seamless access to password-protected resources while strengthening security and improving the overall user experience.
 - When you enable IAM Identity Center and connect it to an identity source (such as Microsoft Entra ID, Okta, or AWS Directory Service), SSO functionality becomes available by default. Users can then sign in once and access multiple AWS accounts and integrated applications without repeated logins.
 - Example
@@ -45,19 +45,63 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
 - [Enable IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/enable-identity-center.html)
 - [What is SSO (Single-Sign-On)?](https://aws.amazon.com/what-is/sso/)
 
-##### AWS Organizations
+##### 🏢 AWS Organizations
 - Manages multiple AWS accounts under one umbrella. It allows centralized governance, consolidated billing, and service control policies (SCPs).
 - Example: A company with separate accounts for development, testing, and production uses AWS Organizations to enforce a rule that no account can disable CloudTrail logging.
 
-##### AWS Cognito
+##### 📱 AWS Cognito
 - Provides authentication, authorization, and user management for web and mobile apps. It supports social logins (Google, Facebook) and enterprise identity providers.
 - Example: A mobile app uses Cognito to let users sign in with their Google account. Cognito issues temporary AWS credentials so the app can securely access an S3 bucket.
 
-##### AWS Resource Access Manager (RAM)
+##### 🔗 AWS Resource Access Manager (RAM)
 - Enables resource sharing across AWS accounts without duplicating resources.
 - Two AWS accounts (one for networking, one for applications) share a VPC subnet using AWS RAM, so applications can run in the shared network environment.
 
-##### AWS Directory Service
+##### 📂 AWS Directory Service
 - Provides managed Microsoft Active Directory (AD) or integrates with existing AD environments.
 - Example: An enterprise uses AWS Directory Service to allow employees to log into Amazon WorkSpaces with their existing corporate AD usernames and passwords.
+
+### Recommendations for Azure Identity Security
+##### 🛂 AWS Organizations
+- Manages multiple AWS accounts under one umbrella. It allows centralized governance, consolidated billing, and service control policies (SCPs).
+- Example: A company with separate accounts for development, testing, and production uses AWS Organizations to enforce a rule that no account can disable CloudTrail logging.
+
+### Zero Trust IAM Framework
+##### 🛡️ Zero Trust Principles for AWS IAM
+##### 🔎 Verify Explicitly
+- Concept: Never trust, always verify. Authentication and authorization must use multiple signals.
+  - Your Controls:
+    - 🔐 Multi-Factor Authentication (MFA)
+    - 📱 Cognito (App Authentication)
+    - 📂 Directory Service (Enterprise Authentication)
+    - 🌐 IAM Identity Center (SSO)
+
+##### ⛔ Least Privilege Access
+- Concept: Limit access to only what is necessary, and only for the time required.
+  - Your Controls:
+    - ⛔ IAM Roles & Policies
+    - 🔗 Resource Access Manager (RAM)
+    - 🏢 AWS Organizations (SCPs)
+##### 🛡️ Assume Breach
+- Concept: Design IAM policies to minimize impact if credentials or accounts are compromised.
+  - Your Controls:
+     - 🛂 AWS Organizations (multi-account isolation)
+
+
+### 📊 Simplified AWS IAM Framework (Beyond Zero Trust)
+
+  🏢 AWS Organizations / Control Tower (Governance)
+                      |
+        -------------------------------
+        |                             |
+   🌐 IAM Identity Center (SSO)   ⛔️ IAM (Roles/Policies)
+        |                             |
+   📂 Directory Service          🔗 RAM (Cross-account sharing)
+   📱 Cognito (App Auth)
+        |
+   🔐 MFA (Strong Authentication)
+        |
+   🔎 Monitoring & Auditing (CloudTrail, GuardDuty, Security Hub)
+        |
+   🛡️ Identity Governance (Access Analyzer, Access Advisor, Credential Reports)
 
