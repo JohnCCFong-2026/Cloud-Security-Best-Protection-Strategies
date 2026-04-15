@@ -67,7 +67,7 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
 - Example: An administrator runs Access Analyzer on an S3 bucket and discovers that it is accidentally accessible to the public. They use the tool to identify the specific policy statement causing the leak and remediate it. Additionally, they use the Policy Generation feature to create a new, restricted policy for a developer based on only the S3 actions that developer actually used in the last 30 days.
 - [Validate policies with IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-policy-validation.html)
 
-##### AWS STS (Security Token Service)
+##### 🎫 AWS STS (Security Token Service)
 - AWS STS issues temporary security credentials (access key, secret key, session token) that expire after a set time. This allows users, applications, or services to access AWS resources without permanent credentials.
 - Example: A developer needs to access an S3 bucket for 1 hour.
 - [Welcome to the AWS Security Token Service API Reference](https://docs.aws.amazon.com/STS/latest/APIReference/API_Operations.html)
