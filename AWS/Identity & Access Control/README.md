@@ -61,7 +61,11 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
 - [What gets created with your AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_getting_started_what_gets_created.html)
 
 ### Recommendations for Azure Identity Security
-
+##### IAM Access Analyzer *(pricing required)*
+- Helps you identify and refine permissions by analyzing resource-based policies to ensure that only intended identities have access to your resources. It also helps you move toward "Least Privilege" by generating fine-grained policies based on actual access activity.
+- It provides findings for resources that are accessible from outside your AWS account or organization, helping you spot accidental public access.
+- Example: An administrator runs Access Analyzer on an S3 bucket and discovers that it is accidentally accessible to the public. They use the tool to identify the specific policy statement causing the leak and remediate it. Additionally, they use the Policy Generation feature to create a new, restricted policy for a developer based on only the S3 actions that developer actually used in the last 30 days.
+- [Validate policies with IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-policy-validation.html)
 
 ### Zero Trust IAM Framework
 ##### 🛡️ Zero Trust Principles for AWS IAM
