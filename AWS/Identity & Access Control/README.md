@@ -89,7 +89,7 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
 
 
 ### 📊 Simplified AWS IAM Framework (Beyond Zero Trust)
-
+```
   🏢 AWS Organizations / Control Tower (Governance)
                       |
         -------------------------------
@@ -104,5 +104,5 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
    🔎 Monitoring & Auditing (CloudTrail, GuardDuty, Security Hub)
         |
    🛡️ Identity Governance (Access Analyzer, Access Advisor, Credential Reports)
-
+```
 
