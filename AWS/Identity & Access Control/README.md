@@ -10,7 +10,7 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
 - MFA adds an extra layer of security by requiring users to provide two or more verification factors to access AWS resources. Instead of relying solely on a username and password, MFA ensures that even if credentials are compromised, unauthorized access is prevented. AWS supports MFA devices such as:
   - Virtual Authenticator Applications
      - Apps like Google Authenticator, Authy, or Microsoft Authenticator.
-     - They generate time-based one-time passwords (TOTP) that refresh every 30 seconds.
+     - They generate time-based one-time passwords (TOTP) that refresh every 30 sexconds.
      - Easy to set up and widely used.
   - Hardware TOTP Tokens
      - Physical devices that generate TOTP codes.
@@ -44,3 +44,20 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
    - If the employee leaves, disabling their Entra ID account instantly removes all access.
 - [Enable IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/enable-identity-center.html)
 - [What is SSO (Single-Sign-On)?](https://aws.amazon.com/what-is/sso/)
+
+##### AWS Organizations
+- Manages multiple AWS accounts under one umbrella. It allows centralized governance, consolidated billing, and service control policies (SCPs).
+- Example: A company with separate accounts for development, testing, and production uses AWS Organizations to enforce a rule that no account can disable CloudTrail logging.
+
+##### AWS Cognito
+- Provides authentication, authorization, and user management for web and mobile apps. It supports social logins (Google, Facebook) and enterprise identity providers.
+- Example: A mobile app uses Cognito to let users sign in with their Google account. Cognito issues temporary AWS credentials so the app can securely access an S3 bucket.
+
+##### AWS Resource Access Manager (RAM)
+- Enables resource sharing across AWS accounts without duplicating resources.
+- Two AWS accounts (one for networking, one for applications) share a VPC subnet using AWS RAM, so applications can run in the shared network environment.
+
+##### AWS Directory Service
+- Provides managed Microsoft Active Directory (AD) or integrates with existing AD environments.
+- Example: An enterprise uses AWS Directory Service to allow employees to log into Amazon WorkSpaces with their existing corporate AD usernames and passwords.
+
