@@ -53,6 +53,7 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
 ##### 🔗 AWS Resource Access Manager (RAM)
 - Enables resource sharing across AWS accounts without duplicating resources.
 - Two AWS accounts (one for networking, one for applications) share a VPC subnet using AWS RAM, so applications can run in the shared network environment.
+- [Sharing your AWS resources(https://docs.aws.amazon.com/ram/latest/userguide/getting-started-sharing.html)
 
 ##### 📂 AWS Directory Service
 - Provides managed Microsoft Active Directory (AD) or integrates with existing AD environments.
