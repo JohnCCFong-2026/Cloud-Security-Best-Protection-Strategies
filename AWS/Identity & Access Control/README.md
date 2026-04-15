@@ -45,13 +45,10 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
 - [Enable IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/enable-identity-center.html)
 - [What is SSO (Single-Sign-On)?](https://aws.amazon.com/what-is/sso/)
 
-##### 🏢 AWS Organizations
-- Manages multiple AWS accounts under one umbrella. It allows centralized governance, consolidated billing, and service control policies (SCPs).
-- Example: A company with separate accounts for development, testing, and production uses AWS Organizations to enforce a rule that no account can disable CloudTrail logging.
-
 ##### 📱 AWS Cognito
 - Provides authentication, authorization, and user management for web and mobile apps. It supports social logins (Google, Facebook) and enterprise identity providers.
 - Example: A mobile app uses Cognito to let users sign in with their Google account. Cognito issues temporary AWS credentials so the app can securely access an S3 bucket.
+- [Create a new application in the Amazon Cognito console](https://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-user-pools-application.html)
 
 ##### 🔗 AWS Resource Access Manager (RAM)
 - Enables resource sharing across AWS accounts without duplicating resources.
@@ -62,9 +59,7 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
 - Example: An enterprise uses AWS Directory Service to allow employees to log into Amazon WorkSpaces with their existing corporate AD usernames and passwords.
 
 ### Recommendations for Azure Identity Security
-##### 🛂 AWS Organizations
-- Manages multiple AWS accounts under one umbrella. It allows centralized governance, consolidated billing, and service control policies (SCPs).
-- Example: A company with separate accounts for development, testing, and production uses AWS Organizations to enforce a rule that no account can disable CloudTrail logging.
+
 
 ### Zero Trust IAM Framework
 ##### 🛡️ Zero Trust Principles for AWS IAM
