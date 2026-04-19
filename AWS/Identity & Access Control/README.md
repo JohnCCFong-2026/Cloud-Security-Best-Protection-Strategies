@@ -60,7 +60,7 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
 - Example: An enterprise uses AWS Directory Service to allow employees to log into Amazon WorkSpaces with their existing corporate AD usernames and passwords.
 - [What gets created with your AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_getting_started_what_gets_created.html)
 
-### Recommendations for Azure Identity Security
+### Recommendations for AWS Identity Security
 ##### 🔎 IAM Access Analyzer *(pricing required)*
 - Helps you identify and refine permissions by analyzing resource-based policies to ensure that only intended identities have access to your resources. It also helps you move toward "Least Privilege" by generating fine-grained policies based on actual access activity.
 - It provides findings for resources that are accessible from outside your AWS account or organization, helping you spot accidental public access.
