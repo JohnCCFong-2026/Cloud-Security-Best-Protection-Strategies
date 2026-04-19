@@ -40,5 +40,25 @@ AWS Governance refers to the set of policies, processes, and tools that organiza
   - Compliance at Scale — Ensures accounts remain aligned with organizational and regulatory requirements.
 - Example: A financial services company uses Control Tower to automatically provision new accounts with encryption enabled, centralized logging configured, and Service Control Policies applied — ensuring compliance without manual setup.
 
+### Goverance Framework
+##### 📘 AWS Cloud Adoption Framework (CAF)
+- Provides best practices and structured guidance for cloud adoption.
+- Six perspectives: Business, People, Governance, Platform, Security, Operations.
+- The Governance Perspective ensures compliance, risk management, and accountability.
+- Example: A bank uses CAF Governance to define policies for account creation, cost controls, and compliance reporting before migrating workloads.
 
+##### 🏗️ AWS Well‑Architected Framework (WAF)
+- Focuses on workload design and architecture best practices.
+  - Six pillars:
+    - Security
+    - Performance Efficiency
+    - Cost Optimization
+    - Operational Excellence
+    - Reliability
+    - Sustainability
+- Example: A healthcare workload enforces encryption, IAM least privilege, and monitoring under the Security pillar.
 
+##### 🏢 AWS Organizations + SCPs
+- Core governance mechanism for multi‑account environments.
+- Service Control Policies (SCPs) enforce rules across accounts.
+- Example: A retail company restricts production accounts from using unapproved services, ensuring compliance with internal policies.
