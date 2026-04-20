@@ -27,11 +27,13 @@ AWS Governance refers to the set of policies, processes, and tools that organiza
 ##### 🏷️ Resource Management & Tagging
 - Standardized tagging for ownership, environment, and compliance.
 - Example: EC2 instance tagged with “Owner: Team A” and “Environment: Production”.
+- [Set up permissions](https://docs.aws.amazon.com/tag-editor/latest/userguide/gettingstarted-prereqs-permissions.html)
 
 ##### ⚙️ Automation & Policy Enforcement
 - Tools: AWS Control Tower, CloudFormation, Service Catalog.
 - Automates account setup and enforces guardrails.
 - Example: Control Tower ensures new accounts comply with organizational policies
+- [AWS Systems Manager Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html)
 
 ### Recommendations for AWS Goverance
 ##### 🧩 AWS Control Tower (Enterprise Setup)
