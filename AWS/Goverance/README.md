@@ -44,6 +44,7 @@ AWS Governance refers to the set of policies, processes, and tools that organiza
   - Rapid Deployment — Ideal for quickly deploying secure environments at scale.
   - Compliance at Scale — Ensures accounts remain aligned with organizational and regulatory requirements.
 - Example: A financial services company uses Control Tower to automatically provision new accounts with encryption enabled, centralized logging configured, and Service Control Policies applied — ensuring compliance without manual setup.
+- [AWS Control Tower quick start guide](https://docs.aws.amazon.com/controltower/latest/userguide/quick-start.html)
 
 ### Goverance Framework
 ##### 📘 AWS Cloud Adoption Framework (CAF)
@@ -51,6 +52,7 @@ AWS Governance refers to the set of policies, processes, and tools that organiza
 - Six perspectives: Business, People, Governance, Platform, Security, Operations.
 - The Governance Perspective ensures compliance, risk management, and accountability.
 - Example: A bank uses CAF Governance to define policies for account creation, cost controls, and compliance reporting before migrating workloads.
+- [AWS Cloud Adoption Framework (AWS CAF)](https://aws.amazon.com/cloud-adoption-framework/)
 
 ##### 🏗️ AWS Well‑Architected Framework (WAF)
 - Focuses on workload design and architecture best practices.
@@ -62,8 +64,10 @@ AWS Governance refers to the set of policies, processes, and tools that organiza
     - Reliability
     - Sustainability
 - Example: A healthcare workload enforces encryption, IAM least privilege, and monitoring under the Security pillar.
+- [The pillars of the framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html)
 
 ##### 🏢 AWS Organizations + SCPs
 - Core governance mechanism for multi‑account environments.
 - Service Control Policies (SCPs) enforce rules across accounts.
 - Example: A retail company restricts production accounts from using unapproved services, ensuring compliance with internal policies.
+- [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)
