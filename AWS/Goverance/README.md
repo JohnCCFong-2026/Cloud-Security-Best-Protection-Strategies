@@ -10,6 +10,7 @@ AWS Governance refers to the set of policies, processes, and tools that organiza
 - Centralized multi‑account governance.
 - Manage policies, billing, and compliance across accounts.
 - Example: Apply Service Control Policies (SCPs) to block risky services in production.
+- - [Tutorial: Creating and configuring an organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_tutorials_basic.html)
 
 ##### 🔒 Compliance & Security Monitoring
 - Tools: AWS Config, Security Hub, CloudTrail.
