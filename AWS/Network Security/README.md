@@ -18,4 +18,7 @@ AWS network security is built on a shared responsibility model, where AWS secure
 - Provides subnet-level traffic filtering with rules for inbound and outbound traffic.
 - Example: You set a NACL to deny all traffic from a suspicious IP range while allowing normal traffic to your application subnet.
 
-
+### Recommendations for AWS Network Security
+##### 🛡️ AWS Shield *(pricing required)*
+- Protects against Distributed Denial of Service (DDoS) attacks.
+- Example: Your e-commerce site uses AWS Shield Standard to automatically mitigate common DDoS attacks, ensuring availability during peak shopping seasons.
