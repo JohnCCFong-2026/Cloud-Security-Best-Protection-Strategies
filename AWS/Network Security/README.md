@@ -23,6 +23,11 @@ AWS network security is built on a shared responsibility model, where AWS secure
 - Works with CloudFront, Application Load Balancer (ALB), and API Gateway.
 - Example: Block malicious requests while allowing legitimate traffic to your e-commerce site.
 
+##### 🛡️ AWS Network Firewall
+- A managed firewall service for VPCs.
+- Provides stateful inspection, intrusion prevention, and deep packet inspection.
+- Example: Deploy in a centralized VPC to filter traffic across multiple subnets.
+
 ##### 🛣️ AWS PrivateLink / VPC Endpoints
 - Securely connect to AWS services without traversing the public internet.
 - Example: Access S3 or DynamoDB privately from within your VPC.
