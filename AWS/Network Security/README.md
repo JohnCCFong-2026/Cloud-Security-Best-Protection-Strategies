@@ -14,4 +14,8 @@ AWS network security is built on a shared responsibility model, where AWS secure
 - Acts as a virtual firewall for EC2 instances, controlling inbound and outbound traffic.
 - Example: You configure a security group to allow inbound HTTP (port 80) and HTTPS (port 443) traffic from anywhere, but restrict SSH (port 22) access to only your office IP address.
 
+##### 🚧 Network Access Control Lists (NACLs)
+- Provides subnet-level traffic filtering with rules for inbound and outbound traffic.
+- Example: You set a NACL to deny all traffic from a suspicious IP range while allowing normal traffic to your application subnet.
+
 
