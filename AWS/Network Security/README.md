@@ -18,9 +18,25 @@ AWS network security is built on a shared responsibility model, where AWS secure
 - Provides subnet-level traffic filtering with rules for inbound and outbound traffic.
 - Example: You set a NACL to deny all traffic from a suspicious IP range while allowing normal traffic to your application subnet.
 
+##### 🛡️ AWS WAF (Web Application Firewall)
+- Protects web applications from common exploits (SQL injection, XSS, etc.).
+- Works with CloudFront, Application Load Balancer (ALB), and API Gateway.
+- Example: Block malicious requests while allowing legitimate traffic to your e-commerce site.
+
+##### 🛣️ AWS PrivateLink / VPC Endpoints
+- Securely connect to AWS services without traversing the public internet.
+- Example: Access S3 or DynamoDB privately from within your VPC.
+
+##### 🌐 AWS Bastion Host / Systems Manager Session Manager
+- Provides secure administrative access to EC2 instances without exposing SSH ports.
+- Example: Use Session Manager to connect to servers via the AWS console, eliminating the need for public IPs.
+
 ### Recommendations for AWS Network Security
 ##### 🛡️ AWS Shield *(pricing required)*
 - Protects against Distributed Denial of Service (DDoS) attacks.
+- Versions:
+  - Shield Standard → Free, automatically included with AWS services. Provides protection against common, most frequent network and transport layer DDoS attacks.
+  - Shield Advanced (pricing required) → Paid tier with enhanced detection, mitigation, cost protection, and 24/7 support from the AWS DDoS Response Team (DRT).
 - Example: Your e-commerce site uses AWS Shield Standard to automatically mitigate common DDoS attacks, ensuring availability during peak shopping seasons.
 
 ### Network Security Framework
