@@ -51,6 +51,19 @@ AWS network security is built on a shared responsibility model, where AWS secure
 - Provides DNSSEC, health checks, and routing policies (weighted, latency‑based, geolocation) to improve security and performance.
 - Example: You register example.com in Route 53 and configure it to route traffic to an Application Load Balancer. If one region becomes unhealthy, Route 53 automatically reroutes users to a healthy endpoint, ensuring availability.
 
+##### 🌐 Internet Gateway
+- A horizontally scaled, redundant, and highly available VPC component that allows communication between resources in your VPC and the internet.
+- Example: You attach an Internet Gateway to your VPC so that EC2 instances in a public subnet can serve web traffic to users on the internet.
+
+##### 🌐 NAT Gateway
+- Provides outbound internet access for resources in private subnets while preventing inbound connections from the internet.
+- Example: Your database servers in a private subnet need to download OS updates. A NAT Gateway in the public subnet allows them to connect out securely without exposing them to inbound internet traffic.
+
+##### 🛣️ Transit Gateway
+- A highly scalable hub that connects multiple VPCs and on‑premises networks through a central gateway.
+- Simplifies network architecture by replacing complex peering relationships with a single managed service.
+- Example: Your company has separate VPCs for production, development, and testing across multiple regions. A Transit Gateway connects them all securely, while also linking back to your on‑premises data center.
+
 ### Recommendations for AWS Network Security
 ##### 🛡️ AWS Shield *(pricing required)*
 - Protects against Distributed Denial of Service (DDoS) attacks.
