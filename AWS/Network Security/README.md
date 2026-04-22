@@ -18,6 +18,11 @@ AWS network security is built on a shared responsibility model, where AWS secure
 - Provides subnet-level traffic filtering with rules for inbound and outbound traffic.
 - Example: You set a NACL to deny all traffic from a suspicious IP range while allowing normal traffic to your application subnet.
 
+##### 🌐 Amazon CloudFront
+- A Content Delivery Network (CDN) that securely delivers websites, APIs, videos, and applications to users with low latency by caching content at AWS edge locations worldwide.
+- Integrates with AWS WAF for application-layer protection and AWS Shield for DDoS mitigation, while supporting TLS/SSL encryption and access controls like signed URLs and cookies.
+- Example: You host an e-commerce site with product images stored in S3. CloudFront caches these images at edge locations near your customers, ensuring fast page loads globally. At the same time, AWS WAF filters malicious requests (like SQL injection), and Shield Standard automatically mitigates DDoS attacks to keep your site available during peak shopping seasons.
+
 ##### 🛡️ AWS WAF (Web Application Firewall)
 - Protects web applications from common exploits (SQL injection, XSS, etc.).
 - Works with CloudFront, Application Load Balancer (ALB), and API Gateway.
