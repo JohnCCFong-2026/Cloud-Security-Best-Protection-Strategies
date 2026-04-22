@@ -41,6 +41,17 @@ AWS network security is built on a shared responsibility model, where AWS secure
 - Provides secure administrative access to EC2 instances without exposing SSH ports.
 - Example: Use Session Manager to connect to servers via the AWS console, eliminating the need for public IPs.
 
+##### ⚖️ Elastic Load Balancing (ELB)
+- Distributes incoming traffic across multiple targets (EC2 instances, containers, IP addresses) to ensure high availability and fault tolerance.
+- Provides automatic scaling and integrates with AWS Shield and AWS WAF for security at the edge.
+- Supports TLS termination (offloading SSL/TLS encryption from your application servers) and can enforce security policies.
+- Example: You deploy a web application across three EC2 instances in different Availability Zones. An Application Load Balancer (ALB) routes HTTP/HTTPS traffic evenly across them, while AWS WAF filters malicious requests at the load balancer level. If one instance fails, ELB automatically reroutes traffic to healthy targets, keeping your app available and secure.
+
+##### 🛣️ Amazon Route 53
+- A highly available and scalable Domain Name System (DNS) web service that routes end‑user requests to AWS resources or external endpoints.
+- Provides DNSSEC, health checks, and routing policies (weighted, latency‑based, geolocation) to improve security and performance.
+- Example: You register example.com in Route 53 and configure it to route traffic to an Application Load Balancer. If one region becomes unhealthy, Route 53 automatically reroutes users to a healthy endpoint, ensuring availability.
+
 ### Recommendations for AWS Network Security
 ##### 🛡️ AWS Shield *(pricing required)*
 - Protects against Distributed Denial of Service (DDoS) attacks.
