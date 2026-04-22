@@ -22,3 +22,5 @@ AWS network security is built on a shared responsibility model, where AWS secure
 ##### 🛡️ AWS Shield *(pricing required)*
 - Protects against Distributed Denial of Service (DDoS) attacks.
 - Example: Your e-commerce site uses AWS Shield Standard to automatically mitigate common DDoS attacks, ensuring availability during peak shopping seasons.
+
+### Network Security Framework
