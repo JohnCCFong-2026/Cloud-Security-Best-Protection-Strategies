@@ -25,38 +25,46 @@ AWS network security is built on a shared responsibility model, where AWS secure
 - A Content Delivery Network (CDN) that securely delivers websites, APIs, videos, and applications to users with low latency by caching content at AWS edge locations worldwide.
 - Integrates with AWS WAF for application-layer protection and AWS Shield for DDoS mitigation, while supporting TLS/SSL encryption and access controls like signed URLs and cookies.
 - Example: You host an e-commerce site with product images stored in S3. CloudFront caches these images at edge locations near your customers, ensuring fast page loads globally. At the same time, AWS WAF filters malicious requests (like SQL injection), and Shield Standard automatically mitigates DDoS attacks to keep your site available during peak shopping seasons.
+- [Tutorial: Create a simple function with CloudFront Functions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/functions-tutorial.html)
 
 ##### 🛡️ AWS WAF (Web Application Firewall)
 - Protects web applications from common exploits (SQL injection, XSS, etc.).
 - Works with CloudFront, Application Load Balancer (ALB), and API Gateway.
 - Example: Block malicious requests while allowing legitimate traffic to your e-commerce site.
+- [Use AWS WAF protections](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-awswaf.html)
 
 ##### 🛡️ AWS Network Firewall
 - A managed firewall service for VPCs.
 - Provides stateful inspection, intrusion prevention, and deep packet inspection.
 - Example: Deploy in a centralized VPC to filter traffic across multiple subnets.
+- [Filter network traffic using AWS Network Firewall](https://docs.aws.amazon.com/vpc/latest/userguide/network-firewall.html)
 
 ##### 🛣️ AWS PrivateLink / VPC Endpoints
 - Securely connect to AWS services without traversing the public internet.
 - Example: Access S3 or DynamoDB privately from within your VPC.
+- [Connect your VPC to services using AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/userguide/endpoint-services-overview.html)
 
 ##### 🌐 AWS Bastion Host / Systems Manager Session Manager
 - Provides secure administrative access to EC2 instances without exposing SSH ports.
 - Example: Use Session Manager to connect to servers via the AWS console, eliminating the need for public IPs.
+- [Access a bastion host by using Session Manager and Amazon EC2 Instance Connect](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-a-bastion-host-by-using-session-manager-and-amazon-ec2-instance-connect.html)
 
 ##### ⚖️ Elastic Load Balancing (ELB)
 - Distributes incoming traffic across multiple targets (EC2, containers, IPs) to ensure high availability and fault tolerance.
 - Supports Application Load Balancer (ALB) for HTTP/HTTPS, Network Load Balancer (NLB) for TCP/UDP, and Gateway Load Balancer (GLB) for third‑party appliances.
 - Example: Your web app runs on three EC2 instances in different Availability Zones. An ALB routes traffic evenly across them, while WAF filters malicious requests at the load balancer level.
+- [What is Elastic Load Balancing?](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html)
 
 ##### 🛣️ Amazon Route 53
 - A highly available and scalable Domain Name System (DNS) web service that routes end‑user requests to AWS resources or external endpoints.
 - Provides DNSSEC, health checks, and routing policies (weighted, latency‑based, geolocation) to improve security and performance.
 - Example: You register example.com in Route 53 and configure it to route traffic to an Application Load Balancer. If one region becomes unhealthy, Route 53 automatically reroutes users to a healthy endpoint, ensuring availability.
+- [Set up Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/setting-up-route-53.html)
 
 ##### 🌐 Internet Gateway
 - A horizontally scaled, redundant, and highly available VPC component that allows communication between resources in your VPC and the internet.
 - Example: You attach an Internet Gateway to your VPC so that EC2 instances in a public subnet can serve web traffic to users on the internet.
+- [Enable internet access for a VPC using an internet gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)
 
 ##### 🌐 NAT Gateway
 - Provides outbound internet access for resources in private subnets while preventing inbound connections from the internet.
