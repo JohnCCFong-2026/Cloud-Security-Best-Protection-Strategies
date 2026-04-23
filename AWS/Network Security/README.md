@@ -97,6 +97,11 @@ AWS network security is built on a shared responsibility model, where AWS secure
 - Example: ECS services in one VPC securely call Lambda functions in another VPC, with VPC Lattice enforcing request‑level policies.
 - [How VPC Lattice works](https://docs.aws.amazon.com/vpc-lattice/latest/ug/how-it-works.html)
 
+##### 🌐 AWS Direct Connect
+- A dedicated, private network connection between your on‑premises environment (data center, office, or colocation facility) and AWS. It bypasses the public internet, providing lower latency, consistent performance, and enhanced security.
+- Example: A financial services company sets up AWS Direct Connect from its colocation facility to the AWS Hong Kong Region. They create a private virtual interface to securely connect to their VPC for sensitive workloads, and a public virtual interface to access services like Amazon S3. This ensures trading applications have ultra‑low latency and secure connectivity without traversing the public internet.
+- [AWS Direct Connect](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect.html)
+
 ### Recommendations for AWS Network Security
 ##### 🛡️ AWS Shield *(pricing required)*
 - Protects against Distributed Denial of Service (DDoS) attacks.
@@ -114,11 +119,6 @@ AWS network security is built on a shared responsibility model, where AWS secure
   - Private subnet → hosts application servers that only communicate with the web tier.
   - Isolated subnet → hosts databases with no direct internet access, only reachable from the application tier.
   - This segmentation ensures that even if the web tier is compromised, attackers cannot directly reach the databas
-
-##### 🌐 AWS Direct Connect
-- A dedicated, private network connection between your on‑premises environment (data center, office, or colocation facility) and AWS. It bypasses the public internet, providing lower latency, consistent performance, and enhanced security.
-- Example: A financial services company sets up AWS Direct Connect from its colocation facility to the AWS Hong Kong Region. They create a private virtual interface to securely connect to their VPC for sensitive workloads, and a public virtual interface to access services like Amazon S3. This ensures trading applications have ultra‑low latency and secure connectivity without traversing the public internet.
-- [AWS Direct Connect](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect.html)
 
 ### Network Security Framework
 ##### Hub and Spoke with Organization
