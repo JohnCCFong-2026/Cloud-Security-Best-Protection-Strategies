@@ -115,6 +115,11 @@ AWS network security is built on a shared responsibility model, where AWS secure
   - Isolated subnet → hosts databases with no direct internet access, only reachable from the application tier.
   - This segmentation ensures that even if the web tier is compromised, attackers cannot directly reach the databas
 
+##### 🌐 AWS Direct Connect
+- A dedicated, private network connection between your on‑premises environment (data center, office, or colocation facility) and AWS. It bypasses the public internet, providing lower latency, consistent performance, and enhanced security.
+- Example: A financial services company sets up AWS Direct Connect from its colocation facility to the AWS Hong Kong Region. They create a private virtual interface to securely connect to their VPC for sensitive workloads, and a public virtual interface to access services like Amazon S3. This ensures trading applications have ultra‑low latency and secure connectivity without traversing the public internet.
+- [AWS Direct Connect](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect.html)
+
 ### Network Security Framework
 ##### Hub and Spoke with Organization
 - This refers to a network architecture pattern where a central hub (often a Transit Gateway or a shared services VPC) connects multiple spoke VPCs or networks. It simplifies connectivity, centralizes security controls, and reduces complexity compared to full mesh peering.
