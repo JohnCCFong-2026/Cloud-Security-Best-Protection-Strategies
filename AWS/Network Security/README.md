@@ -9,6 +9,7 @@ AWS network security is built on a shared responsibility model, where AWS secure
 ##### 🌐 Virtual Private Cloud (VPC)
 - Provides logically isolated sections of the AWS cloud where you can launch resources.
 - Example: You create a VPC with two subnets—one public for web servers and one private for databases. The public subnet connects to the internet via an Internet Gateway, while the private subnet only communicates internally.
+- [Getting started with Amazon VPC using the AWS CLI](https://docs.aws.amazon.com/vpc/latest/userguide/getting-started-with-amazon-vpc-using-the-aws-cli.html)
 
 ##### 🛡️ Security Groups
 - Acts as a virtual firewall for EC2 instances, controlling inbound and outbound traffic.
