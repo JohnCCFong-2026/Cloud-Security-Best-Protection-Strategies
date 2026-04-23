@@ -14,10 +14,12 @@ AWS network security is built on a shared responsibility model, where AWS secure
 ##### 🛡️ Security Groups
 - Acts as a virtual firewall for EC2 instances, controlling inbound and outbound traffic.
 - Example: You configure a security group to allow inbound HTTP (port 80) and HTTPS (port 443) traffic from anywhere, but restrict SSH (port 22) access to only your office IP address.
+- [Control traffic to your AWS resources using security groups](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html)
 
 ##### 🚧 Network Access Control Lists (NACLs)
 - Provides subnet-level traffic filtering with rules for inbound and outbound traffic.
 - Example: You set a NACL to deny all traffic from a suspicious IP range while allowing normal traffic to your application subnet.
+- [Control subnet traffic with network access control lists](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
 
 ##### 🌐 Amazon CloudFront
 - A Content Delivery Network (CDN) that securely delivers websites, APIs, videos, and applications to users with low latency by caching content at AWS edge locations worldwide.
