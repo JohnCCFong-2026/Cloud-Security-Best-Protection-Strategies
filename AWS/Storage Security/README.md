@@ -26,4 +26,18 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 - Centralized service for managing encryption keys across AWS storage services.
 - Example: You use a customer-managed KMS key to encrypt both S3 objects and RDS databases, ensuring consistent encryption policies.
 
+##### 📂 Azure Files (Cloud File Shares)
+- Provides fully managed file shares accessible via SMB or NFS, supporting standard NTFS permissions.
+- Integrates with Active Directory Domain Services (AD DS) to allow users to use their corporate credentials for access.
+- Example: You migrate an on-premises file server to Azure Files, maintaining the same folder-level permissions (ACLs) for your employees.
+
+##### 🛡️ Encryption at Host
+- Provides end-to-end encryption by encrypting data at the VM host before it is written to storage.
+- Unlike the retiring Azure Disk Encryption (ADE), this handles temporary disks and caches without OS-level overhead.
+- Example: You enable Encryption at Host for a high-performance database VM to ensure the cache and data disks are encrypted before they even leave the host server.
+
+##### 🧠 Confidential Computing
+- Protects "data in use" by performing computations in a hardware-based Trusted Execution Environment (TEE).
+- Example: A healthcare app processes patient records in a Confidential VM, ensuring even Azure administrators cannot see the data in memory.
+
 ### Recommendations for AWS Storage Security
