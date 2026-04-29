@@ -26,3 +26,4 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 - Centralized service for managing encryption keys across AWS storage services.
 - Example: You use a customer-managed KMS key to encrypt both S3 objects and RDS databases, ensuring consistent encryption policies.
 
+### Recommendations for AWS Storage Security
