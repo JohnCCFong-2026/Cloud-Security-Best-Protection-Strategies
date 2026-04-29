@@ -40,4 +40,16 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 - Protects "data in use" by performing computations in a hardware-based Trusted Execution Environment (TEE).
 - Example: A healthcare app processes patient records in a Confidential VM, ensuring even Azure administrators cannot see the data in memory.
 
+##### S3 Pre-signed URLs
+- A secure method to grant temporary, limited access to a specific S3 object without requiring the recipient to have AWS credentials. You define exactly how long the link remains valid (e.g., 15 minutes).
+- Example: You need to share a private 2GB video file with an external contractor. Instead of making the bucket public, you generate a pre-signed URL that expires in 1 hour. The contractor downloads the file via that specific link, which becomes useless immediately after the hour passes.
+
+##### VPC Endpoints 
+- A private connection between your Virtual Private Cloud (VPC) and AWS services (like S3 or DynamoDB). It ensures your data travels over the AWS private network rather than the public internet.
+- Example: You have a backend server in a private subnet with no internet access. By creating an S3 Gateway Endpoint, that server can securely upload logs to an S3 bucket without needing a NAT Gateway or an internet connection.
+
+##### 🛡️ VPC Security Groups & Network ACLs
+- Acts as a virtual firewall to control inbound and outbound traffic for storage-related resources like RDS databases or EFS file systems. Security Groups are stateful (track connections), while Network ACLs are stateless (act at the subnet level).
+- Example: You deploy a PostgreSQL database in RDS. You attach a Security Group that only allows incoming traffic on port 5432 from the specific Security Group ID belonging to your web servers, blocking all other attempts to connect to the database.
+
 ### Recommendations for AWS Storage Security
