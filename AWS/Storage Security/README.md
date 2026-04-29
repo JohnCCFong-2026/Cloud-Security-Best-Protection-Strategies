@@ -6,10 +6,6 @@ For setup instructions, please follow the steps provided in AWS.
 ### Storage Security
 AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) and each comes with built-in security features. The main pillars of storage security are encryption, access control, monitoring, and compliance.
 
-##### 🗂️ Amazon S3 (Simple Storage Service)
-- Provides scalable object storage with built-in security features like encryption and access control.
-- Example: You create an S3 bucket for HR documents, enable Block Public Access, and enforce server-side encryption with KMS. Only HR IAM roles can access the bucket.
-
 ##### 💾 Amazon EBS (Elastic Block Store)
 - Offers block-level storage volumes for EC2 instances with encryption and snapshot protection.
 - Example: You attach an encrypted EBS volume to an EC2 instance running a payroll application. Snapshots are also encrypted automatically.
@@ -18,9 +14,22 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 - Provides managed relational databases with encryption, network isolation, and automated backups.
 - Example: You deploy a MySQL database in RDS, encrypt it with a KMS key, and restrict access to only application servers inside a private VPC.
 
+##### 🗂️ Amazon S3 (Simple Storage Service)
+- Provides scalable object storage with built-in security features like encryption and access control.
+- Example: You create an S3 bucket for HR documents, enable Block Public Access, and enforce server-side encryption with KMS. Only HR IAM roles can access the bucket.
+
 ##### 📚 Amazon S3 Glacier (Archival Storage)
 - Long-term archival storage with compliance features like Vault Lock and encryption.
 - Example: You archive medical records in Glacier with Vault Lock, ensuring they cannot be modified, meeting regulatory requirements.
+
+##### S3 Pre-signed URLs
+- A secure method to grant temporary, limited access to a specific S3 object without requiring the recipient to have AWS credentials.
+- Example: You generate a link for a client to download a specific report. You set the link to expire in 30 minutes. Once the time is up, the link automatically becomes invalid.
+
+##### 🔐 S3 Block Public Access (The Safety Net)
+- A global setting that acts as a master fail-safe to prevent any S3 bucket from being made public, even if a user makes a mistake in a policy.
+- Best Practice: Enable this at the Account Level immediately.
+- Example: A junior admin accidentally sets a bucket policy to "Public." Because Block Public Access is on at the account level, the bucket stays private, preventing a data leak.
 
 ##### 🔑 AWS Key Management Service (KMS)
 - Centralized service for managing encryption keys across AWS storage services.
@@ -37,10 +46,6 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 ##### 🧠 AWS Nitro Enclaves
 - Creates isolated compute environments to protect and process highly sensitive "data in use" (data in memory).
 - Example: A healthcare app processes sensitive patient data inside a Nitro Enclave. This environment has no persistent storage or interactive access, ensuring even a "root" administrator cannot see the data being processed.
-
-##### S3 Pre-signed URLs
-- A secure method to grant temporary, limited access to a specific S3 object without requiring the recipient to have AWS credentials.
-- Example: You generate a link for a client to download a specific report. You set the link to expire in 30 minutes. Once the time is up, the link automatically becomes invalid.
 
 ##### VPC Endpoints 
 - A private connection between your Virtual Private Cloud (VPC) and AWS services (like S3 or DynamoDB). It ensures your data travels over the AWS private network rather than the public internet.
