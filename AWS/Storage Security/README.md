@@ -26,23 +26,21 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 - Centralized service for managing encryption keys across AWS storage services.
 - Example: You use a customer-managed KMS key to encrypt both S3 objects and RDS databases, ensuring consistent encryption policies.
 
-##### 📂 Azure Files (Cloud File Shares)
-- Provides fully managed file shares accessible via SMB or NFS, supporting standard NTFS permissions.
-- Integrates with Active Directory Domain Services (AD DS) to allow users to use their corporate credentials for access.
-- Example: You migrate an on-premises file server to Azure Files, maintaining the same folder-level permissions (ACLs) for your employees.
+##### 📂 Amazon EFS (Elastic File System)
+- Provides serverless, fully managed file shares for Linux-based workloads via the NFS protocol.
+- Example: You use EFS to provide shared storage for a fleet of web servers. Access is controlled by Security Groups at the network level and POSIX permissions at the file level.
 
-##### 🛡️ Encryption at Host
-- Provides end-to-end encryption by encrypting data at the VM host before it is written to storage.
-- Unlike the retiring Azure Disk Encryption (ADE), this handles temporary disks and caches without OS-level overhead.
-- Example: You enable Encryption at Host for a high-performance database VM to ensure the cache and data disks are encrypted before they even leave the host server.
+##### 🛡️ Amazon EBS Encryption (Nitro System)
+- Provides seamless, hardware-accelerated encryption for data at rest and in transit between the host and storage.
+- Example: On Nitro-based instances, encryption is handled by dedicated hardware, ensuring there is zero impact on the CPU performance of your application while keeping your disks secure.
 
-##### 🧠 Confidential Computing
-- Protects "data in use" by performing computations in a hardware-based Trusted Execution Environment (TEE).
-- Example: A healthcare app processes patient records in a Confidential VM, ensuring even Azure administrators cannot see the data in memory.
+##### 🧠 AWS Nitro Enclaves
+- Creates isolated compute environments to protect and process highly sensitive "data in use" (data in memory).
+- Example: A healthcare app processes sensitive patient data inside a Nitro Enclave. This environment has no persistent storage or interactive access, ensuring even a "root" administrator cannot see the data being processed.
 
 ##### S3 Pre-signed URLs
-- A secure method to grant temporary, limited access to a specific S3 object without requiring the recipient to have AWS credentials. You define exactly how long the link remains valid (e.g., 15 minutes).
-- Example: You need to share a private 2GB video file with an external contractor. Instead of making the bucket public, you generate a pre-signed URL that expires in 1 hour. The contractor downloads the file via that specific link, which becomes useless immediately after the hour passes.
+- A secure method to grant temporary, limited access to a specific S3 object without requiring the recipient to have AWS credentials.
+- Example: You generate a link for a client to download a specific report. You set the link to expire in 30 minutes. Once the time is up, the link automatically becomes invalid.
 
 ##### VPC Endpoints 
 - A private connection between your Virtual Private Cloud (VPC) and AWS services (like S3 or DynamoDB). It ensures your data travels over the AWS private network rather than the public internet.
@@ -53,3 +51,12 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 - Example: You deploy a PostgreSQL database in RDS. You attach a Security Group that only allows incoming traffic on port 5432 from the specific Security Group ID belonging to your web servers, blocking all other attempts to connect to the database.
 
 ### Recommendations for AWS Storage Security
+##### 🏷️ Amazon Macie (Sensitive Data Discovery)
+- Automatically discovers and protects sensitive data (like PII, credit card numbers, or API keys) stored in Amazon S3.
+- Even with perfect encryption, you may accidentally store sensitive data in the wrong bucket. Macie uses machine learning to alert you to these data privacy risks.
+- Example: You run a Macie scan on a legacy S3 bucket and find unencrypted CSV files containing customer social security numbers. You immediately move them to a restricted vault.
+
+##### 🔄 AWS Backup (Centralized Governance)
+- A fully managed service to centralize and automate data protection across AWS services (EBS, RDS, EFS, and S3).
+- It prevents "backup silos" by allowing you to manage retention policies and disaster recovery in one place.
+- Example: You create a single Backup Plan that automatically backs up your RDS databases every 24 hours and copies them to a different AWS Region for disaster recovery.
