@@ -14,3 +14,15 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 - Offers block-level storage volumes for EC2 instances with encryption and snapshot protection.
 - Example: You attach an encrypted EBS volume to an EC2 instance running a payroll application. Snapshots are also encrypted automatically.
 
+##### 🗄️ Amazon RDS (Relational Database Service)
+- Provides managed relational databases with encryption, network isolation, and automated backups.
+- Example: You deploy a MySQL database in RDS, encrypt it with a KMS key, and restrict access to only application servers inside a private VPC.
+
+##### 📚 Amazon S3 Glacier (Archival Storage)
+- Long-term archival storage with compliance features like Vault Lock and encryption.
+- Example: You archive medical records in Glacier with Vault Lock, ensuring they cannot be modified, meeting regulatory requirements.
+
+##### 🔑 AWS Key Management Service (KMS)
+- Centralized service for managing encryption keys across AWS storage services.
+- Example: You use a customer-managed KMS key to encrypt both S3 objects and RDS databases, ensuring consistent encryption policies.
+
