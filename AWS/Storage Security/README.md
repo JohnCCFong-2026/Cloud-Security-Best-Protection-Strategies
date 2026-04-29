@@ -4,5 +4,6 @@
 For setup instructions, please follow the steps provided in AWS.
 
 ### Storage Security
-AWS storage security is built on encryption, access control, monitoring, and compliance. The key principle is the Shared Responsibility Model: AWS secures the infrastructure, while you must configure and manage your data protection, permissions, and monitoring.
+AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) and each comes with built-in security features. The main pillars of storage security are encryption, access control, monitoring, and compliance.
+
 
