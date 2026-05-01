@@ -19,6 +19,7 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 ##### 🗂️ Amazon S3 (Simple Storage Service)
 - Provides scalable object storage with built-in security features like encryption and access control.
 - Example: You create an S3 bucket for HR documents, enable Block Public Access, and enforce server-side encryption with KMS. Only HR IAM roles can access the bucket.
+- [Security in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security.html)
 
 ##### 📚 Amazon S3 Glacier (Archival Storage)
 - Long-term archival storage with compliance features like Vault Lock and encryption.
