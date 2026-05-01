@@ -9,6 +9,7 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 ##### 💾 Amazon EBS (Elastic Block Store)
 - Offers block-level storage volumes for EC2 instances with encryption and snapshot protection.
 - Example: You attach an encrypted EBS volume to an EC2 instance running a payroll application. Snapshots are also encrypted automatically.
+- [What is Amazon Elastic Block Store?](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html)
 
 ##### 🗄️ Amazon RDS (Relational Database Service)
 - Provides managed relational databases with encryption, network isolation, and automated backups.
