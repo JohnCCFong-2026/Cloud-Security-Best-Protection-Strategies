@@ -22,7 +22,7 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 - Long-term archival storage with compliance features like Vault Lock and encryption.
 - Example: You archive medical records in Glacier with Vault Lock, ensuring they cannot be modified, meeting regulatory requirements.
 
-##### S3 Pre-signed URLs
+##### 🔑 S3 Pre-signed URLs
 - A secure method to grant temporary, limited access to a specific S3 object without requiring the recipient to have AWS credentials.
 - Example: You generate a link for a client to download a specific report. You set the link to expire in 30 minutes. Once the time is up, the link automatically becomes invalid.
 
@@ -47,7 +47,7 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 - Creates isolated compute environments to protect and process highly sensitive "data in use" (data in memory).
 - Example: A healthcare app processes sensitive patient data inside a Nitro Enclave. This environment has no persistent storage or interactive access, ensuring even a "root" administrator cannot see the data being processed.
 
-##### VPC Endpoints 
+##### 🛡️ VPC Endpoints 
 - A private connection between your Virtual Private Cloud (VPC) and AWS services (like S3 or DynamoDB). It ensures your data travels over the AWS private network rather than the public internet.
 - Example: You have a backend server in a private subnet with no internet access. By creating an S3 Gateway Endpoint, that server can securely upload logs to an S3 bucket without needing a NAT Gateway or an internet connection.
 
