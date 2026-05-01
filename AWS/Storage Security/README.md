@@ -50,21 +50,25 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 ##### 🛡️ VPC Endpoints 
 - A private connection between your Virtual Private Cloud (VPC) and AWS services (like S3 or DynamoDB). It ensures your data travels over the AWS private network rather than the public internet.
 - Example: You have a backend server in a private subnet with no internet access. By creating an S3 Gateway Endpoint, that server can securely upload logs to an S3 bucket without needing a NAT Gateway or an internet connection.
+- [Control access to VPC endpoints using endpoint policies](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html)
 
 ##### 🛡️ VPC Security Groups & Network ACLs
 - Acts as a virtual firewall to control inbound and outbound traffic for storage-related resources like RDS databases or EFS file systems. Security Groups are stateful (track connections), while Network ACLs are stateless (act at the subnet level).
 - Example: You deploy a PostgreSQL database in RDS. You attach a Security Group that only allows incoming traffic on port 5432 from the specific Security Group ID belonging to your web servers, blocking all other attempts to connect to the database.
+- [Security groups and network ACLs (BP5)](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/security-groups-and-network-acls-bp5.html)
 
 ### Recommendations for AWS Storage Security
 ##### 🏷️ Amazon Macie (Sensitive Data Discovery)
 - Automatically discovers and protects sensitive data (like PII, credit card numbers, or API keys) stored in Amazon S3.
 - Even with perfect encryption, you may accidentally store sensitive data in the wrong bucket. Macie uses machine learning to alert you to these data privacy risks.
 - Example: You run a Macie scan on a legacy S3 bucket and find unencrypted CSV files containing customer social security numbers. You immediately move them to a restricted vault.
+- [Monitoring data security and privacy with Macie](https://docs.aws.amazon.com/macie/latest/user/monitoring-s3.html)
 
 ##### 🔄 AWS Backup (Centralized Governance)
 - A fully managed service to centralize and automate data protection across AWS services (EBS, RDS, EFS, and S3).
 - It prevents "backup silos" by allowing you to manage retention policies and disaster recovery in one place.
 - Example: You create a single Backup Plan that automatically backs up your RDS databases every 24 hours and copies them to a different AWS Region for disaster recovery.
+- [Security in AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/security-considerations.html)
 
 ### Storage Security Framework
 ##### Least Privilege Access
