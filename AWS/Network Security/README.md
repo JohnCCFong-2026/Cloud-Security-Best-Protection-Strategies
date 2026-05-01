@@ -9,7 +9,7 @@ AWS network security is built on a shared responsibility model, where AWS secure
 ##### 🌐 Virtual Private Cloud (VPC)
 - Provides logically isolated sections of the AWS cloud where you can launch resources.
 - Example: You create a VPC with two subnets—one public for web servers and one private for databases. The public subnet connects to the internet via an Internet Gateway, while the private subnet only communicates internally.
-- [Getting started with Amazon VPC using the AWS CLI](https://docs.aws.amazon.com/vpc/latest/userguide/getting-started-with-amazon-vpc-using-the-aws-cli.html)
+- [Security best practices for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-best-practices.html)
 
 ##### 🛡️ Security Groups
 - Acts as a virtual firewall for EC2 instances, controlling inbound and outbound traffic.
@@ -25,24 +25,24 @@ AWS network security is built on a shared responsibility model, where AWS secure
 - A Content Delivery Network (CDN) that securely delivers websites, APIs, videos, and applications to users with low latency by caching content at AWS edge locations worldwide.
 - Integrates with AWS WAF for application-layer protection and AWS Shield for DDoS mitigation, while supporting TLS/SSL encryption and access controls like signed URLs and cookies.
 - Example: You host an e-commerce site with product images stored in S3. CloudFront caches these images at edge locations near your customers, ensuring fast page loads globally. At the same time, AWS WAF filters malicious requests (like SQL injection), and Shield Standard automatically mitigates DDoS attacks to keep your site available during peak shopping seasons.
-- [Tutorial: Create a simple function with CloudFront Functions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/functions-tutorial.html)
+- [Security in Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/security.html)
 
 ##### 🛡️ AWS WAF (Web Application Firewall)
 - Protects web applications from common exploits (SQL injection, XSS, etc.).
 - Works with CloudFront, Application Load Balancer (ALB), and API Gateway.
 - Example: Block malicious requests while allowing legitimate traffic to your e-commerce site.
-- [Use AWS WAF protections](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-awswaf.html)
+- [Security in your use of the AWS WAF service](https://docs.aws.amazon.com/waf/latest/developerguide/security.html)
 
 ##### 🛡️ AWS Network Firewall
 - A managed firewall service for VPCs.
 - Provides stateful inspection, intrusion prevention, and deep packet inspection.
 - Example: Deploy in a centralized VPC to filter traffic across multiple subnets.
-- [Filter network traffic using AWS Network Firewall](https://docs.aws.amazon.com/vpc/latest/userguide/network-firewall.html)
+- [Security in your use of the AWS Network Firewall service](https://docs.aws.amazon.com/network-firewall/latest/developerguide/security.html)
 
 ##### 🛣️ AWS PrivateLink / VPC Endpoints
 - Securely connect to AWS services without traversing the public internet.
 - Example: Access S3 or DynamoDB privately from within your VPC.
-- [Connect your VPC to services using AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/userguide/endpoint-services-overview.html)
+- [Securely Access Services Over AWS PrivateLink](https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/aws-privatelink.html)
 
 ##### 🌐 AWS Bastion Host / Systems Manager Session Manager
 - Provides secure administrative access to EC2 instances without exposing SSH ports.
@@ -53,13 +53,13 @@ AWS network security is built on a shared responsibility model, where AWS secure
 - Distributes incoming traffic across multiple targets (EC2, containers, IPs) to ensure high availability and fault tolerance.
 - Supports Application Load Balancer (ALB) for HTTP/HTTPS, Network Load Balancer (NLB) for TCP/UDP, and Gateway Load Balancer (GLB) for third‑party appliances.
 - Example: Your web app runs on three EC2 instances in different Availability Zones. An ALB routes traffic evenly across them, while WAF filters malicious requests at the load balancer level.
-- [What is Elastic Load Balancing?](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html)
+- [Security in Elastic Load Balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/security.html)
 
 ##### 🛣️ Amazon Route 53
 - A highly available and scalable Domain Name System (DNS) web service that routes end‑user requests to AWS resources or external endpoints.
 - Provides DNSSEC, health checks, and routing policies (weighted, latency‑based, geolocation) to improve security and performance.
 - Example: You register example.com in Route 53 and configure it to route traffic to an Application Load Balancer. If one region becomes unhealthy, Route 53 automatically reroutes users to a healthy endpoint, ensuring availability.
-- [Set up Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/setting-up-route-53.html)
+- [Security in Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/security.html)
 
 ##### 🌐 Internet Gateway
 - A horizontally scaled, redundant, and highly available VPC component that allows communication between resources in your VPC and the internet.
@@ -95,12 +95,12 @@ AWS network security is built on a shared responsibility model, where AWS secure
 ##### 🌐 Amazon VPC Lattice
 - An application networking service that simplifies secure service‑to‑service communication across VPCs and accounts. Provides Zero Trust style authentication and authorization.
 - Example: ECS services in one VPC securely call Lambda functions in another VPC, with VPC Lattice enforcing request‑level policies.
-- [How VPC Lattice works](https://docs.aws.amazon.com/vpc-lattice/latest/ug/how-it-works.html)
+- [Security in Amazon VPC Lattice](https://docs.aws.amazon.com/vpc-lattice/latest/ug/security.html)
 
 ##### 🌐 AWS Direct Connect
 - A dedicated, private network connection between your on‑premises environment (data center, office, or colocation facility) and AWS. It bypasses the public internet, providing lower latency, consistent performance, and enhanced security.
 - Example: A financial services company sets up AWS Direct Connect from its colocation facility to the AWS Hong Kong Region. They create a private virtual interface to securely connect to their VPC for sensitive workloads, and a public virtual interface to access services like Amazon S3. This ensures trading applications have ultra‑low latency and secure connectivity without traversing the public internet.
-- [AWS Direct Connect](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect.html)
+- [Security in AWS Direct Connect](https://docs.aws.amazon.com/directconnect/latest/UserGuide/security.html)
 
 ### Recommendations for AWS Network Security
 ##### 🛡️ AWS Shield *(pricing required)*
