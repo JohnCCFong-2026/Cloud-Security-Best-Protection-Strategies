@@ -70,7 +70,7 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
 ##### 🎫 AWS STS (Security Token Service)
 - AWS STS issues temporary security credentials (access key, secret key, session token) that expire after a set time. This allows users, applications, or services to access AWS resources without permanent credentials.
 - Example: A developer needs to access an S3 bucket for 1 hour.
-- [Welcome to the AWS Security Token Service API Reference](https://docs.aws.amazon.com/STS/latest/APIReference/API_Operations.html)
+- [Security in IAM and AWS STS](https://docs.aws.amazon.com/IAM/latest/UserGuide/security.html)
 
 ### Zero Trust IAM Framework
 ##### 🛡️ Zero Trust Principles for AWS IAM
