@@ -28,6 +28,7 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 ##### 🔑 S3 Pre-signed URLs
 - A secure method to grant temporary, limited access to a specific S3 object without requiring the recipient to have AWS credentials.
 - Example: You generate a link for a client to download a specific report. You set the link to expire in 30 minutes. Once the time is up, the link automatically becomes invalid.
+- [Sharing objects with presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html)
 
 ##### 🔐 S3 Block Public Access (The Safety Net)
 - A global setting that acts as a master fail-safe to prevent any S3 bucket from being made public, even if a user makes a mistake in a policy.
