@@ -65,3 +65,41 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 - A fully managed service to centralize and automate data protection across AWS services (EBS, RDS, EFS, and S3).
 - It prevents "backup silos" by allowing you to manage retention policies and disaster recovery in one place.
 - Example: You create a single Backup Plan that automatically backs up your RDS databases every 24 hours and copies them to a different AWS Region for disaster recovery.
+
+### Storage Security Framework
+##### Least Privilege Access
+- Use IAM roles and policies to grant only the permissions needed.
+- Enforce MFA for sensitive operations.
+- Rotate and audit credentials regularly.
+- Example: An application role can only read from one S3 bucket, not write or access others.
+
+##### Data Protection
+- Encrypt data at rest with AWS KMS (customer‑managed or AWS‑managed keys).
+- Encrypt data in transit using TLS/SSL.
+- Use automatic encryption features (EBS Nitro, RDS managed encryption).
+- Example: RDS databases encrypted with a customer‑managed KMS key.
+
+##### Infrastructure Protection
+- Use VPC Endpoints for private connectivity to S3/DynamoDB.
+- Configure Security Groups & Network ACLs to control inbound/outbound traffic.
+- Isolate sensitive workloads with Nitro Enclaves.
+- Example: Logs uploaded securely from a private subnet to S3 via a Gateway Endpoint.
+
+##### Detection & Monitoring
+- Enable AWS CloudTrail to log all storage API calls.
+- Use Amazon Macie to discover and classify sensitive data in S3.
+- Monitor with Amazon GuardDuty for suspicious activity.
+- Centralize logs with AWS Security Lake.
+- Example: Macie alerts you to unencrypted CSV files with PII in a legacy bucket.
+
+##### Incident Response
+- Automate alerts for unusual access patterns.
+- Use immutable backups with Glacier Vault Lock.
+- Implement AWS Backup for centralized disaster recovery.
+- Example: Daily RDS backups copied to another region for DR readiness.
+
+##### Compliance & Governance
+- Enforce Block Public Access globally for S3.
+- Use AWS Config for compliance auditing.
+- Apply data residency controls to meet regulatory requirements.
+- Example: Prevent accidental public exposure of S3 buckets at the account level.
