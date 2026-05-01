@@ -1,1 +1,7 @@
-# Coming soon
+##### 🛡️ Amazon EBS Encryption (Nitro System)
+- Provides seamless, hardware-accelerated encryption for data at rest and in transit between the host and storage.
+- Example: On Nitro-based instances, encryption is handled by dedicated hardware, ensuring there is zero impact on the CPU performance of your application while keeping your disks secure.
+
+##### 🧠 AWS Nitro Enclaves
+- Creates isolated compute environments to protect and process highly sensitive "data in use" (data in memory).
+- Example: A healthcare app processes sensitive patient data inside a Nitro Enclave. This environment has no persistent storage or interactive access, ensuring even a "root" administrator cannot see the data being processed.
