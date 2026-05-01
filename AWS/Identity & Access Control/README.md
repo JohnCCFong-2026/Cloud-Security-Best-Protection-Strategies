@@ -32,7 +32,7 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
     - An Admin role has full access to manage EC2 instances.
     - A Developer role has permissions to start/stop EC2 instances but not terminate them.
     - A Read-only role has permissions to view resources without making changes.
-- [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
+- [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 
 ##### 🌐 AWS IAM Identity Center (formerly AWS SSO)
 - Single sign-on (SSO) is an authentication solution that enables users to securely access multiple applications and websites with a single login. By validating a user’s identity once, organizations can provide seamless access to password-protected resources while strengthening security and improving the overall user experience.
@@ -42,7 +42,7 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
    - An employee signs in once with their corporate credentials and MFA.
    - They can then access AWS accounts (dev, test, prod) and apps like Salesforce without logging in again.
    - If the employee leaves, disabling their Entra ID account instantly removes all access.
-- [Enable IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/enable-identity-center.html)
+- [Security in AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/security.html)
 - [What is SSO (Single-Sign-On)?](https://aws.amazon.com/what-is/sso/)
 
 ##### 📱 AWS Cognito
@@ -53,12 +53,12 @@ AWS Identity and Access Management (IAM) is the backbone of security on AWS — 
 ##### 🔗 AWS Resource Access Manager (RAM)
 - Enables resource sharing across AWS accounts without duplicating resources.
 - Two AWS accounts (one for networking, one for applications) share a VPC subnet using AWS RAM, so applications can run in the shared network environment.
-- [Sharing your AWS resources](https://docs.aws.amazon.com/ram/latest/userguide/getting-started-sharing.html)
+- [Security in AWS Resource Access Manager](https://docs.aws.amazon.com/ram/latest/userguide/security.html)
 
 ##### 📂 AWS Directory Service
 - Provides managed Microsoft Active Directory (AD) or integrates with existing AD environments.
 - Example: An enterprise uses AWS Directory Service to allow employees to log into Amazon WorkSpaces with their existing corporate AD usernames and passwords.
-- [What gets created with your AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_getting_started_what_gets_created.html)
+- [Security in AWS Directory Service](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/security.html)
 
 ### Recommendations for AWS Identity Security
 ##### 🔎 IAM Access Analyzer *(pricing required)*
