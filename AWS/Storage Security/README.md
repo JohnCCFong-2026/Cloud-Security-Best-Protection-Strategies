@@ -24,6 +24,7 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 ##### 📚 Amazon S3 Glacier (Archival Storage)
 - Long-term archival storage with compliance features like Vault Lock and encryption.
 - Example: You archive medical records in Glacier with Vault Lock, ensuring they cannot be modified, meeting regulatory requirements.
+- [Locking a Vault using the AWS Command Line Interface](https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock-how-to-cli.html)
 
 ##### 🔑 S3 Pre-signed URLs
 - A secure method to grant temporary, limited access to a specific S3 object without requiring the recipient to have AWS credentials.
@@ -34,22 +35,17 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 - A global setting that acts as a master fail-safe to prevent any S3 bucket from being made public, even if a user makes a mistake in a policy.
 - Best Practice: Enable this at the Account Level immediately.
 - Example: A junior admin accidentally sets a bucket policy to "Public." Because Block Public Access is on at the account level, the bucket stays private, preventing a data leak.
+- [Blocking public access to your Amazon S3 storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html)
 
 ##### 🔑 AWS Key Management Service (KMS)
 - Centralized service for managing encryption keys across AWS storage services.
 - Example: You use a customer-managed KMS key to encrypt both S3 objects and RDS databases, ensuring consistent encryption policies.
+- [Data protection in AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/data-protection.html)
 
 ##### 📂 Amazon EFS (Elastic File System)
 - Provides serverless, fully managed file shares for Linux-based workloads via the NFS protocol.
 - Example: You use EFS to provide shared storage for a fleet of web servers. Access is controlled by Security Groups at the network level and POSIX permissions at the file level.
-
-##### 🛡️ Amazon EBS Encryption (Nitro System)
-- Provides seamless, hardware-accelerated encryption for data at rest and in transit between the host and storage.
-- Example: On Nitro-based instances, encryption is handled by dedicated hardware, ensuring there is zero impact on the CPU performance of your application while keeping your disks secure.
-
-##### 🧠 AWS Nitro Enclaves
-- Creates isolated compute environments to protect and process highly sensitive "data in use" (data in memory).
-- Example: A healthcare app processes sensitive patient data inside a Nitro Enclave. This environment has no persistent storage or interactive access, ensuring even a "root" administrator cannot see the data being processed.
+- [Securing your data in Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/security-considerations.html)
 
 ##### 🛡️ VPC Endpoints 
 - A private connection between your Virtual Private Cloud (VPC) and AWS services (like S3 or DynamoDB). It ensures your data travels over the AWS private network rather than the public internet.
