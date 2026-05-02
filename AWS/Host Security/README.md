@@ -1,3 +1,10 @@
+# Security Fundamentals: Core Foundations - Host Security
+
+## Getting started
+For setup instructions, please follow the steps provided in AWS.
+
+### Host Security
+
 ##### 🛡️ Amazon EBS Encryption (Nitro System)
 - Provides seamless, hardware-accelerated encryption for data at rest and in transit between the host and storage.
 - Example: On Nitro-based instances, encryption is handled by dedicated hardware, ensuring there is zero impact on the CPU performance of your application while keeping your disks secure.
