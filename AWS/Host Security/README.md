@@ -4,6 +4,7 @@
 For setup instructions, please follow the steps provided in AWS.
 
 ### Host Security
+AWS host security focuses on safeguarding the compute environment, including EC2 instances and workloads, through layered protections. Core measures include instance hardening, patch management, identity and access controls, encryption, monitoring, and intrusion detection.
 
 ##### 🛡️ Amazon EBS Encryption (Nitro System)
 - Provides seamless, hardware-accelerated encryption for data at rest and in transit between the host and storage.
