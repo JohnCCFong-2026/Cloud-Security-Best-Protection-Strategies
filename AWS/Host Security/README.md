@@ -27,7 +27,7 @@ AWS host security focuses on safeguarding the compute environment, including EC2
 - Example: Developers are given IAM roles that allow them to start/stop EC2 instances but not modify security groups.
 
 ### Recommendations for AWS Host Security
-##### OS‑Level Hardening
+##### 🛡️ OS‑Level Hardening
 - Securing the operating system inside the EC2 instance.
 - Actions:
   - Disable unused services and ports
@@ -36,7 +36,7 @@ AWS host security focuses on safeguarding the compute environment, including EC2
   - Configure host‑based firewalls (iptables, Windows Firewall)
 - Example: A company applies CIS Linux benchmarks, disables legacy protocols like Telnet, and enforces SSH key authentication.
 
-###### Cloud‑Level Hardening
+##### 🛡️ Cloud‑Level Hardening
 - Securing the instance using AWS‑native controls and services.
 - Actions:
   - 🔒 Amazon EC2 Security Groups & Network ACLs → firewall‑like traffic control
