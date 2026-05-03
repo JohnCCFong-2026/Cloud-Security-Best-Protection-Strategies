@@ -27,9 +27,23 @@ AWS host security focuses on safeguarding the compute environment, including EC2
 - Example: Developers are given IAM roles that allow them to start/stop EC2 instances but not modify security groups.
 
 ### Recommendations for AWS Host Security
-##### Instance Hardening
-- Securing EC2 instances by reducing attack surfaces — disabling unnecessary services, enforcing least privilege, and applying secure configurations.
-- Example: A company disables unused ports, enforces SSH key-based authentication, and applies CIS benchmark configurations to its Linux instances.
+##### OS‑Level Hardening
+- Securing the operating system inside the EC2 instance.
+- Actions:
+  - Disable unused services and ports
+  - Enforce SSH key‑based authentication
+  - Apply CIS benchmark configurations (Linux/Windows)
+  - Configure host‑based firewalls (iptables, Windows Firewall)
+- Example: A company applies CIS Linux benchmarks, disables legacy protocols like Telnet, and enforces SSH key authentication.
+
+###### Cloud‑Level Hardening
+- Securing the instance using AWS‑native controls and services.
+- Actions:
+  - 🔒 Amazon EC2 Security Groups & Network ACLs → firewall‑like traffic control
+  - 👤 AWS Identity and Access Management (IAM) → least‑privilege access policies
+  - 🕵️ Amazon GuardDuty → intrusion detection and anomaly detection
+  - 🛡️ AWS Security Hub → compliance checks against CIS, PCI DSS, etc.
+-Example: A company restricts SSH access to EC2 instances using Security Groups, assigns IAM roles to limit developer permissions, and enables GuardDuty to detect suspicious activity.
 
 ### Host Security Framework (3 Pillars)
 - 🔒 Protection
