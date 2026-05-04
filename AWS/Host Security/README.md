@@ -9,18 +9,22 @@ AWS host security focuses on safeguarding the compute environment, including EC2
 ##### 🛡️ Amazon EBS Encryption (Nitro System)
 - Provides seamless, hardware-accelerated encryption for data at rest and in transit between the host and storage.
 - Example: On Nitro-based instances, encryption is handled by dedicated hardware, ensuring there is zero impact on the CPU performance of your application while keeping your disks secure.
+- [The Security Design of the AWS Nitro System](https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aws-nitro-system/security-design-of-aws-nitro-system.html)
 
 ##### 🧠 AWS Nitro Enclaves
 - Creates isolated compute environments to protect and process highly sensitive "data in use" (data in memory).
 - Example: A healthcare app processes sensitive patient data inside a Nitro Enclave. This environment has no persistent storage or interactive access, ensuring even a "root" administrator cannot see the data being processed.
+- [Security](https://docs.aws.amazon.com/enclaves/latest/user/security.html)
 
 ##### 🔒 Amazon EC2 Security Groups & Network ACLs
 - Control inbound and outbound traffic to your instances, acting as virtual firewalls.
 - A company restricts SSH access to EC2 instances by allowing only connections from its corporate IP range.
+- [Control traffic to your AWS resources using security groups](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html)
 
 ##### 🔧 AWS Systems Manager Patch Manager
 - Automates patching for operating systems and applications on EC2 instances.
 - Example: An e-commerce platform schedules automatic patching of Linux servers every Sunday night to reduce downtime.
+- [How security patches are selected](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager-selecting-patches.html)
 
 ##### 👤 AWS Identity and Access Management (IAM)
 - Fine-grained access control for AWS resources, including EC2 instances.
