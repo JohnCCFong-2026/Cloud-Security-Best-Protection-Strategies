@@ -102,6 +102,11 @@ AWS network security is built on a shared responsibility model, where AWS secure
 - Example: A financial services company sets up AWS Direct Connect from its colocation facility to the AWS Hong Kong Region. They create a private virtual interface to securely connect to their VPC for sensitive workloads, and a public virtual interface to access services like Amazon S3. This ensures trading applications have ultra‑low latency and secure connectivity without traversing the public internet.
 - [Security in AWS Direct Connect](https://docs.aws.amazon.com/directconnect/latest/UserGuide/security.html)
 
+##### 🔒 AWS Certificate Manager (ACM)
+- Simplifies provisioning, managing, and deploying SSL/TLS certificates for secure communication.
+- Example: Deploying HTTPS certificates for a customer-facing web application hosted on Elastic Load Balancing.
+- [Security in AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/security.html)
+
 ### Recommendations for AWS Network Security
 ##### 🛡️ AWS Shield *(pricing required)*
 - Protects against Distributed Denial of Service (DDoS) attacks.
