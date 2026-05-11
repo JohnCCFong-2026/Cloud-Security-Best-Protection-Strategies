@@ -77,11 +77,20 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 - Rotate and audit credentials regularly.
 - Example: An application role can only read from one S3 bucket, not write or access others.
 
-##### Data Protection
-- Encrypt data at rest with AWS KMS (customer‑managed or AWS‑managed keys).
-- Encrypt data in transit using TLS/SSL.
-- Use automatic encryption features (EBS Nitro, RDS managed encryption).
-- Example: RDS databases encrypted with a customer‑managed KMS key.
+##### 🔑 Encryption at Rest
+- AWS protects stored data using AWS Key Management Service (KMS) integrated with services like Amazon S3, Amazon RDS, and Amazon EBS.
+- Encryption is automatic when enabled, and keys are centrally managed in KMS.
+- Example: Encrypting an EBS volume with a KMS-managed key ensures that even if the physical disk is compromised, the data remains unreadable without the decryption key.
+
+##### 🌐 Encryption in Transit
+- Data moving between clients, applications, and AWS services is secured using TLS/SSL protocols.
+- AWS also provides AWS Certificate Manager (ACM) to simplify provisioning and managing SSL/TLS certificates for secure communication.
+- Example: Enforcing HTTPS for all public endpoints ensures secure communication between users and applications, preventing eavesdropping or tampering.
+
+##### ⚙️ Encryption in Use (Compute)
+- AWS protects data while it is actively being processed in memory or inside compute environments.
+- This is achieved through AWS Nitro Enclaves and confidential computing, which isolate sensitive workloads from the host OS and other applications.
+- Example: Running workloads in Nitro Enclaves ensures sensitive data (like medical records or financial transactions) is processed securely, and even system administrators cannot access plaintext values during computation.
 
 ##### Infrastructure Protection
 - Use VPC Endpoints for private connectivity to S3/DynamoDB.
