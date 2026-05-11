@@ -71,7 +71,7 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 - [Security in AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/security-considerations.html)
 
 ### Storage Security Framework
-##### Least Privilege Access
+##### 👥 Least Privilege Access
 - Use IAM roles and policies to grant only the permissions needed.
 - Enforce MFA for sensitive operations.
 - Rotate and audit credentials regularly.
@@ -92,26 +92,26 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 - This is achieved through AWS Nitro Enclaves and confidential computing, which isolate sensitive workloads from the host OS and other applications.
 - Example: Running workloads in Nitro Enclaves ensures sensitive data (like medical records or financial transactions) is processed securely, and even system administrators cannot access plaintext values during computation.
 
-##### Infrastructure Protection
+##### 🛡️ Infrastructure Protection
 - Use VPC Endpoints for private connectivity to S3/DynamoDB.
 - Configure Security Groups & Network ACLs to control inbound/outbound traffic.
 - Isolate sensitive workloads with Nitro Enclaves.
 - Example: Logs uploaded securely from a private subnet to S3 via a Gateway Endpoint.
 
-##### Detection & Monitoring
+##### 📡 Detection & Monitoring
 - Enable AWS CloudTrail to log all storage API calls.
 - Use Amazon Macie to discover and classify sensitive data in S3.
 - Monitor with Amazon GuardDuty for suspicious activity.
 - Centralize logs with AWS Security Lake.
 - Example: Macie alerts you to unencrypted CSV files with PII in a legacy bucket.
 
-##### Incident Response
+##### 🚨 Incident Response
 - Automate alerts for unusual access patterns.
 - Use immutable backups with Glacier Vault Lock.
 - Implement AWS Backup for centralized disaster recovery.
 - Example: Daily RDS backups copied to another region for DR readiness.
 
-##### Compliance & Governance
+##### 📜 Compliance & Governance
 - Enforce Block Public Access globally for S3.
 - Use AWS Config for compliance auditing.
 - Apply data residency controls to meet regulatory requirements.
