@@ -22,18 +22,6 @@ AWS data security focuses on protecting information across its lifecycle at rest
 - Uses machine learning to discover and classify sensitive data such as PII in S3.
 - Example: Automatically identifying credit card numbers stored in S3 and applying stricter access policies.
 
+### Recommendations for AWS Data Security
+
 ### Data Security Framework
-##### 🔑 Encryption at Rest
-- AWS protects stored data using AWS Key Management Service (KMS) integrated with services like Amazon S3, Amazon RDS, and Amazon EBS.
-- Encryption is automatic when enabled, and keys are centrally managed in KMS.
-- Example: Encrypting an EBS volume with a KMS-managed key ensures that even if the physical disk is compromised, the data remains unreadable without the decryption key.
-
-##### 🌐 Encryption in Transit
-- Data moving between clients, applications, and AWS services is secured using TLS/SSL protocols.
-- AWS also provides AWS Certificate Manager (ACM) to simplify provisioning and managing SSL/TLS certificates for secure communication.
-- Example: Enforcing HTTPS for all public endpoints ensures secure communication between users and applications, preventing eavesdropping or tampering.
-
-##### ⚙️ Encryption in Use (Compute)
-- AWS protects data while it is actively being processed in memory or inside compute environments.
-- This is achieved through AWS Nitro Enclaves and confidential computing, which isolate sensitive workloads from the host OS and other applications.
-- Example: Running workloads in Nitro Enclaves ensures sensitive data (like medical records or financial transactions) is processed securely, and even system administrators cannot access plaintext values during computation.
