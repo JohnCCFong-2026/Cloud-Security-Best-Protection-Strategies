@@ -33,7 +33,7 @@ AWS provides multiple storage services (like Amazon S3, EBS, RDS, and Glacier) a
 
 ##### 🔐 S3 Block Public Access (The Safety Net)
 - A global setting that acts as a master fail-safe to prevent any S3 bucket from being made public, even if a user makes a mistake in a policy.
-- Best Practice: Enable this at the Account Level immediately.
+- Enable this at the Account Level immediately.
 - Example: A junior admin accidentally sets a bucket policy to "Public." Because Block Public Access is on at the account level, the bucket stays private, preventing a data leak.
 - [Blocking public access to your Amazon S3 storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html)
 
