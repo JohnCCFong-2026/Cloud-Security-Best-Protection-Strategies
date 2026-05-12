@@ -94,8 +94,20 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
   - [Trusted Execution Environment (TEE)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-execution-environment)
 - Example: A financial institution runs risk models in confidential computing enclaves, ensuring sensitive data remains protected during analysis.
 
-### Data Security Framework
 ##### 🔍 Microsoft Purview - Data Loss Prevention (DLP) (pricing required)
 - Prevents sensitive data from being leaked or misused by monitoring and controlling data movement.
 - Example: Configure policies to block credit card numbers from being copied out of VMs or uploaded to unauthorized storage.
 - [Learn about the information protection scanner](https://learn.microsoft.com/en-us/purview/deploy-scanner#learn-about-the-information-protection-scanner)
+
+### Data Security Framework
+##### 🔍 Data Classification
+- Classify data based on sensitivity and business impact so that the right level of protection is enforced across workloads.
+
+##### 🔒 Data at Rest
+- Ensure all data at rest is encrypted by default using AES-256, TDE, or Always Encrypted, protecting against unauthorized access to storage.
+
+##### 🔐 Data in Transit
+- Protect data in transit by requiring TLS/SSL for all connections and managing certificates securely with Azure services.
+
+##### 🛡️ Defense-in-Depth Model
+- Azure follows a defense-in-depth model, combining Zero Trust identity verification, encryption, monitoring, compliance automation, and recovery to safeguard data across its lifecycle.
