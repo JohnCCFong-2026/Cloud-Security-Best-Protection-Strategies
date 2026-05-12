@@ -101,13 +101,24 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
 
 ### Data Security Framework
 ##### 🔍 Data Classification
-- Classify data based on sensitivity and business impact so that the right level of protection is enforced across workloads.
+- Categorize data by sensitivity and business impact (Public, Confidential, Highly Confidential).
+- Ensures stronger controls are applied to critical or regulated data.
+- Example: Patient records classified as Highly Confidential require encryption and strict access policies.
 
 ##### 🔒 Data at Rest
-- Ensure all data at rest is encrypted by default using AES-256, TDE, or Always Encrypted, protecting against unauthorized access to storage.
+- Protect stored data from unauthorized access.
+- AES-256 encryption, Transparent Data Encryption (TDE), Always Encrypted in SQL Database, automatic encryption in Cosmos DB and Blob Storage.
+- Example: A bank encrypts transaction logs in Azure Data Lake with AES-256, ensuring compliance with financial regulations.
 
 ##### 🔐 Data in Transit
-- Protect data in transit by requiring TLS/SSL for all connections and managing certificates securely with Azure services.
+- Prevent interception or tampering during transfer.
+- TLS/SSL enforced for all connections, VPNs, secure APIs, and certificate management via Azure Key Vault.
+- Example: An e-commerce app uses TLS to secure customer payment data transmitted between the web app and Azure SQL Database.
+
+##### 🧠 Data in Use
+- Protect data while being processed in memory.
+- Azure Confidential Computing with Trusted Execution Environments (TEEs) and secure enclaves.
+- Example: A financial institution runs risk models in confidential computing enclaves, ensuring sensitive data remains protected during analysis.
 
 ##### 🛡️ Defense-in-Depth Model
-- Azure follows a defense-in-depth model, combining Zero Trust identity verification, encryption, monitoring, compliance automation, and recovery to safeguard data across its lifecycle.
+- Azure’s defense-in-depth model applies multiple layers of protection across the entire data lifecycle — including classification, encryption at rest and in transit, safeguards for data in use, identity and access control, continuous monitoring, compliance automation, and recovery — ensuring that no single point of failure can compromise sensitive information.
