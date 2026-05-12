@@ -122,3 +122,4 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
 
 ##### 🛡️ Defense-in-Depth Model
 - Azure’s defense-in-depth model applies multiple layers of protection across the entire data lifecycle — including classification, encryption at rest and in transit, safeguards for data in use, identity and access control, continuous monitoring, compliance automation, and recovery — ensuring that no single point of failure can compromise sensitive information.
+- [Introduction to Azure security](https://learn.microsoft.com/en-us/azure/security/fundamentals/overview)
