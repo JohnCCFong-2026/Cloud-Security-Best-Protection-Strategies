@@ -28,20 +28,32 @@ AWS data security focuses on protecting information across its lifecycle at rest
 - Supports cross-region replication for resilience and disaster recovery.
 - Example: A manufacturing company uses AWS Backup to protect ERP databases, ensuring recovery in case of ransomware attacks.
 
-##### AWS Nitro Enclaves
+##### 🧠 AWS Nitro Enclaves
 - Isolates sensitive workloads in secure enclaves.
 - Protects data during processing, not just at rest or in transit.
 - Example: A fintech company runs risk models in Nitro Enclaves, ensuring sensitive customer data remains secure during computation.
 
 ### Data Security Framework
-##### Data Classification
-- Categorize your data based on sensitivity and business impact (e.g., Public, Confidential, Secret) so you can apply the appropriate level of control.Protecting 
+##### 🔍 Data Classification
+- Categorize data based on sensitivity and business impact (e.g., Public, Confidential, Secret).
+- Ensures appropriate controls are applied to critical or regulated data.
+- Example: Patient records classified as Secret require encryption and strict IAM policies.
 
-##### Data at Rest
-- Ensure sensitive data is encrypted. Implement automated default encryption for data storage layers like Amazon S3 and Amazon EBS.Protecting 
+##### 🔒 Data at Rest
+- Encrypt sensitive data by default using AWS KMS and service‑level encryption (Amazon S3, Amazon EBS, Amazon RDS).
+- Protects stored data from unauthorized access.
+- Example: A bank encrypts transaction logs in Amazon S3 with KMS keys to meet compliance requirements.
 
-##### Data in Transit
-- Prevent data interception. Enforce TLS for all application traffic and API calls, and rely on secure key and certificate management.
+##### 🔐 Data in Transit
+- Prevent interception or tampering during transfer.
+- Enforce TLS for all application traffic and API calls, and manage certificates securely with AWS Certificate Manager (ACM).
+- Example: An e‑commerce app uses TLS to secure customer payment data transmitted between the web app and RDS.
 
-##### AWS defense-in-depth model
--  Apply a layered approach that combines encryption, identity and access management, monitoring, automation, and resilience to safeguard data across its lifecycle.
+##### 🧠 Data in Use
+- Protect sensitive data while being processed in memory.
+- AWS Nitro Enclaves isolate workloads, ensuring encrypted data remains secure during computation.
+- Example: A fintech company runs risk models in Nitro Enclaves, keeping customer data protected even during analysis.
+
+##### 🛡️ AWS defense-in-depth model
+-  Apply a layered approach that combines classification, encryption at rest and in transit, encrypted safeguards for data in use, identity and access management, monitoring and detection (CloudTrail, GuardDuty, Macie), compliance automation (AWS Config), centralized security management (Security Hub), and resilience (AWS Backup).
+- Ensures that no single point of failure can compromise sensitive information.
