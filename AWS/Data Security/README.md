@@ -23,5 +23,14 @@ AWS data security focuses on protecting information across its lifecycle at rest
 - Example: Automatically identifying credit card numbers stored in S3 and applying stricter access policies.
 
 ### Recommendations for AWS Data Security
+##### 🛡️ AWS Backup & Recovery
+- Automated Backups: Protects against accidental deletion or corruption.
+- Cross-Region Replication: Ensures resilience and disaster recovery.
+- Example: A manufacturing company uses AWS Backup to protect ERP databases, ensuring recovery in case of ransomware attacks.
+
+##### AWS Nitro Enclaves
+- Isolates sensitive workloads in secure enclaves.
+- Protects data during processing, not just at rest or in transit.
+- Example: A fintech company runs risk models in Nitro Enclaves, ensuring sensitive customer data remains protected even during computation.
 
 ### Data Security Framework
