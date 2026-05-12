@@ -24,13 +24,24 @@ AWS data security focuses on protecting information across its lifecycle at rest
 
 ### Recommendations for AWS Data Security
 ##### 🛡️ AWS Backup & Recovery
-- Automated Backups: Protects against accidental deletion or corruption.
-- Cross-Region Replication: Ensures resilience and disaster recovery.
+- Provides automated backups to protect against accidental deletion or corruption.
+- Supports cross-region replication for resilience and disaster recovery.
 - Example: A manufacturing company uses AWS Backup to protect ERP databases, ensuring recovery in case of ransomware attacks.
 
 ##### AWS Nitro Enclaves
 - Isolates sensitive workloads in secure enclaves.
 - Protects data during processing, not just at rest or in transit.
-- Example: A fintech company runs risk models in Nitro Enclaves, ensuring sensitive customer data remains protected even during computation.
+- Example: A fintech company runs risk models in Nitro Enclaves, ensuring sensitive customer data remains secure during computation.
 
 ### Data Security Framework
+##### Data Classification
+- Categorize your data based on sensitivity and business impact (e.g., Public, Confidential, Secret) so you can apply the appropriate level of control.Protecting 
+
+##### Data at Rest
+- Ensure sensitive data is encrypted. Implement automated default encryption for data storage layers like Amazon S3 and Amazon EBS.Protecting 
+
+##### Data in Transit
+- Prevent data interception. Enforce TLS for all application traffic and API calls, and rely on secure key and certificate management.
+
+##### AWS defense-in-depth model
+-  Apply a layered approach that combines encryption, identity and access management, monitoring, automation, and resilience to safeguard data across its lifecycle.
