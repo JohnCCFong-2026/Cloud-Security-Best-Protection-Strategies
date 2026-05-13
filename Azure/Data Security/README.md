@@ -85,15 +85,6 @@ Azure ensures data security through a multilayered defense-in-depth approach, co
 - Explore Microsoft Defender for SQL capabilities
 - [Microsoft Defender for SQL](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-defender-for-sql?view=azuresql)
 
-##### 🔒 Azure Confidential Computing
-- Data-in-Use Protection
-  - Uses secure enclaves to protect data while being processed.
-  - [Protecting data privacy and security on your most sensitive workloads](https://azure.microsoft.com/en-us/solutions/confidential-compute)
-- Trusted Execution Environments (TEEs)
-  - Prevents unauthorized access even from cloud operators.
-  - [Trusted Execution Environment (TEE)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-execution-environment)
-- Example: A financial institution runs risk models in confidential computing enclaves, ensuring sensitive data remains protected during analysis.
-
 ##### 🔍 Microsoft Purview - Data Loss Prevention (DLP) (pricing required)
 - Prevents sensitive data from being leaked or misused by monitoring and controlling data movement.
 - Example: Configure policies to block credit card numbers from being copied out of VMs or uploaded to unauthorized storage.
