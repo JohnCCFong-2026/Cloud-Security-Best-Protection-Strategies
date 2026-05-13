@@ -33,11 +33,6 @@ AWS data security focuses on protecting information across its lifecycle at rest
 - Example: A manufacturing company uses AWS Backup to protect ERP databases, ensuring recovery in case of ransomware attacks.
 - [Data protection in AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/data-protection.html)
 
-##### 🧠 AWS Nitro Enclaves
-- Isolates sensitive workloads in secure enclaves.
-- Protects data during processing, not just at rest or in transit.
-- Example: A fintech company runs risk models in Nitro Enclaves, ensuring sensitive customer data remains secure during computation.
-
 ### Data Security Framework
 ##### 🔍 Data Classification
 - Categorize data based on sensitivity and business impact (e.g., Public, Confidential, Secret).
