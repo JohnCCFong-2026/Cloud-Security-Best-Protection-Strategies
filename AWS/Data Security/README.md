@@ -57,3 +57,4 @@ AWS data security focuses on protecting information across its lifecycle at rest
 ##### 🛡️ AWS defense-in-depth model
 -  Apply a layered approach that combines classification, encryption at rest and in transit, encrypted safeguards for data in use, identity and access management, monitoring and detection (CloudTrail, GuardDuty, Macie), compliance automation (AWS Config), centralized security management (Security Hub), and resilience (AWS Backup).
 - Ensures that no single point of failure can compromise sensitive information.
+- [Defense-in-Depth Security Architecture on AWS](https://www.linkedin.com/pulse/defense-in-depth-security-architecture-aws-mustafa-yagci-fnfzf) by Mustafa Sarac Yagci
