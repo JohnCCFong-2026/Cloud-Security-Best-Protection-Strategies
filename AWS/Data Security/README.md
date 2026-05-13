@@ -9,10 +9,12 @@ AWS data security focuses on protecting information across its lifecycle at rest
 ##### 🔑 AWS Key Management Service (KMS)
 - Provides centralized control of encryption keys for securing data across AWS services.
 - Example: Encrypting an Amazon RDS database with a KMS-managed key ensures sensitive financial records remain secure even if the physical storage is compromised.
+- [Data protection in AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/data-protection.html)
 
 ##### 👥 AWS Identity and Access Management (IAM)
 - Enables fine-grained access control to AWS resources, enforcing least privilege.
 - Example: Restricting access so only specific IAM roles can read or write to sensitive S3 buckets.
+- [Data protection in AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/data-protection.html)
 
 ##### 📦 Amazon S3 Security
 - Offers bucket policies, Block Public Access, and server-side encryption with KMS integration.
