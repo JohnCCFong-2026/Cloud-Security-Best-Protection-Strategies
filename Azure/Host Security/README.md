@@ -26,6 +26,15 @@ Azure host security focuses on protecting the virtual machines (VMs), operating 
 - Example: In Azure, we enabled Encrypt at Host for our virtual machines so that all data is automatically encrypted at the compute layer before leaving the host, providing strong protection without requiring disk-level encryption management.
 - [Use the Azure portal to enable end-to-end encryption using encryption at host](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-host-based-encryption-portal?tabs=azure-powershell)
 
+##### 🔒 Azure Confidential Computing
+- Data-in-Use Protection
+  - Uses secure enclaves to protect data while being processed.
+  - [Protecting data privacy and security on your most sensitive workloads](https://azure.microsoft.com/en-us/solutions/confidential-compute)
+- Trusted Execution Environments (TEEs)
+  - Prevents unauthorized access even from cloud operators.
+  - [Trusted Execution Environment (TEE)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-execution-environment)
+- Example: A financial institution runs risk models in confidential computing enclaves, ensuring sensitive data remains protected during analysis.
+
 ### Recommendations for Azure Host Security
 ##### 🛡️ Hardening (Windows/Linux OS) in Operating System (OS)
 - System hardening in Azure involves securing the operating system inside the VM itself. For both Windows and Linux, this means applying recommended security baselines, disabling unnecessary services, closing unused ports, enforcing strong authentication, and configuring host-based firewalls. Azure provides guidance and built-in baselines through Microsoft Defender for Cloud to help ensure VMs are aligned with best practices.
