@@ -26,6 +26,20 @@ AWS application security centers on safeguarding workloads and code execution ac
 - Enforce TLS 1.2+ for all application traffic and API calls.
 - Example: A healthcare app secures patient data transmitted between its web front‑end and RDS database using TLS.
 
+##### 📦 Dependency Scanning (via Amazon Inspector + CodePipeline)
+- Checks third‑party libraries and packages for known vulnerabilities.
+- Example: Inspector flags an outdated open‑source package with a critical CVE; developers update the dependency before deployment.
+
+##### 🔗 AWS API Gateway (API Security)
+- Secures APIs by enforcing authentication, authorization, throttling, and monitoring.
+- Example: A company exposes a customer API through API Gateway. Requests must include a valid IAM or Cognito token, and rate limits prevent denial‑of‑service attacks.
+
+##### ⚙️ Amazon Inspector (Application Security)
+- Amazon Inspector also secures application workloads by scanning Lambda functions and container images (ECS/EKS). It analyzes code packages and dependencies for insecure libraries or misconfigurations.
+- This ensures applications don’t ship with vulnerable components.
+- Example (Lambda): A serverless function uses an outdated Node.js library with a critical CVE. Inspector flags the issue, and developers update the dependency before redeployment.
+- Example (Containers): An e‑commerce API container image includes a vulnerable version of log4j. Inspector detects the CVE during the build process, and the CI/CD pipeline blocks deployment until the image is rebuilt with a patched version.
+
 ### Recommendations for AWS Application Security
 ##### 🧩 Static Application Security Testing (SAST)
 - Analyzes source code and binaries before deployment to detect vulnerabilities early in the development cycle.
