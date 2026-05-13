@@ -5,3 +5,32 @@ For setup instructions, please follow the steps provided in AWS.
 
 ### Application Security
 AWS application security centers on safeguarding workloads and code execution across their lifecycle from development to deployment and runtime through layered defenses. Core measures include secure identity and access controls, hardened network boundaries, encryption of sensitive data, automated vulnerability scanning, runtime protection with web application firewalls, and continuous monitoring with threat detection services.
+
+##### 👥 AWS Identity and Access Management (IAM)
+- Provides fine‑grained access control to AWS resources, enforcing least privilege.
+- Example: Restricting access so only specific IAM roles can deploy code, while customer data remains inaccessible to developers.
+
+##### 🔑 AWS Secrets Manager
+- Securely stores and rotates credentials, API keys, and database passwords.
+- Example: A web application retrieves database credentials from Secrets Manager at runtime instead of hardcoding them in source code.
+
+##### 🛡️ AWS Web Application Firewall (WAF)
+- Protects applications from common exploits such as SQL injection, cross‑site scripting (XSS), and bot traffic.
+- Example: An e‑commerce site uses WAF rules to block malicious requests targeting its checkout page.
+
+##### 🧪 Secure Development Lifecycle
+- Integrate security checks into CI/CD pipelines with CodePipeline and Inspector.
+- Example: A fintech company runs automated scans during build stages to catch insecure dependencies before release.
+
+##### 🔒 Encryption in Transit
+- Enforce TLS 1.2+ for all application traffic and API calls.
+- Example: A healthcare app secures patient data transmitted between its web front‑end and RDS database using TLS.
+
+### Recommendations for AWS Application Security
+##### 🧩 Static Application Security Testing (SAST)
+- Analyzes source code and binaries before deployment to detect vulnerabilities early in the development cycle.
+- Example: Running SAST scans in CodeBuild to identify insecure coding patterns (like hardcoded credentials) before merging into production.
+
+##### ⚡ Dynamic Application Security Testing (DAST)
+- Tests running applications by simulating real‑world attacks to uncover runtime vulnerabilities.
+- Example: Using DAST tools integrated with AWS environments to detect SQL injection or XSS vulnerabilities in a staging web app before release.
