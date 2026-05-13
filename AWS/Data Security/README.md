@@ -19,6 +19,7 @@ AWS data security focuses on protecting information across its lifecycle at rest
 ##### 📦 Amazon S3 Security
 - Offers bucket policies, Block Public Access, and server-side encryption with KMS integration.
 - Example: Storing medical images in S3 with server-side encryption enabled and blocking all public access to prevent accidental exposure.
+- [Using server-side encryption with AWS KMS keys (SSE-KMS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html)
 
 ##### 🕵️ Amazon Macie
 - Uses machine learning to discover and classify sensitive data such as PII in S3.
