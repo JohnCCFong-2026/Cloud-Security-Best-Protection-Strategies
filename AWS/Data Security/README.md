@@ -24,12 +24,14 @@ AWS data security focuses on protecting information across its lifecycle at rest
 ##### 🕵️ Amazon Macie
 - Uses machine learning to discover and classify sensitive data such as PII in S3.
 - Example: Automatically identifying credit card numbers stored in S3 and applying stricter access policies.
+- [Data protection in Macie](https://docs.aws.amazon.com/macie/latest/user/data-protection.html)
 
 ### Recommendations for AWS Data Security
 ##### 🛡️ AWS Backup & Recovery
 - Provides automated backups to protect against accidental deletion or corruption.
 - Supports cross-region replication for resilience and disaster recovery.
 - Example: A manufacturing company uses AWS Backup to protect ERP databases, ensuring recovery in case of ransomware attacks.
+- [Data protection in AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/data-protection.html)
 
 ##### 🧠 AWS Nitro Enclaves
 - Isolates sensitive workloads in secure enclaves.
