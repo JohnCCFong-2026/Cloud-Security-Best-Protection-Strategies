@@ -35,6 +35,12 @@ Azure host security focuses on protecting the virtual machines (VMs), operating 
   - [Trusted Execution Environment (TEE)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-execution-environment)
 - Example: A financial institution runs risk models in confidential computing enclaves, ensuring sensitive data remains protected during analysis.
 
+🖥️ Amazon Inspector (Host Security)
+- Amazon Inspector scans EC2 instances to identify vulnerabilities in the operating system and installed software packages. It checks for missing patches, outdated libraries, and known CVEs (Common Vulnerabilities and Exposures).
+- This ensures the host infrastructure is hardened against exploitation.
+- Example: An EC2 instance running Ubuntu has an outdated version of OpenSSL. Inspector detects the vulnerability and reports it, prompting the operations team to patch the OS and reduce the risk of TLS exploits.
+- [Security in Amazon Inspector](https://docs.aws.amazon.com/inspector/latest/user/security.html)
+
 ### Recommendations for Azure Host Security
 ##### 🛡️ Hardening (Windows/Linux OS) in Operating System (OS)
 - System hardening in Azure involves securing the operating system inside the VM itself. For both Windows and Linux, this means applying recommended security baselines, disabling unnecessary services, closing unused ports, enforcing strong authentication, and configuring host-based firewalls. Azure provides guidance and built-in baselines through Microsoft Defender for Cloud to help ensure VMs are aligned with best practices.
