@@ -46,6 +46,10 @@ AWS Governance refers to the set of policies, processes, and tools that organiza
 - Example: A financial services company uses Control Tower to automatically provision new accounts with encryption enabled, centralized logging configured, and Service Control Policies applied — ensuring compliance without manual setup.
 - [AWS Control Tower quick start guide](https://docs.aws.amazon.com/controltower/latest/userguide/quick-start.html)
 
+##### AWS Config
+- Monitors resource configurations for compliance with security policies.
+- Example: Config rules enforce encryption on all S3 buckets, automatically flagging any misconfigured storage.
+
 ### Goverance Framework
 ##### 📘 AWS Cloud Adoption Framework (CAF)
 - Provides best practices and structured guidance for cloud adoption.
@@ -71,3 +75,8 @@ AWS Governance refers to the set of policies, processes, and tools that organiza
 - Service Control Policies (SCPs) enforce rules across accounts.
 - Example: A retail company restricts production accounts from using unapproved services, ensuring compliance with internal policies.
 - [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)
+
+##### 🌐 GitOps
+- GitOps is primarily a deployment and operations methodology — it uses Git repositories as the single source of truth for infrastructure and application configurations.
+- It focuses on automation, consistency, and auditability of deployments.
+- Example: A company manages Kubernetes manifests in Git. When developers push changes, CodePipeline triggers deployment to EKS. Amazon Inspector scans container images for CVEs, and if vulnerabilities are found, the pipeline halts until remediation
