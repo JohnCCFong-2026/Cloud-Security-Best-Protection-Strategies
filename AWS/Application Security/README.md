@@ -13,6 +13,7 @@ AWS application security centers on safeguarding workloads and code execution ac
 ##### 🔑 AWS Secrets Manager
 - Securely stores and rotates credentials, API keys, and database passwords.
 - Example: A web application retrieves database credentials from Secrets Manager at runtime instead of hardcoding them in source code.
+- [Security in AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/security.html)
 
 ##### 🛡️ AWS Web Application Firewall (WAF)
 - Protects applications from common exploits such as SQL injection, cross‑site scripting (XSS), and bot traffic.
@@ -21,6 +22,7 @@ AWS application security centers on safeguarding workloads and code execution ac
 ##### 🧪 Secure Development Lifecycle
 - Integrate security checks into CI/CD pipelines with CodePipeline and Inspector.
 - Example: A fintech company runs automated scans during build stages to catch insecure dependencies before release.
+- [Application security](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/application-security.html)
 
 ##### 🔒 Encryption in Transit
 - Enforce TLS 1.2+ for all application traffic and API calls.
@@ -54,7 +56,7 @@ AWS application security centers on safeguarding workloads and code execution ac
 - Example: Using DAST tools integrated with AWS environments to detect SQL injection or XSS vulnerabilities in a staging web app before release.
 
 ### Applicaton Security Framework
-🔄 AWS DevSecOps for Application Security
+🔄 AWS DevSecOps
 - Integrates security into every stage of the software lifecycle (plan → code → build → test → release → deploy → operate → monitor).
 - Ensures that applications are secure by design, continuously tested, and monitored in production.
 - Core practices include shift‑left security, automated compliance checks, immutable infrastructure, runtime protection, and continuous monitoring.
