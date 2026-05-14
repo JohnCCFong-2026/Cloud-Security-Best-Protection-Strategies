@@ -49,6 +49,7 @@ AWS Governance refers to the set of policies, processes, and tools that organiza
 ##### AWS Config
 - Monitors resource configurations for compliance with security policies.
 - Example: Config rules enforce encryption on all S3 buckets, automatically flagging any misconfigured storage.
+- [Security in AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/security.html)
 
 ### Goverance Framework
 ##### 📘 AWS Cloud Adoption Framework (CAF)
