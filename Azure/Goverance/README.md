@@ -9,18 +9,22 @@ Azure Governance refers to the set of policies, processes, and tools that organi
 #####  🔧 Azure Policies
 - Enforce compliance by ensuring that resources meet both conditional and mandatory standards, keeping them aligned with your organization’s corporate requirements.
 - [Create a policy assignment to identify non-compliant resources using Azure portal](https://learn.microsoft.com/en-us/azure/governance/policy/assign-policy-portal)
+
 #####  🔒 Security Policies
 - Provide built-in compliance controls aligned with global standards and regulatory frameworks such as NIST, HIPAA, and ISO.
 - Help ensure that cloud resources remain secure and compliant with organizational requirements.
 - [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/governance/policy/samples/?context=%2Fazure%2Fgovernance%2Fpolicy%2Fcontext%2Fpolicy-context)
+
 ##### 💵 Cost Management
 - Monitor and track costs within Azure. For example, if daily costs increase unexpectedly beyond normal usage patterns, it may indicate a potential attack.
 - [Start using Cost Analysis](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/quick-acm-cost-analysis)
+
 ##### ☁️ Defender for Cloud *(Basic tier free, advanced features require premium license)*
 - Continuously assesses resources to improve security posture with secure score and recommendations.
 - Provides threat protection for workloads (VMs, databases, containers, storage).
 - Supports regulatory compliance and extends protection to multicloud/hybrid environments.
 - [Connect your Azure subscriptions](https://learn.microsoft.com/en-us/azure/defender-for-cloud/connect-azure-subscription)
+
 ### Goverance Framework
 ##### 🧩 Cloud Adoption Framework (CAF) for Azure
 - Provides best practices, guidance, and tools to help organizations plan, implement, and manage their cloud adoption journey effectively.
@@ -34,3 +38,10 @@ Azure Governance refers to the set of policies, processes, and tools that organi
   - Reliability.
   - Security.
 - [Microsoft Azure Well-Architected Framework pillars](https://learn.microsoft.com/en-us/azure/well-architected/pillars)
+
+##### 🌐 GitOps
+- Uses Git repositories as the single source of truth for infrastructure and application configurations.
+- Ensures auditable, version‑controlled, and policy‑driven deployments, aligning with governance and compliance requirements.
+- Integrates with Azure Kubernetes Service (AKS), Azure Arc, and Azure Policy to enforce compliance and security controls automatically.
+- Example: A financial services company manages Kubernetes manifests in Git. When developers push changes, Azure Pipelines deploys them to AKS. Azure Policy validates that all resources meet compliance rules (e.g., encryption enabled). If drift or misconfiguration occurs, GitOps automatically restores the compliant state.
+- [GitOps for Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gitops-aks/gitops-blueprint-aks)
