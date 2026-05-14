@@ -40,6 +40,10 @@ AWS application security centers on safeguarding workloads and code execution ac
 - Example (Lambda): A serverless function uses an outdated Node.js library with a critical CVE. Inspector flags the issue, and developers update the dependency before redeployment.
 - Example (Containers): An e‑commerce API container image includes a vulnerable version of log4j. Inspector detects the CVE during the build process, and the CI/CD pipeline blocks deployment until the image is rebuilt with a patched version.
 
+##### AWS Shield
+- Provides DDoS protection at the network and application layer.
+- Example: A media streaming service uses AWS Shield Advanced to automatically mitigate volumetric DDoS attacks targeting its video delivery endpoints.
+
 ### Recommendations for AWS Application Security
 ##### 🧩 Static Application Security Testing (SAST)
 - Analyzes source code and binaries before deployment to detect vulnerabilities early in the development cycle.
@@ -48,3 +52,10 @@ AWS application security centers on safeguarding workloads and code execution ac
 ##### ⚡ Dynamic Application Security Testing (DAST)
 - Tests running applications by simulating real‑world attacks to uncover runtime vulnerabilities.
 - Example: Using DAST tools integrated with AWS environments to detect SQL injection or XSS vulnerabilities in a staging web app before release.
+
+### Applicaton Security Framework
+🔄 AWS DevSecOps for Application Security
+- Integrates security into every stage of the software lifecycle (plan → code → build → test → release → deploy → operate → monitor).
+- Ensures that applications are secure by design, continuously tested, and monitored in production.
+- Core practices include shift‑left security, automated compliance checks, immutable infrastructure, runtime protection, and continuous monitoring.
+- Example: A fintech company uses CodeBuild for SAST scans, Amazon Inspector for container vulnerability checks, AWS WAF for runtime protection, and GuardDuty for anomaly detection. If GuardDuty flags suspicious API calls, a Lambda function automatically quarantines the compromised resource.
