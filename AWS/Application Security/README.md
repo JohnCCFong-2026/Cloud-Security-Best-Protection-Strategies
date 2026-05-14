@@ -43,10 +43,6 @@ AWS application security centers on safeguarding workloads and code execution ac
 - Example (Containers): An e‑commerce API container image includes a vulnerable version of log4j. Inspector detects the CVE during the build process, and the CI/CD pipeline blocks deployment until the image is rebuilt with a patched version.
 - [Amazon Inspector Code Security](https://docs.aws.amazon.com/inspector/latest/user/code-security-assessments.html)
 
-##### AWS Shield
-- Provides DDoS protection at the network and application layer.
-- Example: A media streaming service uses AWS Shield Advanced to automatically mitigate volumetric DDoS attacks targeting its video delivery endpoints.
-
 ### Recommendations for AWS Application Security
 ##### 🧩 Static Application Security Testing (SAST)
 - Analyzes source code and binaries before deployment to detect vulnerabilities early in the development cycle.
