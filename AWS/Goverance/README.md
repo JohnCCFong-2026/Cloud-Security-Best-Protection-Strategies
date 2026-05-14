@@ -81,3 +81,4 @@ AWS Governance refers to the set of policies, processes, and tools that organiza
 - GitOps is primarily a deployment and operations methodology — it uses Git repositories as the single source of truth for infrastructure and application configurations.
 - It focuses on automation, consistency, and auditability of deployments.
 - Example: A company manages Kubernetes manifests in Git. When developers push changes, CodePipeline triggers deployment to EKS. Amazon Inspector scans container images for CVEs, and if vulnerabilities are found, the pipeline halts until remediation
+- [Best practices for choosing a GitOps tool](https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-tools/best-practices.html)
