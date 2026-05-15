@@ -35,6 +35,17 @@ AWS Governance refers to the set of policies, processes, and tools that organiza
 - Example: Control Tower ensures new accounts comply with organizational policies
 - [AWS Systems Manager Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html)
 
+##### 🔔 Amazon EventBridge
+- Event-driven automation and alerting.
+- Routes monitoring events to Lambda, SNS, or other services.
+- Example: Automatically disabling compromised IAM keys when GuardDuty raises an alert.
+- [Amazon EventBridge security](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-security.html)
+
+##### 🏗️ AWS CloudFormation
+- Infrastructure as Code (IaC) service that lets you model, provision, and manage AWS resources using JSON or YAML templates. It automates resource creation and ensures consistent deployments across environments.
+- Example: A company defines a CloudFormation template to launch an EC2 instance, create an encrypted S3 bucket, and set up CloudWatch alarms. When deployed, CloudFormation provisions all resources automatically in the correct order, ensuring compliance and consistency.
+- [Security in CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/security.html)
+
 ### Recommendations for AWS Goverance
 ##### 🧩 AWS Control Tower (Enterprise Setup)
 - AWS Control Tower automates the setup of a secure, compliant multi‑account AWS environment (landing zone) using AWS best practices. It orchestrates services like AWS Organizations and IAM Identity Center to manage, govern, and monitor accounts with preconfigured controls (guardrails).
