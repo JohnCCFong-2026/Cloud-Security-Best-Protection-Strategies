@@ -21,3 +21,27 @@ AWS monitoring ensures visibility, performance tracking, and security oversight 
 ##### 📡 CloudWatch
 - Real-time monitoring and alerting.
 - Example: Triggers alarms when unusual traffic patterns occur.
+
+##### 🔍 AWS Detective
+- Investigates and visualizes security findings.
+- Capabilities: Helps analyze relationships between resources and events.
+- Example: Tracing the root cause of suspicious API activity across multiple accounts.
+
+##### 💡 AWS Trusted Advisor
+- Provides best-practice recommendations for cost, performance, security, and fault tolerance.
+- Identifies underutilized resources, insecure configurations, and optimization opportunities.
+- Example: Suggesting resizing EC2 instances to reduce costs.
+
+##### 💰 AWS Cost Explorer
+- Monitors and analyzes cloud spending.
+- Provides cost reports, forecasts, and optimization insights.
+- Example: Identifying rising costs due to unused EBS volumes and recommending cleanup.
+
+##### 🏥 AWS Personal Health Dashboard
+- Provides alerts and remediation guidance when AWS services experience issues.
+- Personalized view of AWS service health affecting your resources.
+- Example: Notifying admins when an outage impacts RDS in a specific region.
+
+### Recommendations for AWS Monitoring
+
+### Monitoring Framework
